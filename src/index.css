@@ -1,13 +1,181 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Lobster Two", cursive;
+  font-family: "Roboto Condensed", sans-serif;
+  background-image: url(/src/Assets/bg/bg.jpg);
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+  overflow: auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+/********************Navbar Top******************/
+
+a:hover {
+  transform: scale(1.15);
+}
+
+h6 {
+  color: rgb(255 255 255 / 0%);
+  font-family: "Fondamento", cursive;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: rgb(255 255 255 / 39%);
+}
+
+/********************Home Page*******************/
+
+.home-div p {
+  font-size: 2.5em;
+  color: rgb(255 255 255 / 49%);
+  font-family: "Fondamento", cursive;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgb(255 255 255 / 50%);
+  position: absolute;
+  bottom: 12vh;
+  left: 18vw;
+  right: 18vw;
+}
+
+.estrellas {
+  position: relative;
+  width: auto;
+  max-width: 300px;
+  margin: 0 auto;
+  color: rgb(0, 0, 0);
+  font-size: 4rem;
+  font-family: "Fondamento", cursive;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.39);
+}
+.estrellas span {
+  position: absolute;
+  width: 5rem;
+  height: 11rem;
+  margin-left: -50px;
+  text-align: center;
+  transform-origin: top center;
+}
+.estrellas span:nth-of-type(1) {
+  transform: rotate(50deg);
+}
+.estrellas span:nth-of-type(2) {
+  transform: rotate(33deg);
+}
+.estrellas span:nth-of-type(3) {
+  transform: rotate(15deg);
+}
+.estrellas span:nth-of-type(4) {
+  transform: rotate(0deg);
+}
+.estrellas span:nth-of-type(5) {
+  transform: rotate(-15deg);
+}
+.estrellas span:nth-of-type(6) {
+  transform: rotate(-27deg);
+}
+.estrellas span:nth-of-type(7) {
+  transform: rotate(-45deg);
+}
+
+.inverso {
+  font-weight: bold;
+}
+.inverso span {
+  line-height: 70px;
+  transform-origin: bottom center;
+}
+
+.lamp:hover {
+  cursor: pointer;
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.lamp {
+  width: 4.5rem;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+
+/*****************Navbar Bottom*****************/
+
+.stamp {
+  color: rgb(111, 111, 111);
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: 0.25rem solid #555;
+  display: inline-block;
+  padding: 0.35rem 0.35rem;
+  border-radius: 1rem;
+  mask-image: url(./Assets/bg/bgStamp.png);
+  mask-size: contain;
+  mix-blend-mode: multiply;
+  transform: rotate(-5deg);
+}
+
+.save {
+  color: #d23;
+  border: 0.25rem double #d23;
+  mask-position: 2rem 3rem;
+  transform: rotate(5deg);
+}
+
+.travel {
+  color: #0a9928;
+  border: 0.25rem solid #0a9928;
+  mask-position: 1rem 6rem;
+  border-radius: 0 49%;
+  transform: rotate(-3deg);
+  margin-left: 1.1em;
+}
+
+.repeat {
+  color: #c4c4c4;
+  border: 0.25rem double #c4c4c4;
+  border-radius: 0;
+  transform: rotate(7deg);
+}
+
+/********************Gallery Page*******************/
+
+.carousel .slide {
+  background: #0000;
+}
+
+.carousel-root {
+  padding: 25px;
 }
