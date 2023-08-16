@@ -46,7 +46,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
         </div>
       </div>
 
-      <IntroSection />
+      <IntroSection home={page.home} />
     </main>
   );
 }

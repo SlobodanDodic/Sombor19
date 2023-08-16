@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Locale, i18n } from "@/i18n.config";
 import { Montserrat } from "next/font/google";
 import Navbar from "./components/navbar";
+import type { RootLayoutProps } from "./types";
 
 const myFont = Montserrat({ subsets: ["latin"] });
 
@@ -13,11 +14,6 @@ export const metadata: Metadata = {
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale as Locale }));
-}
-
-interface RootLayoutProps {
-  children: React.ReactNode;
-  params: { lang: Locale };
 }
 
 export default function RootLayout({ children, params }: RootLayoutProps) {

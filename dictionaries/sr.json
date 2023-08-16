@@ -1,0 +1,20 @@
+{
+  "navigation": {
+    "1": "Naslovna",
+    "2": "O Nama",
+    "3": "Usluge",
+    "4": "Kontakt"
+  },
+  "page": {
+    "home": {
+      "headline": "Sobe u Somboru",
+      "title": "Sombor 19 CA",
+      "visit": "posetite nas",
+      "welcome": "Dobrodošli u Apartmans"
+    },
+    "about": {
+      "title": "O Nama",
+      "description": "Ovo je O Nama strana"
+    }
+  }
+}
