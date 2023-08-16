@@ -1,0 +1,19 @@
+{
+  "navigation": {
+    "1": "Home",
+    "2": "About",
+    "3": "Service",
+    "4": "Contact"
+  },
+  "page": {
+    "home": {
+      "headline": "Rooms in Sombor",
+      "title": "Sombor 19 CA",
+      "visit": "visit us"
+    },
+    "about": {
+      "title": "About Us",
+      "description": "This is the about page"
+    }
+  }
+}

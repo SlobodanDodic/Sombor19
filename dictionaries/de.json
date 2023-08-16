@@ -1,0 +1,19 @@
+{
+  "navigation": {
+    "1": "Startseite",
+    "2": "Über uns",
+    "3": "Service",
+    "4": "Kontakt"
+  },
+  "page": {
+    "home": {
+      "headline": "Zimmer in Sombor",
+      "title": "Sombor 19 CA",
+      "visit": "Besuchen Sie uns"
+    },
+    "about": {
+      "title": "Über uns",
+      "description": "Dies ist die Über uns Seite"
+    }
+  }
+}
