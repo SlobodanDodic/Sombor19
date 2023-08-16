@@ -1,5 +1,3 @@
-import React from "react";
-
-export default function HomePage() {
-  return <div>HomePage</div>;
-}
+export { BarCodeRight } from "./BarCodeRight";
+export { BarCodeCenter } from "./BarCodeCenter";
+export { IntroSection } from "./IntroSection";
