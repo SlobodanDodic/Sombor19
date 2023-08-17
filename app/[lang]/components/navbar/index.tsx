@@ -1,15 +1,8 @@
 import { Locale } from "@/i18n.config";
 import Menubar from "./Menubar";
-import { getDictionary } from "@/lib/dictionary";
 import LocaleSwitcher from "./locale-switcher";
 
-interface NavbarProps {
-  lang: Locale;
-}
-
-export default async function Navbar({ lang }: NavbarProps) {
-  const { navigation } = await getDictionary(lang);
-
+export default async function Navbar({ lang }: { lang: Locale }) {
   return (
     <main className="navbar relative items-center bg-white">
       <div className="absolute top-[1px] left-0 w-full h-full bg-gradient-to-r from-amber-600 to-transparent -z-10" />
@@ -22,7 +15,7 @@ export default async function Navbar({ lang }: NavbarProps) {
           <Menubar lang={lang} />
         </div>
       </div>
-      <div className="flex mr-5">
+      <div className="flex justify-center items-center mr-5">
         <LocaleSwitcher />
       </div>
     </main>

@@ -1,33 +1,25 @@
+import Link from "next/link";
 import { Locale } from "@/i18n.config";
 import { getDictionary } from "@/lib/dictionary";
-import Link from "next/link";
 
-interface NavbarProps {
-  lang: Locale;
-}
-
-export default async function Menubar({ lang }: NavbarProps) {
+export default async function Menubar({ lang }: { lang: Locale }) {
   const { navigation } = await getDictionary(lang);
 
   const navbarLinks = [
     {
       title: navigation[1],
-      description: "See'em all!",
       href: `/${lang}`,
     },
     {
       title: navigation[2],
-      description: "Fine tunings!",
       href: `/${lang}/about`,
     },
     {
       title: navigation[3],
-      description: "It'was mine!",
       href: `/${lang}/service`,
     },
     {
       title: navigation[4],
-      description: "Spin around!",
       href: `/${lang}/contact`,
     },
   ];
@@ -35,7 +27,11 @@ export default async function Menubar({ lang }: NavbarProps) {
   return (
     <div className="flex pl-5">
       {navbarLinks.map((link) => (
-        <Link href={link.href} key={link.title} className="text-sm tracking-tight px-2">
+        <Link
+          href={link.href}
+          key={link.title}
+          className="text-sm font-semibold tracking-tight mx-2 relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-amber-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+        >
           {link.title}
         </Link>
       ))}
