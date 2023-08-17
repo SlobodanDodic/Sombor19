@@ -31,6 +31,20 @@
   }
 }
 
+@layer components {
+  .menu-link {
+    @apply text-xs sm:text-sm font-semibold tracking-tight mx-2 uppercase relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-amber-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center;
+  }
+}
+
 .fontMerienda {
   font-family: "Merienda", cursive;
 }
+
+/* .dots {
+  background-color: #292524;
+  background-image: radial-gradient(circle, #d97706 2%, transparent 10%),
+    radial-gradient(circle, #d97706 2%, transparent 10%);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
+} */

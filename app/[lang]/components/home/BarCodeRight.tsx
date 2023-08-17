@@ -1,6 +1,6 @@
 export const BarCodeRight = () => {
   return (
-    <div className="absolute grid h-4 w-[122px] sm:w-20 gap-1 transform rotate-90 top-36 -right-11 sm:-right-3">
+    <div className="absolute grid h-4 w-[122px] sm:w-20 gap-1 transform rotate-90 top-[152px] -right-11 sm:-right-3">
       <hr className="h-[1px] w-96 border-t-0 bg-amber-600/80" />
       <hr className="h-[1px] w-96 border-t-0 bg-amber-600/70" />
       <hr className="h-[1px] w-96 border-t-0 bg-amber-600/60" />

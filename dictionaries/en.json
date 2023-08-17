@@ -1,9 +1,7 @@
 {
   "navigation": {
-    "1": "Home",
-    "2": "About",
-    "3": "Service",
-    "4": "Contact"
+    "1": "About",
+    "2": "Contact"
   },
   "page": {
     "home": {

@@ -1,9 +1,7 @@
 {
   "navigation": {
-    "1": "Startseite",
-    "2": "Über uns",
-    "3": "Service",
-    "4": "Kontakt"
+    "1": "Über uns",
+    "2": "Kontakt"
   },
   "page": {
     "home": {

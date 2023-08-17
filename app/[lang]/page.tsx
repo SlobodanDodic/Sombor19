@@ -13,19 +13,19 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
   const thirdWord = words[2];
 
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col overflow-hidden">
       <div className="relative flex w-screen max-w-full">
         <BarCodeTop />
-        <div className="absolute top-[91px] sm:top-28 h-96 left-[2%] w-[96%] -z-10 bg-hero bg-no-repeat bg-center bg-cover brightness-50 outline outline-offset-2 outline-2 outline-amber-600 rounded-s-3xl" />
+        <div className="absolute top-[91px] sm:top-28 h-[25rem] left-[2%] w-[96%] -z-10 bg-hero bg-no-repeat bg-center bg-cover brightness-50 shadow-inner border-y-4 border-amber-600 rounded-s-3xl" />
         <div className="absolute top-0 left-0 sm:left-[79px] w-[1px] h-screen bg-gradient-to-b from-amber-600 to-transparent -z-20" />
-        <div className="absolute top-[90px] sm:top-28 right-1 sm:right-5 w-16 h-96 backdrop-blur-[1px]" />
+        <div className="absolute top-0 left-0 w-[1px] h-[70vh] bg-gradient-to-b from-amber-600 to-transparent -z-20" />
 
         <div className="flex flex-col items-center w-screen max-w-full py-12 px-2">
           <div className="flex flex-col items-center w-full sm:max-w-xl px-3 sm:px-7">
             <h1 className="flex tracking-[-5px] text-5xl sm:text-7xl font-bold">
               <span className="z-20 ml-4">{firstWord}</span>
             </h1>
-            <h2 className="relative flex tracking-[-3px] text-4xl sm:text-5xl font-bold -mt-3 ml-12 text-amber-600">
+            <h2 className="relative flex tracking-[-3px] text-4xl sm:text-5xl font-bold -mt-2 ml-12 text-amber-600">
               <span className="absolute -top-1 sm:-top-3 -left-11 sm:-left-16 text-4xl sm:text-5xl bg-stone-800 text-amber-600 border border-amber-600 z-0 w-4 h-4 flex items-center justify-center p-6 sm:p-8 rounded-full">
                 {secondWord}
               </span>

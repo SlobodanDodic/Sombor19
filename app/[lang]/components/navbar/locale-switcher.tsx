@@ -4,17 +4,10 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { i18n } from "@/i18n.config";
 import { PiTranslateThin } from "react-icons/pi";
-import { HiOutlineBars2 } from "react-icons/hi2";
-import { RxCross2 } from "react-icons/rx";
 
 export default function LocaleSwitcher() {
   const pathName = usePathname();
   const [showLang, setShowLang] = useState(false);
-  const [showMenu, setShowMenu] = useState(false);
-
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
-  };
 
   const toggleLang = () => {
     setShowLang(!showLang);
@@ -29,21 +22,6 @@ export default function LocaleSwitcher() {
 
   return (
     <div className="flex">
-      {showMenu ? (
-        <RxCross2
-          onClick={toggleMenu}
-          className="mr-2 z-[51] block sm:hidden w-11 h-11 p-2 bg-stone-800 text-amber-600 border-amber-600 border rounded-full"
-        />
-      ) : (
-        <HiOutlineBars2
-          onClick={toggleMenu}
-          className="mr-2 z-[51] block sm:hidden w-11 h-11 p-2 bg-stone-800 text-amber-600 border-amber-600 border rounded-full"
-        />
-      )}
-
-      {/* Mobile menu */}
-      {showMenu ? <div className="absolute top-0 z-50 left-0 w-screen h-screen bg-black/80">show</div> : null}
-
       <div
         onClick={toggleLang}
         className="flex items-center justify-center rounded hover:cursor-pointer h-11 w-11 z-40"

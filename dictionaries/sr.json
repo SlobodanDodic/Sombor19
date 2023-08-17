@@ -1,9 +1,7 @@
 {
   "navigation": {
-    "1": "Naslovna",
-    "2": "O Nama",
-    "3": "Usluge",
-    "4": "Kontakt"
+    "1": "O Nama",
+    "2": "Kontakt"
   },
   "page": {
     "home": {
