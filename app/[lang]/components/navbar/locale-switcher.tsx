@@ -29,7 +29,7 @@ export default function LocaleSwitcher() {
         <PiTranslateThin className="w-11 h-11 p-2 bg-stone-800 text-amber-600 border-amber-600 border rounded-full" />
       </div>
       {showLang ? (
-        <div className="absolute top-10 bg-stone-800 z-30 right-5 w-11 flex flex-col items-center rounded-b-full py-8 border border-amber-600 text-amber-600">
+        <div className="absolute top-10 bg-stone-800 z-30 right-1 sm:right-7 w-11 flex flex-col items-center rounded-b-full py-8 border border-amber-600 text-amber-600">
           {i18n.locales.map((locale) => {
             return (
               <p key={locale} className="text-xs hover:font-bold uppercase py-1">

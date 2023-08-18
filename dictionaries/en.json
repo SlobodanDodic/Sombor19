@@ -1,14 +1,15 @@
 {
   "navigation": {
-    "1": "About",
-    "2": "Contact"
+    "about": "About",
+    "contact": "Contact"
   },
   "page": {
     "home": {
       "headline": "Rooms in Sombor",
       "title": "Sombor 19 CA",
       "visit": "visit us",
-      "welcome": "Welcome to Apartments"
+      "welcome": "Welcome to Apartments",
+      "about": "About me"
     },
     "about": {
       "title": "About Us",

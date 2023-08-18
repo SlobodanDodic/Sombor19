@@ -1,14 +1,15 @@
 {
   "navigation": {
-    "1": "О нас",
-    "2": "Контакты"
+    "about": "О нас",
+    "contact": "Контакты"
   },
   "page": {
     "home": {
       "headline": "Комнаты в Сомборе",
       "title": "Сомбор 19 ЦА",
       "visit": "посетите нас",
-      "welcome": "Добро пожаловать в Apartments"
+      "welcome": "Добро пожаловать в Apartments",
+      "about": "Обо мне"
     },
     "about": {
       "title": "О нас",

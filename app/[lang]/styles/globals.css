@@ -41,6 +41,10 @@
   font-family: "Merienda", cursive;
 }
 
+.triangle {
+  clip-path: polygon(100% 50%, 0 55%, 55% 100%);
+}
+
 /* .dots {
   background-color: #292524;
   background-image: radial-gradient(circle, #d97706 2%, transparent 10%),

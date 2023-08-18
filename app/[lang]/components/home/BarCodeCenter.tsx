@@ -1,6 +1,6 @@
 export const BarCodeCenter = () => {
   return (
-    <table className="table-auto w-16 h-16 mt-8 overflow-x-auto animate-pulse">
+    <table className="table-auto w-16 h-16 mt-8 overflow-x-auto animate-pulse z-10">
       <thead>
         <tr>
           <th className="w-1/12 border-l border-amber-600/5"></th>

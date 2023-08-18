@@ -1,14 +1,15 @@
 {
   "navigation": {
-    "1": "Rólunk",
-    "2": "Kapcsolat"
+    "about": "Rólunk",
+    "contact": "Kapcsolat"
   },
   "page": {
     "home": {
       "headline": "Szobák ♣ Zomborban",
       "title": "Sombor 19 CA",
       "visit": "látogasson el hozzánk",
-      "welcome": "Üdvözöljük az Apartments"
+      "welcome": "Üdvözöljük az Apartments",
+      "about": "Rólam"
     },
     "about": {
       "title": "Rólunk",

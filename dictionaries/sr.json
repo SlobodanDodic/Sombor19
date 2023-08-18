@@ -1,14 +1,15 @@
 {
   "navigation": {
-    "1": "O Nama",
-    "2": "Kontakt"
+    "about": "O Nama",
+    "contact": "Kontakt"
   },
   "page": {
     "home": {
       "headline": "Sobe u Somboru",
       "title": "Sombor 19 CA",
       "visit": "posetite nas",
-      "welcome": "Dobrodošli u Apartmans"
+      "welcome": "Dobrodošli u Apartmans",
+      "about": "O meni"
     },
     "about": {
       "title": "O Nama",

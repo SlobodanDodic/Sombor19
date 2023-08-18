@@ -8,10 +8,12 @@ export interface RootLayoutProps {
 
 // IntroSectionProps
 export interface IntroSectionProps {
+  lang: Locale;
   home: {
     headline: string;
     title: string;
     visit: string;
     welcome: string;
+    about: string;
   };
 }

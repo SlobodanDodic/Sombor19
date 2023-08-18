@@ -19,17 +19,19 @@ export default async function Navbar({ lang }: { lang: Locale }) {
 
       <div className="flex flex-auto justify-center items-center">
         <Link href={`/${lang}/about`} className="menu-link">
-          {navigation[1]}
+          {navigation.about}
         </Link>
 
         <div className="flex text-amber-600">░</div>
 
         <Link href={`/${lang}/contact`} className="menu-link">
-          {navigation[2]}
+          {navigation.contact}
         </Link>
+
+        <div className="flex text-amber-600">░</div>
       </div>
 
-      <div className="flex justify-center items-center mr-5">
+      <div className="flex justify-center items-center mr-1 sm:mr-7">
         <LocaleSwitcher />
       </div>
     </main>
