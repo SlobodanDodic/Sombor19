@@ -18,7 +18,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
     <main className="flex flex-col overflow-hidden">
       <div className="relative flex w-screen max-w-full">
         <BarCodeTop />
-        <div className="absolute bg-white top-[91px] sm:top-28 h-[405px] left-[2%] w-[96%] z-10 outline outline-amber-600 -skew-y-3 rounded drop-shadow-xl">
+        <div className="absolute bg-white top-[91px] sm:top-28 h-[400px] left-[2%] w-[96%] z-10 outline outline-amber-600 -skew-y-3 rounded drop-shadow-xl">
           <Image
             src={HomeImg}
             alt="home"
@@ -57,9 +57,9 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
 
           <BarCodeCenter />
         </div>
-      </div>
 
-      <div className="absolute triangle flex justify-center items-center -bottom-16 sm:-bottom-11 mt-2 left-1/2 w-72 h-72 bg-amber-600 transform -translate-x-1/2 -z-20" />
+        <div className="absolute triangle flex justify-center items-center -bottom-36 sm:-bottom-32 left-1/2 w-72 h-72 bg-amber-600 transform -translate-x-1/2 -z-20" />
+      </div>
 
       <IntroSection home={page.home} lang={lang} />
     </main>
