@@ -6,9 +6,12 @@ export async function IntroSection({ home, lang }: IntroSectionProps) {
   const { navigation } = await getDictionary(lang);
 
   return (
-    <div className="flex flex-col">
-      <h1 className="shadow-inner ml-24 mr-4 w-[100% - 7rem] mt-5 shadow-stone-800 p-5 rounded text-stone-600 leading-7 underline decoration-[10px] underline-offset-8 decoration-amber-600 sm:text-center text-2xl sm:text-3xl font-bold">
-        {home.welcome} {home.title}
+    <div className="flex flex-col mt-10">
+      <h1 className="ml-24 text-stone-600 leading-7 underline decoration-[10px] underline-offset-8 decoration-amber-600 text-3xl sm:text-4xl font-bold">
+        {home.welcome}
+      </h1>
+      <h1 className="ml-24 text-stone-600 leading-7 underline decoration-[10px] underline-offset-8 decoration-amber-600 text-2xl sm:text-3xl font-bold">
+        {home.title}
       </h1>
 
       {/* <div className="relative flex w-screen justify-center mt-28 mb-10">
