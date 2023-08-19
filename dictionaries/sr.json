@@ -1,19 +1,20 @@
 {
   "navigation": {
-    "about": "O Nama",
+    "about": "O nama",
     "contact": "Kontakt"
   },
   "page": {
     "home": {
+      "flag": "🇷🇸",
       "headline": "Sobe u Somboru",
-      "title": "Sombor 19 CA",
+      "welcome": "Dobro došli u ",
+      "title": "Centralni apartman Sombor 19",
       "visit": "posetite nas",
-      "welcome": "Dobrodošli u Apartmans",
-      "about": "O meni"
+      "about": "O nama"
     },
     "about": {
-      "title": "O Nama",
-      "description": "Ovo je O Nama strana"
+      "title": "O nama",
+      "description": "Ovo je stranica o nama"
     }
   }
 }

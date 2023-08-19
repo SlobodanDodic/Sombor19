@@ -5,10 +5,11 @@
   },
   "page": {
     "home": {
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
       "headline": "Rooms in Sombor",
-      "title": "Sombor 19 CA",
+      "welcome": "Welcome to ",
+      "title": "Sombor 19 Central Apartment",
       "visit": "visit us",
-      "welcome": "Welcome to Apartments",
       "about": "About me"
     },
     "about": {

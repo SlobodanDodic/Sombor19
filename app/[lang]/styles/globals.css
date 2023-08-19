@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap");
-
 ::-webkit-scrollbar {
   display: none;
   -ms-overflow-style: none; /* IE and Edge */
@@ -13,9 +11,6 @@
 @layer base {
   html {
     @apply text-stone-800;
-  }
-  main {
-    @apply w-screen max-w-5xl flex justify-between mx-auto;
   }
   h1 {
     @apply text-xl;
@@ -33,16 +28,12 @@
 
 @layer components {
   .menu-link {
-    @apply text-xs sm:text-sm font-semibold tracking-tight mx-2 uppercase relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-amber-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center;
+    @apply text-sm mx-2 lowercase relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-amber-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center;
   }
 }
 
-.fontMerienda {
-  font-family: "Merienda", cursive;
-}
-
 .triangle {
-  clip-path: polygon(100% 50%, 0 55%, 55% 100%);
+  clip-path: polygon(100% 50%, 0 57%, 55% 100%);
 }
 
 /* .dots {

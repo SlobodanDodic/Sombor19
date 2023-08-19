@@ -10,6 +10,7 @@ export interface RootLayoutProps {
 export interface IntroSectionProps {
   lang: Locale;
   home: {
+    flag: string;
     headline: string;
     title: string;
     visit: string;

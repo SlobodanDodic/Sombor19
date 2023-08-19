@@ -5,15 +5,16 @@
   },
   "page": {
     "home": {
+      "flag": "🇩🇪",
       "headline": "Zimmer in Sombor",
-      "title": "Sombor 19 CA",
+      "welcome": "Willkommen bei ",
+      "title": "Zentrales Apartment Sombor 19",
       "visit": "Besuchen Sie uns",
-      "welcome": "Willkommen in Apartments",
       "about": "Über mich"
     },
     "about": {
       "title": "Über uns",
-      "description": "Dies ist die Über uns Seite"
+      "description": "Dies ist die Über-uns-Seite"
     }
   }
 }

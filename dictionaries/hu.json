@@ -5,15 +5,16 @@
   },
   "page": {
     "home": {
-      "headline": "Szobák ♣ Zomborban",
-      "title": "Sombor 19 CA",
+      "flag": "🇭🇺",
+      "headline": "Szobák Somborban",
+      "welcome": "Üdvözöljük ",
+      "title": "Sombor 19 Központi Apartman",
       "visit": "látogasson el hozzánk",
-      "welcome": "Üdvözöljük az Apartments",
-      "about": "Rólam"
+      "about": "Rólunk"
     },
     "about": {
       "title": "Rólunk",
-      "description": "Ez az \"Rólunk\" oldal"
+      "description": "Ez az Rólunk oldal"
     }
   }
 }
