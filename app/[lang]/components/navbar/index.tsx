@@ -11,7 +11,7 @@ export default async function Navbar({ lang }: { lang: Locale }) {
       <div className="flex items-center">
         <Link
           href={`/${lang}`}
-          className="flex text-amber-600 text-4xl items-center justify-center bg-stone-800 w-20 h-20"
+          className="flex text-amber-600 text-4xl items-center justify-center bg-stone-800 w-20 h-20 border-r border-amber-600"
         >
           XIX
         </Link>

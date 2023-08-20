@@ -22,8 +22,6 @@ export default function RootLayout({ children, params }: RootLayoutProps) {
     <html lang={params.lang}>
       <body className={myFont.className}>
         <Navbar lang={params.lang} />
-        <div className="absolute top-0 left-0 w-20 h-screen border-r-2 border-amber-600 z-10" />
-        <div className="absolute top-0 left-0 w-20 h-screen bg-stone-800 -z-10" />
         {children}
       </body>
     </html>
