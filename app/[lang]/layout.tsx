@@ -1,10 +1,11 @@
+// import { Grenze_Gotisch } from "next/font/google";
 import "./styles/globals.css";
 import type { Metadata } from "next";
 import { Locale, i18n } from "@/i18n.config";
-// import { Grenze_Gotisch } from "next/font/google";
 import { Arima } from "next/font/google";
 import Navbar from "./components/navbar";
 import type { RootLayoutProps } from "./types";
+import { FormProvider } from "./context/FormContext";
 
 const myFont = Arima({ subsets: ["latin"] });
 
@@ -21,8 +22,10 @@ export default function RootLayout({ children, params }: RootLayoutProps) {
   return (
     <html lang={params.lang}>
       <body className={myFont.className}>
-        <Navbar lang={params.lang} />
-        {children}
+        <FormProvider>
+          <Navbar lang={params.lang} />
+          {children}
+        </FormProvider>
       </body>
     </html>
   );

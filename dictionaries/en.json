@@ -9,7 +9,10 @@
       "headline": "Rooms in Sombor",
       "welcome": "Welcome to ",
       "title": "Sombor 19 Central Apartment",
-      "visit": "visit us",
+      "visit": "Check available dates and visit us!",
+      "select": "select dates",
+      "guests": "guests",
+      "submit": "submit",
       "about": "About me"
     },
     "about": {
