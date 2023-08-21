@@ -8,7 +8,7 @@ interface DatePickerInputProps {
   placeholder: string;
 }
 
-export async function DateInput({ value, placeholder }: DatePickerInputProps) {
+export function DateInput({ value, placeholder }: DatePickerInputProps) {
   const { setFormData } = useFormState();
 
   const handleValueChange = (newValue: DateValueType) => {
