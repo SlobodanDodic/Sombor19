@@ -28,8 +28,8 @@ export interface RootLayoutProps {
   params: { lang: Locale };
 }
 
-export interface LangContextProps {
-  children: React.ReactNode;
+// locale-switcher
+export interface LangProps {
   lang: Locale;
 }
 

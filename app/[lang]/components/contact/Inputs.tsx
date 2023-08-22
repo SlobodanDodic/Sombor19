@@ -8,7 +8,7 @@ export default function Inputs({ home }: HomeProps) {
   const { formData } = useFormState();
 
   return (
-    <div className="flex flex-col items-center justify-center w-screen sm:flex-row p-2 font-semibold text-xs bg-stone-800">
+    <div className="flex flex-col items-center justify-center w-screen sm:flex-row p-2 font-semibold text-xs">
       <DateInput value={formData.dateRange} placeholder={home.select} />
 
       <GuestsSelect defaultValue={formData.guests} guests={home.guests} />

@@ -28,12 +28,12 @@
 
 @layer components {
   .menu-link {
-    @apply text-sm mx-2 lowercase relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-amber-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center;
+    @apply text-sm font-light mx-2 lowercase relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-amber-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center;
   }
 }
 
-.triangle {
-  clip-path: polygon(100% 50%, 0 57%, 55% 100%);
+.clip {
+  clip-path: polygon(0 43%, 17% 3%, 34% 46%, 57% 21%, 77% 39%, 100% 26%, 100% 100%, 0 100%);
 }
 
 /* .dots {
