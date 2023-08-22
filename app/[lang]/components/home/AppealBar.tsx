@@ -5,6 +5,7 @@ import { DateInput } from "../contact/DateInput";
 import { GuestsSelect } from "../contact/GuestsSelect";
 import Link from "next/link";
 // import { BiSolidDownArrow } from "react-icons/bi";
+// import { BiSolidDownArrow } from "react-icons/bi";
 
 export function AppealBar({ home, lang }: AppealBarProps) {
   const { formData } = useFormState();
