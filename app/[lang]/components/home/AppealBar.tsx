@@ -1,15 +1,29 @@
 "use client";
-import type { AllFormDataProps, AppealBarProps } from "../../types";
+import type { AppealBarProps } from "../../types";
 import { useFormState } from "../../context/FormContext";
 import { DateInput } from "../contact/DateInput";
 import { GuestsSelect } from "../contact/GuestsSelect";
 import Link from "next/link";
+// import { BiSolidDownArrow } from "react-icons/bi";
 
 export function AppealBar({ home, lang }: AppealBarProps) {
   const { formData } = useFormState();
 
+  const header = home.headline;
+  const words = header.split(" ");
+  const firstWord = words[0];
+  const secondWord = words[1];
+  const thirdWord = words[2];
+
   return (
-    <div className="absolute top-[60vh] left-1/2 transform -translate-x-1/2 text-xs">
+    <div className="absolute top-[30vh] left-1/2 transform -translate-x-1/2 text-xs">
+      <div className="flex flex-col text-center pb-20 font-bold text-shadow-sm shadow-stone-800 z-10">
+        <span className="text-3xl sm:text-4xl tracking-tight text-amber-600/60">
+          {firstWord} {secondWord}
+        </span>
+        <span className="text-5xl sm:text-6xl -mt-5 tracking-tight text-amber-600/70">{thirdWord}</span>
+      </div>
+
       <div className="flex flex-col items-center">
         <div className="text-center px-2 pb-2">
           <h1 className="flex text-white/90 pl-1">{home.visit}</h1>

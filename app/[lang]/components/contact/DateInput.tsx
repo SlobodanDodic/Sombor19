@@ -27,7 +27,7 @@ export function DateInput({ value, placeholder }: DatePickerInputProps) {
       value={value}
       onChange={handleValueChange}
       containerClassName="relative flex"
-      inputClassName="flex w-[200px] h-7 bg-amber-600/60 text-center rounded border-0 text-white/90 ring-2 m-1 ring-white/70 placeholder:text-white/90"
+      inputClassName="flex w-[200px] h-7 bg-amber-600/60 text-xs font-normal text-center rounded border-0 text-white/90 ring-2 m-1 ring-white/70 placeholder:text-white/90"
       toggleClassName="absolute text-transparent left-0 h-full w-full"
     />
   );
