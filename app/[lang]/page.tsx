@@ -19,7 +19,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
         sizes="100vw"
         quality={100}
         style={{ objectFit: "cover" }}
-        className="h-screen w-screen brightness-[39%] -z-10"
+        className="h-[100svh] w-screen brightness-[39%] -z-10"
       />
 
       <div className="clip absolute bottom-0 left-0 h-40 w-screen bg-gradient-to-b from-transparent to-white -z-10" />
