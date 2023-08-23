@@ -22,9 +22,9 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
         className="h-screen w-screen brightness-[39%] -z-10"
       />
 
-      <AppealBar home={page.home} lang={lang} />
+      <div className="clip absolute bottom-0 left-0 h-40 w-screen bg-gradient-to-b from-transparent to-white -z-10" />
 
-      <div className="clip absolute bottom-0 left-0 h-1/6 w-screen bg-gradient-to-b from-transparent to-white -z-10" />
+      <AppealBar home={page.home} lang={lang} />
 
       <ReviewCard />
     </div>
