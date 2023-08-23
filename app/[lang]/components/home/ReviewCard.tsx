@@ -52,14 +52,14 @@ export function ReviewCard() {
         className="absolute top-10 transform left-1/2 -translate-x-1/2 h-full w-full opacity-5 -z-10"
       />
 
-      <div className="flex justify-between items-center my-10">
+      <div className="flex justify-between items-center my-10 -z-10">
         <div className="flex bg-stone-800 text-amber-600 text-sm font-semibold py-2 px-3 rounded-s">9.8</div>
         <div className="flex text-sm font-semibold text-stone-700 bg-amber-600 py-2 px-3 rounded-e uppercase">
           booking average rating
         </div>
       </div>
 
-      <div className="flex">
+      <div className="flex -z-10">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {categories.map((category, i) => (
             <div key={i} className="w-60 bg-stone-800/10 rounded-e-lg p-2">

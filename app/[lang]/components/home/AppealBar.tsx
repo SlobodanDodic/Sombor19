@@ -22,7 +22,7 @@ export function AppealBar({ home, lang }: AppealBarProps) {
         <span className="text-3xl sm:text-5xl tracking-tight text-amber-600/60">
           {firstWord} {secondWord}
         </span>
-        <span className="text-5xl sm:text-7xl -mt-7 tracking-tight text-amber-600/70">{thirdWord}</span>
+        <span className="text-5xl sm:text-7xl -mt-6 tracking-tight text-amber-600/70">{thirdWord}</span>
       </div>
 
       <div className="flex flex-col items-center backdrop-blur-sm border border-white/20 py-7">
@@ -36,7 +36,7 @@ export function AppealBar({ home, lang }: AppealBarProps) {
 
           <Link
             href={`/${lang}/contact`}
-            className="flex w-[200px] h-7 sm:w-[75px] rounded border-0 items-center justify-center text-white/90 ring-2 ring-white/70 m-1 bg-amber-600/60"
+            className="flex w-[200px] h-7 rounded border-0 text-start sm:text-center px-2 items-center sm:justify-center text-white/90 ring-2 ring-white/70 m-1 bg-amber-600/60"
           >
             {home.submit}
           </Link>

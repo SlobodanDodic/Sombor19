@@ -26,8 +26,9 @@ export function DateInput({ value, placeholder }: DatePickerInputProps) {
       displayFormat={"DD.MM.YYYY"}
       value={value}
       onChange={handleValueChange}
-      containerClassName="relative flex"
-      inputClassName="flex w-[200px] h-7 bg-amber-600/60 text-xs font-normal text-center rounded border-0 text-white/90 ring-2 m-1 ring-white/70 placeholder:text-white/90"
+      popoverDirection="down"
+      containerClassName="relative flex text-xs"
+      inputClassName="flex w-[200px] h-7 bg-amber-600/60 text-xs font-normal text-start sm:text-center px-2 items-center rounded border-0 text-white/90 ring-2 m-1 ring-white/70 placeholder:text-white/90"
       toggleClassName="absolute text-transparent left-0 h-full w-full"
     />
   );
