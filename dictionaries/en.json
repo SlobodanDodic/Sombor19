@@ -1,6 +1,8 @@
 {
   "navigation": {
+    "home": "Home",
     "about": "About",
+    "rooms": "Rooms",
     "contact": "Contact"
   },
   "page": {

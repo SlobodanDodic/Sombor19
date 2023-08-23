@@ -1,7 +1,7 @@
 import type { Locale } from "@/i18n.config";
 import { getDictionary } from "@/lib/dictionary";
 import Image from "next/image";
-import HomeImg from "./assets/hero.jpg";
+import HomeImg from "./assets/heroOK.jpg";
 import { AppealBar, ReviewCard } from "./components/home";
 
 export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {

@@ -1,6 +1,8 @@
 {
   "navigation": {
+    "home": "Αρχική",
     "about": "Σχετικά",
+    "rooms": "Δωμάτια",
     "contact": "Επικοινωνία"
   },
   "page": {

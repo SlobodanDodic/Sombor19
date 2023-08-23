@@ -1,7 +1,9 @@
 {
   "navigation": {
-    "about": "O нас",
-    "contact": "Контакты"
+    "home": "Главная",
+    "about": "О нас",
+    "rooms": "Номера",
+    "contact": "Контакт"
   },
   "page": {
     "home": {
@@ -13,11 +15,11 @@
       "select": "Выберите даты",
       "guests": "Гости",
       "submit": "Отправить",
-      "about": "O нас"
+      "about": "О нас"
     },
     "about": {
-      "title": "O нас",
-      "description": "Это страница 'O нас'"
+      "title": "О нас",
+      "description": "Это страница 'О нас'"
     }
   }
 }

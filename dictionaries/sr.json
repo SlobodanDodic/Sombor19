@@ -1,6 +1,8 @@
 {
   "navigation": {
+    "home": "Početna",
     "about": "O nama",
+    "rooms": "Sobe",
     "contact": "Kontakt"
   },
   "page": {

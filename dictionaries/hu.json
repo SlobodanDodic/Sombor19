@@ -1,6 +1,8 @@
 {
   "navigation": {
+    "home": "Kezdőlap",
     "about": "Rólunk",
+    "rooms": "Szobák",
     "contact": "Kapcsolat"
   },
   "page": {

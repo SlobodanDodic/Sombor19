@@ -28,18 +28,16 @@
 
 @layer components {
   .menu-link {
-    @apply text-sm font-light mx-2 lowercase relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-amber-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center;
+    @apply font-light mx-2 lowercase relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-amber-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center;
+  }
+  .visibleStyle {
+    @apply left-0 fixed sm:hidden top-0 bottom-0 p-5 bg-stone-800/80 w-full transition-all overflow-hidden backdrop-blur;
+  }
+  .hiddenStyle {
+    @apply -left-full fixed sm:hidden top-0 bottom-0 p-5 bg-stone-800/80 w-full transition-all overflow-hidden backdrop-blur;
   }
 }
 
 .clip {
   clip-path: polygon(0 43%, 17% 3%, 34% 46%, 57% 21%, 77% 39%, 100% 26%, 100% 100%, 0 100%);
 }
-
-/* .dots {
-  background-color: #292524;
-  background-image: radial-gradient(circle, #d97706 2%, transparent 10%),
-    radial-gradient(circle, #d97706 2%, transparent 10%);
-  background-size: 10px 10px;
-  background-position: 0 0, 5px 5px;
-} */

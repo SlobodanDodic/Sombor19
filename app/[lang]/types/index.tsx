@@ -28,9 +28,20 @@ export interface RootLayoutProps {
   params: { lang: Locale };
 }
 
-// locale-switcher
+// Navbar
 export interface LangProps {
   lang: Locale;
+}
+
+export interface MenuProps {
+  lang: Locale;
+  navigation: {
+    home: string;
+    about: string;
+    rooms: string;
+    contact: string;
+  };
+  className?: string;
 }
 
 // AppealBar

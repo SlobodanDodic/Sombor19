@@ -1,6 +1,8 @@
 {
   "navigation": {
+    "home": "Startseite",
     "about": "Über uns",
+    "rooms": "Zimmer",
     "contact": "Kontakt"
   },
   "page": {
