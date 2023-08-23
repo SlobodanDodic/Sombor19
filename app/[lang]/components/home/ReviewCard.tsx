@@ -2,33 +2,32 @@
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import bgImg from "../../assets/ten.svg";
+import { ImSpinner10 } from "react-icons/im";
 
 export function ReviewCard() {
   const [isLoaded, setIsLoaded] = useState(false);
-
-  const reviewCardRef = useRef(null);
+  const reviewCardRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setIsLoaded(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.7 }
-    );
-
-    if (reviewCardRef.current) {
-      observer.observe(reviewCardRef.current);
-    }
-
-    return () => {
+    const handleScroll = () => {
       if (reviewCardRef.current) {
-        observer.unobserve(reviewCardRef.current);
+        const rect = reviewCardRef.current.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+
+        if (isVisible && !isLoaded) {
+          setIsLoaded(true);
+        } else if (!isVisible && isLoaded) {
+          setIsLoaded(false);
+        }
       }
     };
-  }, []);
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isLoaded]);
 
   const categories = [
     { title: "Staff", rating: 9.9 },
@@ -71,23 +70,12 @@ export function ReviewCard() {
                     className={`h-3 bg-amber-600 rounded ${isLoaded ? "transition-width" : ""}`}
                     style={{
                       width: isLoaded ? `${category.rating * 10}%` : "0",
-                      transitionDuration: isLoaded ? "2s" : "0s",
+                      transitionDuration: isLoaded ? `${1 + i * 0.5}s` : "0s",
                     }}
                   />
                 </div>
                 <span className="text-sm font-medium bg-amber-600 p-2 rounded-full text-white text-shadow-sm shadow-stone-800 border-2 border-stone-400">
-                  {isLoaded ? (
-                    category.rating
-                  ) : (
-                    <svg className="animate-spin h-4 w-4 text-stone-700" viewBox="0 0 24 24">
-                      <path
-                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10"
-                        stroke="currentColor"
-                        strokeWidth="4"
-                        fill="none"
-                      />
-                    </svg>
-                  )}
+                  {isLoaded ? category.rating : <ImSpinner10 className="animate-spin w-5 h-5" />}
                 </span>
               </div>
             </div>
