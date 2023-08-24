@@ -31,10 +31,10 @@
     @apply font-light mx-2 lowercase relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-amber-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center;
   }
   .visibleStyle {
-    @apply left-0 fixed sm:hidden top-0 bottom-0 p-5 bg-stone-800/80 w-full transition-all overflow-hidden backdrop-blur;
+    @apply left-0 fixed sm:hidden top-0 bottom-0 p-5 bg-stone-800/80 w-full h-[100svh] transition-all overflow-hidden backdrop-blur;
   }
   .hiddenStyle {
-    @apply -left-full fixed sm:hidden top-0 bottom-0 p-5 bg-stone-800/80 w-full transition-all overflow-hidden backdrop-blur;
+    @apply -left-full fixed sm:hidden top-0 bottom-0 p-5 bg-stone-800/80 w-full h-[100svh] transition-all overflow-hidden backdrop-blur;
   }
 }
 

@@ -10,7 +10,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
 
   return (
     <div className="">
-      <div className="flex flex-col min-h-screen overflow-hidden">
+      <div className="flex flex-col min-h-[100svh] overflow-hidden">
         <Image
           src={HomeImg}
           alt="home"
