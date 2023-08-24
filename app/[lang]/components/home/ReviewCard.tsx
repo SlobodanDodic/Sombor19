@@ -40,7 +40,7 @@ export function ReviewCard() {
   ];
 
   return (
-    <div ref={reviewCardRef} className="relative flex flex-col items-center justify-center mb-8 w-screen mx-auto">
+    <div ref={reviewCardRef} className="relative flex flex-col items-center justify-center my-10 w-screen mx-auto">
       <Image
         src={bgImg}
         alt="home"

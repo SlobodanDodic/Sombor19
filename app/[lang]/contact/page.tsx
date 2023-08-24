@@ -1,5 +1,5 @@
 import { getDictionary } from "@/lib/dictionary";
-import Inputs from "../components/contact/Inputs";
+import Inputs from "../components/inputs";
 import { Locale } from "@/i18n.config";
 
 export default async function Contact({ params: { lang } }: { params: { lang: Locale } }) {

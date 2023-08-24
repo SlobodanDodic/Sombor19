@@ -1,20 +1,25 @@
 import { Locale } from "@/i18n.config";
 import { Dispatch, ReactNode, SetStateAction } from "react";
-// import { DateValueType } from "react-tailwindcss-datepicker/dist/types";
 
 // FormContext
 export interface ChildrenProps {
   children: ReactNode;
 }
 
-export interface DateRangeProps {
-  startDate: string;
-  endDate: string;
+export interface AllFormDataProps {
+  dateRange: {
+    start: string;
+    end: string;
+  };
+  guests: string;
 }
 
-export interface AllFormDataProps {
-  dateRange: DateRangeProps;
-  guests: string;
+export interface DateRangeProps {
+  value: {
+    start: string;
+    end: string;
+  };
+  placeholder: string;
 }
 
 export interface FormContextType {
@@ -72,20 +77,6 @@ export interface HomeProps {
     select: string;
     guests: string;
     submit: string;
-    about: string;
-  };
-}
-
-// IntroSection
-export interface IntroSectionProps {
-  lang: Locale;
-  home: {
-    flag: string;
-    headline: string;
-    title: string;
-    check: string;
-    visit: string;
-    welcome: string;
     about: string;
   };
 }

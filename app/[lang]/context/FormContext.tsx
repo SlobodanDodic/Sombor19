@@ -4,8 +4,8 @@ import type { AllFormDataProps, ChildrenProps, FormContextType } from "../types"
 
 const initialData = {
   dateRange: {
-    startDate: "",
-    endDate: "",
+    start: "",
+    end: "",
   },
   guests: "",
 };
