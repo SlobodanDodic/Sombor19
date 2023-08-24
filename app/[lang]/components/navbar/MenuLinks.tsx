@@ -1,7 +1,7 @@
 import Link from "next/link";
-import type { MenuProps } from "../../types";
+import type { IMenu } from "../../types";
 
-export default function MenuLinks({ lang, navigation, className }: MenuProps) {
+export default function MenuLinks({ lang, navigation, className, onClick, classSmView }: IMenu) {
   const navigationLinks = [
     { lang: lang, href: `/`, text: navigation.home },
     { lang: lang, href: `/about`, text: navigation.about },
@@ -13,7 +13,7 @@ export default function MenuLinks({ lang, navigation, className }: MenuProps) {
     <>
       {navigationLinks.map((link, index) => (
         <div key={index} className={className}>
-          <Link href={`/${link.lang}${link.href}`} className="menu-link">
+          <Link href={`/${link.lang}${link.href}`} onClick={onClick} className={`menu-link ${classSmView}`}>
             {link.text}
           </Link>
           <div className="flex text-amber-600">░</div>

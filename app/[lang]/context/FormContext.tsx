@@ -1,6 +1,6 @@
 "use client";
 import { createContext, useContext, useState } from "react";
-import type { AllFormDataProps, ChildrenProps, FormContextType } from "../types";
+import type { IFormData, IChildren, IFormContext } from "../types";
 
 const initialData = {
   dateRange: {
@@ -10,15 +10,15 @@ const initialData = {
   guests: "",
 };
 
-const FormContext = createContext<FormContextType>({
+const FormContext = createContext<IFormContext>({
   formData: initialData,
   setFormData: (): void => {
     // now it's not empty
   },
 });
 
-export const FormProvider = ({ children }: ChildrenProps) => {
-  const [formData, setFormData] = useState<AllFormDataProps>(initialData);
+export const FormProvider = ({ children }: IChildren) => {
+  const [formData, setFormData] = useState<IFormData>(initialData);
 
   return <FormContext.Provider value={{ formData, setFormData }}>{children}</FormContext.Provider>;
 };

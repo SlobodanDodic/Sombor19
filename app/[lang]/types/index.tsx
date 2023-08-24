@@ -1,12 +1,11 @@
 import { Locale } from "@/i18n.config";
 import { Dispatch, ReactNode, SetStateAction } from "react";
 
-// FormContext
-export interface ChildrenProps {
+export interface IChildren {
   children: ReactNode;
 }
 
-export interface AllFormDataProps {
+export interface IFormData {
   dateRange: {
     start: string;
     end: string;
@@ -14,7 +13,7 @@ export interface AllFormDataProps {
   guests: string;
 }
 
-export interface DateRangeProps {
+export interface IDateRange {
   value: {
     start: string;
     end: string;
@@ -22,23 +21,21 @@ export interface DateRangeProps {
   placeholder: string;
 }
 
-export interface FormContextType {
-  formData: AllFormDataProps;
+export interface IFormContext {
+  formData: IFormData;
   setFormData: Dispatch<SetStateAction<any>>;
 }
 
-// Layout
-export interface RootLayoutProps {
+export interface IRootLayout {
   children: React.ReactNode;
   params: { lang: Locale };
 }
 
-// Navbar
-export interface LangProps {
+export interface ILang {
   lang: Locale;
 }
 
-export interface MenuProps {
+export interface IMenu {
   lang: Locale;
   navigation: {
     home: string;
@@ -47,36 +44,31 @@ export interface MenuProps {
     contact: string;
   };
   className?: string;
+  classSmView?: string;
+  onClick?: Dispatch<SetStateAction<any>>;
 }
 
-// AppealBar
-export interface AppealBarProps {
-  lang: Locale;
+export interface IHome {
+  lang?: Locale;
   home: {
     flag: string;
     headline: string;
-    title: string;
     visit: string;
+
     welcome: string;
+    title: string;
+
     select: string;
     guests: string;
     submit: string;
-    about: string;
-  };
-}
 
-// Contact
-
-export interface HomeProps {
-  home: {
-    flag: string;
-    headline: string;
-    title: string;
-    visit: string;
-    welcome: string;
-    select: string;
-    guests: string;
-    submit: string;
-    about: string;
+    booking: string;
+    staff: string;
+    facilities: string;
+    cleanliness: string;
+    comfort: string;
+    value: string;
+    location: string;
+    wifi: string;
   };
 }

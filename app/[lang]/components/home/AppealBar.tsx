@@ -1,9 +1,9 @@
 "use client";
-import type { AppealBarProps } from "../../types";
+import type { IHome } from "../../types";
 import Link from "next/link";
 import Inputs from "../inputs";
 
-export function AppealBar({ home, lang }: AppealBarProps) {
+export function AppealBar({ home, lang }: IHome) {
   const header = home.headline;
   const words = header.split(" ");
   const firstWord = words[0];

@@ -1,4 +1,4 @@
-import type { AllFormDataProps } from "../../types";
+import type { IFormData } from "../../types";
 import { useFormState } from "../../context/FormContext";
 
 interface GuestsSelectProps {
@@ -19,7 +19,7 @@ export function GuestsSelect({ defaultValue, guests }: GuestsSelectProps) {
 
   const handleInputChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     e.preventDefault();
-    setFormData((prevFormData: AllFormDataProps) => ({
+    setFormData((prevFormData: IFormData) => ({
       ...prevFormData,
       guests: e.target.value,
     }));

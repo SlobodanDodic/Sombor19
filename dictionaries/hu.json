@@ -5,21 +5,26 @@
     "rooms": "Szobák",
     "contact": "Kapcsolat"
   },
-  "page": {
-    "home": {
-      "flag": "🇭🇺",
-      "headline": "Szobák Somborban",
-      "welcome": "Üdvözöljük ",
-      "title": "Sombor 19 Központi Apartman",
-      "visit": "Ellenőrizze az elérhető dátumokat és látogasson el hozzánk!",
-      "select": "Válassz dátumokat",
-      "guests": "Vendégek",
-      "submit": "Küldés",
-      "about": "Rólunk"
-    },
-    "about": {
-      "title": "Rólunk",
-      "description": "Ez az Rólunk oldal"
-    }
+  "home": {
+    "flag": "🇭🇺",
+    "headline": "Szobák Somborban",
+    "visit": "Ellenőrizze az elérhető dátumokat és látogasson el hozzánk!",
+    "welcome": "Üdvözöljük ",
+    "title": "Központi Apartman 19",
+    "select": "Válassz dátumokat",
+    "guests": "Vendégek",
+    "submit": "Küldés",
+    "booking": "átlagos értékelés",
+    "staff": "Személyzet",
+    "facilities": "Felszerelés",
+    "cleanliness": "Tisztaság",
+    "comfort": "Kényelem",
+    "value": "Pénz értéke",
+    "location": "Helyszín",
+    "wifi": "Ingyenes WiFi"
+  },
+  "about": {
+    "title": "Rólunk",
+    "description": "Ez az Rólunk oldal"
   }
 }

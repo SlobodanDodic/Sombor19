@@ -1,10 +1,10 @@
 "use client";
-import type { HomeProps } from "../../types";
+import type { IHome } from "../../types";
 import { useFormState } from "../../context/FormContext";
 import { GuestsSelect } from "./GuestsSelect";
 import { DateRange } from "./DateRange";
 
-export default function Inputs({ home }: HomeProps) {
+export default function Inputs({ home }: IHome) {
   const { formData } = useFormState();
 
   return (

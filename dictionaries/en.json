@@ -5,21 +5,26 @@
     "rooms": "Rooms",
     "contact": "Contact"
   },
-  "page": {
-    "home": {
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-      "headline": "Rooms in Sombor",
-      "welcome": "Welcome to ",
-      "title": "Sombor 19 Central Apartment",
-      "visit": "Check available dates and visit us!",
-      "select": "select dates",
-      "guests": "guests",
-      "submit": "submit",
-      "about": "About me"
-    },
-    "about": {
-      "title": "About Us",
-      "description": "This is the about page"
-    }
+  "home": {
+    "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "headline": "Rooms in Sombor",
+    "visit": "Check available dates and visit us!",
+    "welcome": "Welcome to ",
+    "title": "Central Apartment 19",
+    "select": "select dates",
+    "guests": "guests",
+    "submit": "submit",
+    "booking": "average rating",
+    "staff": "Staff",
+    "facilities": "Facilities",
+    "cleanliness": "Cleanliness",
+    "comfort": "Comfort",
+    "value": "Value for money",
+    "location": "Location",
+    "wifi": "Free WiFi"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "This is the about page"
   }
 }

@@ -1,4 +1,4 @@
-import type { AllFormDataProps, DateRangeProps } from "../../types";
+import type { IFormData, IDateRange } from "../../types";
 import { useFormState } from "../../context/FormContext";
 import { DateObject } from "react-multi-date-picker";
 import DatePicker from "react-multi-date-picker";
@@ -6,7 +6,7 @@ import "react-multi-date-picker/styles/layouts/mobile.css";
 import "react-multi-date-picker/styles/colors/green.css";
 import "react-multi-date-picker/styles/backgrounds/bg-dark.css";
 
-export function DateRange({ value, placeholder }: DateRangeProps) {
+export function DateRange({ value, placeholder }: IDateRange) {
   const { setFormData } = useFormState();
   const placeValue = value?.start + " ~ " + value?.end;
 
@@ -15,7 +15,7 @@ export function DateRange({ value, placeholder }: DateRangeProps) {
     const formattedStartDate = startDate.format("DD-MMM-YYYY");
     const formattedEndDate = endDate.format("DD-MMM-YYYY");
 
-    setFormData((prevFormData: AllFormDataProps) => ({
+    setFormData((prevFormData: IFormData) => ({
       ...prevFormData,
       dateRange: {
         start: formattedStartDate,

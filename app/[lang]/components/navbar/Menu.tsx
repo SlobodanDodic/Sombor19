@@ -1,11 +1,11 @@
 "use client";
-import type { MenuProps } from "../../types";
+import type { IMenu } from "../../types";
 import { useState } from "react";
 import Image from "next/image";
 import menuImg from "../../assets/menu.jpg";
 import MenuLinks from "./MenuLinks";
 
-export default function Menu({ lang, navigation }: MenuProps) {
+export default function Menu({ lang, navigation }: IMenu) {
   const [visible, setVisible] = useState(false);
 
   return (
@@ -33,6 +33,8 @@ export default function Menu({ lang, navigation }: MenuProps) {
               lang={lang}
               navigation={navigation}
               className="flex flex-row-reverse justify-end rounded p-4 my-3 border border-amber-600 backdrop-blur-sm text-shadow shadow-stone-800"
+              classSmView="font-medium tracking-widest"
+              onClick={() => setVisible(false)}
             />
             <Image
               src={menuImg}

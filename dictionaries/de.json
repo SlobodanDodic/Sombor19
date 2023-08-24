@@ -5,21 +5,26 @@
     "rooms": "Zimmer",
     "contact": "Kontakt"
   },
-  "page": {
-    "home": {
-      "flag": "🇩🇪",
-      "headline": "Zimmer in Sombor",
-      "welcome": "Willkommen bei ",
-      "title": "Zentrales Apartment Sombor 19",
-      "visit": "Überprüfen Sie verfügbare Termine und besuchen Sie uns!",
-      "select": "Wähle Daten",
-      "guests": "Gäste",
-      "submit": "Absenden",
-      "about": "Über mich"
-    },
-    "about": {
-      "title": "Über uns",
-      "description": "Dies ist die Über-uns-Seite"
-    }
+  "home": {
+    "flag": "🇩🇪",
+    "headline": "Zimmer in Sombor",
+    "visit": "Überprüfen Sie verfügbare Termine und besuchen Sie uns!",
+    "welcome": "Willkommen bei ",
+    "title": "Zentrales Apartment 19",
+    "select": "Wähle Daten",
+    "guests": "Gäste",
+    "submit": "Absenden",
+    "booking": "durchschnittliche Bewertung",
+    "staff": "Staff",
+    "facilities": "Einrichtungen",
+    "cleanliness": "Sauberkeit",
+    "comfort": "Komfort",
+    "value": "Preis-Leistungs-Verhältnis",
+    "location": "Lage",
+    "wifi": "Kostenloses WLAN"
+  },
+  "about": {
+    "title": "Über uns",
+    "description": "Dies ist die Über-uns-Seite"
   }
 }

@@ -5,21 +5,26 @@
     "rooms": "Sobe",
     "contact": "Kontakt"
   },
-  "page": {
-    "home": {
-      "flag": "🇷🇸",
-      "headline": "Sobe u Somboru",
-      "welcome": "Dobrodošli u ",
-      "title": "Centralni apartman Sombor 19",
-      "visit": "Proverite dostupne datume i posetite nas!",
-      "select": "izaberite datume",
-      "guests": "gosti",
-      "submit": "pošalji",
-      "about": "O nama"
-    },
-    "about": {
-      "title": "O nama",
-      "description": "Ovo je stranica o nama"
-    }
+  "home": {
+    "flag": "🇷🇸",
+    "headline": "Sobe u Somboru",
+    "visit": "Proverite dostupne datume i posetite nas!",
+    "welcome": "Dobrodošli u ",
+    "title": "Centralni apartman 19",
+    "select": "izaberite datume",
+    "guests": "gosti",
+    "submit": "pošalji",
+    "booking": "prosečna ocena",
+    "staff": "Osoblje",
+    "facilities": "Sadržaji",
+    "cleanliness": "Čistoća",
+    "comfort": "Udobnost",
+    "value": "Vrednost za novac",
+    "location": "Lokacija",
+    "wifi": "Besplatan WiFi"
+  },
+  "about": {
+    "title": "O nama",
+    "description": "Ovo je stranica o nama"
   }
 }

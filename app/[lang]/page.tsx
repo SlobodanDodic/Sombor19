@@ -6,7 +6,7 @@ import { AppealBar, ReviewCard } from "./components/home";
 import { BiSolidDownArrow } from "react-icons/bi";
 
 export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {
-  const { page } = await getDictionary(lang);
+  const { home } = await getDictionary(lang);
 
   return (
     <div className="">
@@ -26,13 +26,14 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
 
         <div className="clip absolute bottom-0 left-0 h-40 w-screen bg-gradient-to-b from-transparent to-white -z-10" />
 
-        <AppealBar home={page.home} lang={lang} />
+        <AppealBar home={home} lang={lang} />
 
         <div className="flex justify-center items-center mt-7">
           <BiSolidDownArrow className="h-7 w-7 text-amber-600" />
         </div>
       </div>
-      <ReviewCard />
+
+      <ReviewCard home={home} />
     </div>
   );
 }

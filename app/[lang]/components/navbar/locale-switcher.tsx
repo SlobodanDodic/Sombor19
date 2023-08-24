@@ -1,11 +1,11 @@
 "use client";
-import type { LangProps } from "../../types";
+import type { ILang } from "../../types";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { i18n } from "@/i18n.config";
 
-export default function LocaleSwitcher({ lang }: LangProps) {
+export default function LocaleSwitcher({ lang }: ILang) {
   const pathName = usePathname();
   const [showLang, setShowLang] = useState(false);
 

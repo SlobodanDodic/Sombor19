@@ -3,8 +3,9 @@ import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import bgImg from "../../assets/ten.svg";
 import { ImSpinner10 } from "react-icons/im";
+import type { IHome } from "../../types";
 
-export function ReviewCard() {
+export function ReviewCard({ home }: IHome) {
   const [isLoaded, setIsLoaded] = useState(false);
   const reviewCardRef = useRef<HTMLDivElement | null>(null);
 
@@ -30,13 +31,13 @@ export function ReviewCard() {
   }, [isLoaded]);
 
   const categories = [
-    { title: "Staff", rating: 9.9 },
-    { title: "Facilities", rating: 9.8 },
-    { title: "Cleanliness", rating: 9.9 },
-    { title: "Comfort", rating: 9.8 },
-    { title: "Value for money", rating: 9.8 },
-    { title: "Location", rating: 9.9 },
-    { title: "Free WiFi", rating: 9.9 },
+    { title: home.staff, rating: 9.9 },
+    { title: home.facilities, rating: 9.8 },
+    { title: home.cleanliness, rating: 9.9 },
+    { title: home.comfort, rating: 9.8 },
+    { title: home.value, rating: 9.8 },
+    { title: home.location, rating: 9.9 },
+    { title: home.wifi, rating: 9.9 },
   ];
 
   return (
@@ -52,10 +53,15 @@ export function ReviewCard() {
         className="absolute top-10 transform left-1/2 -translate-x-1/2 h-full w-full opacity-5 -z-10"
       />
 
+      <div className="flex flex-col justify-center items-center font-bold text-stone-600">
+        <h1>{home.welcome}</h1>
+        <h1>{home.title}</h1>
+      </div>
+
       <div className="flex justify-between items-center my-10 -z-10">
         <div className="flex bg-stone-800 text-amber-600 text-sm font-semibold py-2 px-3 rounded-s">9.8</div>
         <div className="flex text-sm font-semibold text-stone-700 bg-amber-600 py-2 px-3 rounded-e uppercase">
-          booking average rating
+          {home.booking}
         </div>
       </div>
 
