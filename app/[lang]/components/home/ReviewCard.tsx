@@ -1,34 +1,13 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import { useRef } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import bgImg from "../../assets/ten.svg";
-import { ImSpinner10 } from "react-icons/im";
 import type { IHome } from "../../types";
+import AnimatedCounter from "./AnimatedCounter";
 
 export function ReviewCard({ home }: IHome) {
-  const [isLoaded, setIsLoaded] = useState(false);
   const reviewCardRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (reviewCardRef.current) {
-        const rect = reviewCardRef.current.getBoundingClientRect();
-        const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
-
-        if (isVisible && !isLoaded) {
-          setIsLoaded(true);
-        } else if (!isVisible && isLoaded) {
-          setIsLoaded(false);
-        }
-      }
-    };
-
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [isLoaded]);
 
   const categories = [
     { title: home.staff, rating: 9.9 },
@@ -59,7 +38,9 @@ export function ReviewCard({ home }: IHome) {
       </div>
 
       <div className="flex justify-between items-center my-10 -z-10">
-        <div className="flex bg-stone-800 text-amber-600 text-sm font-semibold py-2 px-3 rounded-s">9.8</div>
+        <div className="flex bg-stone-800 text-amber-600 text-sm font-semibold py-2 px-3 rounded-s">
+          <AnimatedCounter from={0} to={9.8} className="flex justify-center w-10" />
+        </div>
         <div className="flex text-sm font-semibold text-stone-700 bg-amber-600 py-2 px-3 rounded-e uppercase">
           {home.booking}
         </div>
@@ -72,16 +53,19 @@ export function ReviewCard({ home }: IHome) {
               <div className="text-sm font-medium text-stone-700 tracking-wide">{category.title}</div>
               <div className="flex items-center mb-3">
                 <div className="w-full bg-stone-800 rounded h-3 mr-2">
-                  <div
-                    className={`h-3 bg-amber-600 rounded ${isLoaded ? "transition-width" : ""}`}
-                    style={{
-                      width: isLoaded ? `${category.rating * 10}%` : "0",
-                      transitionDuration: isLoaded ? `${1 + i * 0.5}s` : "0s",
-                    }}
+                  <motion.div
+                    className="h-3 bg-amber-600 rounded"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: `${category.rating * 10}%`, transition: { duration: 1 + i * 0.5 } }}
                   />
                 </div>
-                <span className="text-sm font-medium bg-amber-600 p-2 rounded-full text-white text-shadow-sm shadow-stone-800 border-2 border-stone-400">
-                  {isLoaded ? category.rating : <ImSpinner10 className="animate-spin w-5 h-5" />}
+
+                <span className="flex justify-center items-center text-sm font-medium h-11 w-11 bg-amber-600 p-2 rounded-full text-white text-shadow-sm shadow-stone-800 border-2 border-stone-400">
+                  <AnimatedCounter
+                    className="flex justify-center items-center w-11 h-11"
+                    from={0}
+                    to={category.rating}
+                  />
                 </span>
               </div>
             </div>
