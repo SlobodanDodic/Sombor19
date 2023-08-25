@@ -9,16 +9,16 @@ type AnimatedCounterProps = {
 
 function AnimatedCounter({ from, to, className }: AnimatedCounterProps) {
   const ref = useRef(null);
-  const inView = useInView(ref);
+  const isInView = useInView(ref);
 
   const count = useMotionValue(from);
   const toValue = useTransform(count, (latest) => latest.toFixed(2));
 
   useEffect(() => {
-    if (inView) {
+    if (isInView) {
       animate(count, to, { duration: 2 });
     }
-  }, [count, inView, to]);
+  }, [count, isInView, to]);
 
   return (
     <motion.span ref={ref} className={className}>

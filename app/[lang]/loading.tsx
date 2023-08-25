@@ -1,11 +1,10 @@
+"use client";
+import { CircleLoader } from "react-spinners";
+
 export default function Loading() {
   return (
-    <div className="relative flex justify-center items-center h-screen">
-      <div className="absolute top-[40vh] left-1/2 animate-spin -ml-3 rounded-full h-16 w-16 border-t-2 border-stone-800 border-solid" />
-      <div
-        className="absolute top-[42vh] left-1/2 animate-spin rounded-full h-10 w-10 border-t-2 border-amber-600 border-solid"
-        style={{ animationDirection: "reverse" }}
-      />
+    <div className="absolute top-0 left-0 w-screen h-screen flex justify-center items-center backdrop-blur-[2px] backdrop-brightness-50 bg-black/20 z-50">
+      <CircleLoader color="#d97705" size={80} />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import { Locale } from "@/i18n.config";
+import { MotionValue } from "framer-motion";
 import { Dispatch, ReactNode, SetStateAction } from "react";
 
 export interface IChildren {

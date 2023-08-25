@@ -1,5 +1,4 @@
 "use client";
-import { useRef } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import bgImg from "../../assets/ten.svg";
@@ -7,8 +6,6 @@ import type { IHome } from "../../types";
 import AnimatedCounter from "./AnimatedCounter";
 
 export function ReviewCard({ home }: IHome) {
-  const reviewCardRef = useRef<HTMLDivElement | null>(null);
-
   const categories = [
     { title: home.staff, rating: 9.9 },
     { title: home.facilities, rating: 9.8 },
@@ -20,7 +17,7 @@ export function ReviewCard({ home }: IHome) {
   ];
 
   return (
-    <div ref={reviewCardRef} className="relative flex flex-col items-center justify-center mb-10 w-screen mx-auto">
+    <div className="relative flex flex-col items-center justify-center mb-10 w-screen mx-auto">
       <Image
         src={bgImg}
         alt="home"
