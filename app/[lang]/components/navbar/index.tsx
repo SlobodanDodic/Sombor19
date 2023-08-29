@@ -2,22 +2,24 @@ import { Locale } from "@/i18n.config";
 import LocaleSwitcher from "./locale-switcher";
 import { getDictionary } from "@/lib/dictionary";
 import Menu from "./Menu";
-import MenuLinks from "./MenuLinks";
 
 export default async function Navbar({ lang }: { lang: Locale }) {
   const { navigation } = await getDictionary(lang);
 
   return (
-    <main className="absolute top-0 left-0 backdrop-blur-sm border-b border-white/20 flex w-screen justify-between text-white items-center z-50 p-5">
-      <div className="flex items-center">
+    <main className="fixed flex w-screen justify-between bg-white items-center z-50 p-5">
+      <div className="flex flex-1 justify-start items-center p-2">
         <Menu lang={lang} navigation={navigation} />
       </div>
 
-      <div className="hidden sm:flex flex-auto justify-center sm:justify-end items-center sm:pr-5 text-shadow-sm shadow-stone-800">
-        <MenuLinks lang={lang} navigation={navigation} className="flex mr-3" />
+      <div className="flex flex-auto justify-center items-center">
+        <p className="flex font-serif text-6xl font-bold -z-10 text-white text-shadow shadow-stone-800/10">XIX</p>
+        <p className="absolute top-9 left-1/2 transform -translate-x-1/2 text-center tracking-[0.15em] font-thin text-stone-700">
+          ap<span className="text-amber-600">art</span>ments
+        </p>
       </div>
 
-      <div className="flex justify-center items-center">
+      <div className="flex flex-1 justify-end items-center">
         <LocaleSwitcher lang={lang} />
       </div>
     </main>

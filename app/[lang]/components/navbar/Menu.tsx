@@ -1,55 +1,41 @@
 "use client";
 import type { IMenu } from "../../types";
 import { useState } from "react";
-import Image from "next/image";
-import menuImg from "../../assets/menu.jpg";
-import MenuLinks from "./MenuLinks";
+import { Divide as Hamburger } from "hamburger-react";
+import Link from "next/link";
 
 export default function Menu({ lang, navigation }: IMenu) {
-  const [visible, setVisible] = useState(false);
+  const [isOpen, setOpen] = useState(false);
+
+  const navigationLinks = [
+    { lang: lang, href: `/`, text: navigation.home },
+    { lang: lang, href: `/about`, text: navigation.about },
+    { lang: lang, href: `/rooms`, text: navigation.rooms },
+    { lang: lang, href: `/contact`, text: navigation.contact },
+  ];
 
   return (
-    <div className="flex items-center">
-      <div className="h-full z-50">
-        <button
-          className="relative flex sm:hidden justify-center items-center w-11 h-11 pt-1 rounded-full font-medium text-xl text-amber-600/50 hover:text-amber-600/80 border border-amber-600 bg-stone-800"
-          onClick={() => setVisible(true)}
-        >
-          XIX
-        </button>
-        <button className="relative hidden sm:flex justify-center items-center w-11 h-11 pt-1 rounded-full font-medium text-xl text-amber-600/50 hover:cursor-default border border-amber-600 bg-stone-800">
-          XIX
-        </button>
+    <>
+      <Hamburger toggled={isOpen} toggle={setOpen} size={20} color="#44403c" rounded label="Show menu" />
 
-        <div className={visible ? "visibleStyle" : "hiddenStyle"}>
-          <button
-            className="relative flex sm:hidden justify-center items-center w-11 h-11 pt-1 rounded-full font-medium text-xl text-amber-600/50 hover:text-amber-600/80 border border-amber-600 bg-stone-800"
-            onClick={() => setVisible(false)}
-          >
-            X
-          </button>
-          <div className="flex flex-col py-3">
-            <MenuLinks
-              lang={lang}
-              navigation={navigation}
-              className="flex flex-row-reverse justify-end rounded p-4 my-3 border border-amber-600 backdrop-blur-sm text-shadow shadow-stone-800"
-              classSmView="font-medium tracking-widest"
-              onClick={() => setVisible(false)}
-            />
-            <Image
-              src={menuImg}
-              alt="menu"
-              placeholder="blur"
-              width="700"
-              height="300"
-              sizes="100vw"
-              quality={100}
-              style={{ objectFit: "cover" }}
-              className="absolute top-0 left-0 h-full w-full brightness-[39%] -z-10"
-            />
+      {isOpen ? (
+        <div className="absolute top-0 left-0 w-screen h-screen bg-[#292524] text-white z-50 transition-all">
+          <div className="h-1/6 p-7">
+            <Hamburger toggled={isOpen} toggle={setOpen} size={20} color="#ffffff" rounded label="Show menu" />
+          </div>
+
+          <div className="flex flex-col h-4/6 w-full items-center justify-between">
+            {navigationLinks.map((link, index) => (
+              <div key={index} className="flex items-center" onClick={() => setOpen(false)}>
+                <Link href={`/${link.lang}${link.href}`}>
+                  <h1 data-name={link.text}>{link.text}</h1>
+                </Link>
+                <div className="text-4xl pl-3 text-amber-600">░</div>
+              </div>
+            ))}
           </div>
         </div>
-      </div>
-    </div>
+      ) : null}
+    </>
   );
 }

@@ -1,3 +1,3 @@
-export { AppealBar } from "./AppealBar";
+export { LandingPage } from "./LandingPage";
 export { ReviewCard } from "./ReviewCard";
 export { IntroSection } from "./IntroSection";

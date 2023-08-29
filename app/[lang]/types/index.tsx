@@ -44,9 +44,7 @@ export interface IMenu {
     rooms: string;
     contact: string;
   };
-  className?: string;
-  classSmView?: string;
-  onClick?: Dispatch<SetStateAction<any>>;
+  // onClick?: Dispatch<SetStateAction<any>>;
 }
 
 export interface IHome {

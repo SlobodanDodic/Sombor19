@@ -29,9 +29,9 @@ export function ReviewCard({ home }: IHome) {
         className="absolute top-10 transform left-1/2 -translate-x-1/2 h-full w-full opacity-5 -z-10"
       />
 
-      <div className="flex flex-col justify-center items-center font-bold text-stone-600">
-        <h1>{home.welcome}</h1>
-        <h1>{home.title}</h1>
+      <div className="flex flex-col text-xl w-screen justify-center items-center py-10 font-bold text-white bg-stone-800">
+        <p>{home.welcome}</p>
+        <p>{home.title}</p>
       </div>
 
       <div className="flex justify-between items-center my-10 -z-10">
