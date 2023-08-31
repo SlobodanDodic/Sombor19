@@ -16,17 +16,21 @@ export default function Menu({ lang, navigation }: IMenu) {
 
   return (
     <>
-      <Hamburger toggled={isOpen} toggle={setOpen} size={20} color="#44403c" rounded label="Show menu" />
-
-      {isOpen ? (
-        <div className="absolute top-0 left-0 w-screen h-screen bg-[#292524] text-white z-50 transition-all">
-          <div className="h-1/6 p-7">
-            <Hamburger toggled={isOpen} toggle={setOpen} size={20} color="#ffffff" rounded label="Show menu" />
-          </div>
-
-          <div className="flex flex-col h-4/6 w-full items-center justify-between">
+      <div className="z-50">
+        <Hamburger
+          toggled={isOpen}
+          toggle={setOpen}
+          size={20}
+          color={isOpen ? "white" : "#44403c"}
+          rounded
+          label="Show menu"
+        />
+      </div>
+      <div className={`wrapper ${isOpen ? "active" : ""}`}>
+        {isOpen ? (
+          <div className="absolute top-28 left-0 w-screen h-screen bg-[#292524] text-white z-50 transition-all flex flex-col items-center">
             {navigationLinks.map((link, index) => (
-              <div key={index} className="flex items-center" onClick={() => setOpen(false)}>
+              <div key={index} className="flex items-center pb-5" onClick={() => setOpen(false)}>
                 <Link href={`/${link.lang}${link.href}`}>
                   <h1 data-name={link.text}>{link.text}</h1>
                 </Link>
@@ -34,8 +38,8 @@ export default function Menu({ lang, navigation }: IMenu) {
               </div>
             ))}
           </div>
-        </div>
-      ) : null}
+        ) : null}
+      </div>
     </>
   );
 }

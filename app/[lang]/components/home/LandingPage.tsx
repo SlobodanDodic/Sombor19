@@ -27,7 +27,7 @@ export function LandingPage({ home, lang }: IHome) {
 
   return (
     <div ref={ref} className="flex flex-col pt-5 h-[100svh] mx-auto overflow-hidden">
-      <div className="relative w-screen h-[75svh] sm:h-[83svh] lg:h-[90svh]">
+      <div className="relative w-screen h-[75svh] sm:h-[83svh] 2xl:h-[90svh]">
         <div className="absolute clippy h-[calc(100%-7rem)] w-full top-[5rem] left-0 bg-amber-600 flex z-30">
           <div className="absolute clippy clippy-bg h-[calc(100%-1rem)] w-full top-[0.5rem] left-0">
             <Image
@@ -46,13 +46,13 @@ export function LandingPage({ home, lang }: IHome) {
       <div className="absolute bottom-0 left-0 h-1/2 w-screen bg-stone-800 border-t-8 border-amber-600 -z-10" />
 
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 backdrop-blur-[1px] text-center">
-        <div className="w-screen font-thin text-shadow-sm shadow-stone-800 py-4 text-3xl sm:text-5xl tracking-tighter text-white">
+        <div className="w-screen font-thin text-shadow-sm shadow-stone-800 py-4 text-4xl sm:text-5xl tracking-tighter text-white border-y border-white/20">
           {home.headline}
         </div>
       </div>
 
-      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 z-30 flex flex-col items-center justify-center w-screen px-2 font-semibold">
-        <p className="px-5 py-2 text-center text-xs text-white/90">{home.visit}</p>
+      <div className="absolute bottom-5 lg:bottom-6 2xl:bottom-9 left-1/2 transform -translate-x-1/2 z-30 flex flex-col items-center justify-center w-screen px-2 font-semibold">
+        <p className="px-5 py-4 text-center text-xs text-shadow-sm shadow-black text-white/90">{home.visit}</p>
         <Inputs home={home} />
         <Link
           href={`/${lang}/contact`}

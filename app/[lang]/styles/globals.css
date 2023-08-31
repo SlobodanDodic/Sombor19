@@ -25,6 +25,22 @@
   background: linear-gradient(to bottom, white 0%, white 50%, #292524 50%, #292524 100%);
 }
 
+/* menu wapper */
+.wrapper {
+  position: fixed;
+  z-index: 49;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #292524;
+  clip-path: circle(0px at 52px 52px);
+  transition: all 0.4s ease-in-out;
+}
+.active {
+  clip-path: circle(75%);
+}
+
 /* menu */
 h1 {
   font-size: 3rem;
@@ -68,18 +84,3 @@ h1:hover::after {
   width: 120%;
   outline: 5px solid #292524;
 }
-
-/* @keyframes circle-swoop {
-  from {
-    clip-path: var(--circle-top-right-out);
-  }
-  to {
-    clip-path: var(--circle-bottom-right-in);
-  }
-}
-
-.--in-custom {
-  --transition__duration: 1s;
-  --transition__easing: ease-in-out;
-  animation-name: circle-swoop;
-} */

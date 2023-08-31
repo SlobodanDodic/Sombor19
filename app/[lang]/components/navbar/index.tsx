@@ -7,7 +7,7 @@ export default async function Navbar({ lang }: { lang: Locale }) {
   const { navigation } = await getDictionary(lang);
 
   return (
-    <main className="fixed flex w-screen justify-between bg-white items-center z-50 p-5">
+    <main className="fixed flex w-screen justify-between bg-white items-center p-5 z-40">
       <div className="flex flex-1 justify-start items-center p-2">
         <Menu lang={lang} navigation={navigation} />
       </div>
