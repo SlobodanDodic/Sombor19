@@ -9,9 +9,9 @@ export default function Inputs({ home }: IHome) {
 
   return (
     <div className="flex flex-col items-center justify-center w-screen sm:flex-row mb-2 font-semibold text-xs">
-      <DateRange value={formData.dateRange} placeholder={home.select} />
+      <DateRange value={formData.dateRange} placeholder={home.query.select} />
 
-      <GuestsSelect defaultValue={formData.guests} guests={home.guests} />
+      <GuestsSelect defaultValue={formData.guests} guests={home.query.guests} />
     </div>
   );
 }
