@@ -8,20 +8,25 @@
   "home": {
     "flag": "🇭🇺",
     "headline": "Szállás Somborban",
-    "visit": "Ellenőrizze az elérhető dátumokat és látogasson el hozzánk!",
     "welcome": "Üdvözöljük ",
     "title": "Központi Apartman 19",
-    "select": "Válassz dátumokat",
-    "guests": "Vendégek",
-    "submit": "Küldés",
-    "booking": "átlagos értékelés",
-    "staff": "Személyzet",
-    "facilities": "Felszerelés",
-    "cleanliness": "Tisztaság",
-    "comfort": "Kényelem",
-    "value": "Pénz értéke",
-    "location": "Helyszín",
-    "wifi": "Ingyenes WiFi"
+    "introText": "Pont Sombor város szívében található ez a bájos lakás, tökéletes hely a pihenéshez és a látnivalók felfedezéséhez. Lesz egy saját bejárat, egy hangulatos nappali, teljesen felszerelt konyha, kényelmes queen-size ágy és egy plusz kanapéágy két személy részére. Ráadásul van egy bájos kert is, ahol bármikor pihenhet a nap folyamán.",
+    "query": {
+      "visit": "Ellenőrizze az elérhető dátumokat és látogasson el hozzánk!",
+      "select": "Válassz dátumokat",
+      "guests": "Vendégek",
+      "submit": "Küldés"
+    },
+    "booking": {
+      "average": "átlagos értékelés",
+      "staff": "Személyzet",
+      "facilities": "Felszerelés",
+      "cleanliness": "Tisztaság",
+      "comfort": "Kényelem",
+      "value": "Pénz értéke",
+      "location": "Helyszín",
+      "wifi": "Ingyenes WiFi"
+    }
   },
   "about": {
     "title": "Rólunk",

@@ -26,9 +26,13 @@ export default function Menu({ lang, navigation }: IMenu) {
           label="Show menu"
         />
       </div>
-      <div className={`wrapper ${isOpen ? "active" : ""}`}>
+      <div
+        className={`wrapper fixed top-0 left-1/2 -translate-x-1/2 h-screen max-w-6xl w-screen bg-stone-800 z-[49] ${
+          isOpen ? "active" : ""
+        }`}
+      >
         {isOpen ? (
-          <div className="absolute top-28 left-0 w-screen h-screen bg-[#292524] text-white z-50 transition-all flex flex-col items-center">
+          <div className="absolute top-28 left-10 w-screen h-screen bg-[#292524] text-white z-50 transition-all flex flex-col">
             {navigationLinks.map((link, index) => (
               <div key={index} className="flex items-center pb-5" onClick={() => setOpen(false)}>
                 <Link href={`/${link.lang}${link.href}`}>

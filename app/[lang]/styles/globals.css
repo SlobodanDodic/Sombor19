@@ -12,75 +12,53 @@
   html {
     @apply text-stone-800;
   }
+  h1 {
+    @apply flex justify-center font-sans font-semibold text-stone-600 text-[2rem] md:text-5xl xl:text-6xl -tracking-[1px];
+  }
+  h2 {
+    @apply flex font-medium text-stone-600 text-xl md:text-2xl xl:text-3xl;
+  }
+  h3 {
+    @apply flex text-justify text-stone-600 text-lg md:text-xl xl:text-2xl -tracking-[0.5px] leading-6;
+  }
 }
 
-@layer components {
+/* Navbar */
+.triangle {
+  clip-path: polygon(0 90%, 7% 100%, 100% 90%);
 }
 
-.clippy {
-  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 90%);
+/* HomePage */
+.hexa {
+  clip-path: polygon(5% 25%, 50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%);
 }
-
-.clippy-bg {
-  background: linear-gradient(to bottom, white 0%, white 50%, #292524 50%, #292524 100%);
+.hexa-aside {
+  clip-path: polygon(10% 25%, 50% 0%, 90% 25%, 95% 75%, 50% 95%, 5% 75%);
+}
+.parallel-up {
+  clip-path: polygon(0% 0%, 90% 20%, 90% 100%, 0% 80%);
+}
+.parallel-down {
+  clip-path: polygon(10% 0%, 100% 20%, 100% 100%, 10% 80%);
+}
+.flt_svg {
+  visibility: hidden;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+}
+.svg-parent {
+  filter: url("#flt_tag");
 }
 
 /* menu wapper */
 .wrapper {
-  position: fixed;
-  z-index: 49;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  background: #292524;
-  clip-path: circle(0px at 52px 52px);
-  transition: all 0.4s ease-in-out;
+  /* clip-path: polygon(0 0, 0 0, 0 0, 0 0); */
+  clip-path: circle(0 at 0 0);
+  transition: all 0.5s ease-in-out;
 }
 .active {
-  clip-path: circle(75%);
+  /* clip-path: polygon(0 0, 85% 0, 70% 80%, 0 100%); */
+  clip-path: circle(75% at 0 0);
 }
-
 /* menu */
-h1 {
-  font-size: 3rem;
-  position: relative;
-  transition: all 300ms ease;
-  width: fit-content;
-  cursor: pointer;
-}
-h1:hover {
-  transform: skew(10deg);
-}
-h1::before {
-  content: attr(data-name);
-  position: absolute;
-  top: 0;
-  left: -20px;
-  background-color: #292524;
-  height: 2rem;
-  overflow: hidden;
-  transition: all 300ms ease;
-  padding-left: 20px;
-}
-h1:hover::before {
-  top: -3px;
-  left: 0px;
-  color: #d97705;
-}
-
-h1::after {
-  content: "";
-  height: 4px;
-  width: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #d97705;
-  transition: all 300ms ease;
-}
-h1:hover::after {
-  width: 120%;
-  outline: 5px solid #292524;
-}

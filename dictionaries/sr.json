@@ -8,20 +8,25 @@
   "home": {
     "flag": "🇷🇸",
     "headline": "Smeštaj u Somboru",
-    "visit": "Proverite dostupne datume i posetite nas!",
     "welcome": "Dobrodošli u ",
     "title": "Centralni apartman 19",
-    "select": "izaberite datume",
-    "guests": "gosti",
-    "submit": "pošalji",
-    "booking": "prosečna ocena",
-    "staff": "Osoblje",
-    "facilities": "Sadržaji",
-    "cleanliness": "Čistoća",
-    "comfort": "Udobnost",
-    "value": "Vrednost za novac",
-    "location": "Lokacija",
-    "wifi": "Besplatan WiFi"
+    "introText": "U samom srcu grada Sombora, ovaj divan stan je savršeno mesto za opuštanje i istraživanje znamenitosti. Imaćete svoj privatni ulaz, udoban dnevni boravak, potpuno opremljenu kuhinju, udoban bračni krevet i dodatni dvosed. Pored toga, imamo šarmantan vrt za odmor u bilo koje doba dana.",
+    "query": {
+      "visit": "Proverite dostupne datume i posetite nas!",
+      "select": "izaberite datume",
+      "guests": "gosti",
+      "submit": "pošalji"
+    },
+    "booking": {
+      "average": "prosečna ocena",
+      "staff": "Osoblje",
+      "facilities": "Sadržaji",
+      "cleanliness": "Čistoća",
+      "comfort": "Udobnost",
+      "value": "Vrednost za novac",
+      "location": "Lokacija",
+      "wifi": "Besplatan WiFi"
+    }
   },
   "about": {
     "title": "O nama",

@@ -36,6 +36,12 @@ export interface ILang {
   lang: Locale;
 }
 
+export interface ITypewriter {
+  text: string;
+  delay: number;
+  className: string;
+}
+
 export interface IMenu {
   lang: Locale;
   navigation: {
@@ -52,22 +58,26 @@ export interface IHome {
   home: {
     flag: string;
     headline: string;
-    visit: string;
-
     welcome: string;
     title: string;
+    introText: string;
 
-    select: string;
-    guests: string;
-    submit: string;
+    query: {
+      visit: string;
+      select: string;
+      guests: string;
+      submit: string;
+    };
 
-    booking: string;
-    staff: string;
-    facilities: string;
-    cleanliness: string;
-    comfort: string;
-    value: string;
-    location: string;
-    wifi: string;
+    booking: {
+      average: string;
+      staff: string;
+      facilities: string;
+      cleanliness: string;
+      comfort: string;
+      value: string;
+      location: string;
+      wifi: string;
+    };
   };
 }

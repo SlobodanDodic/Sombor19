@@ -17,12 +17,14 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        hero: "url('../assets/hero.jpg')",
+        navbar: "url('../assets/navbar/letter.png')",
       },
       textShadow: {
         sm: '0 1px 1px var(--tw-shadow-color)',
+        md: '0 2px 2px var(--tw-shadow-color)',
         DEFAULT: '0 2px 4px var(--tw-shadow-color)',
         lg: '0 8px 16px var(--tw-shadow-color)',
+        down: '0 7px 8px var(--tw-shadow-color)',
       },
     },
   },

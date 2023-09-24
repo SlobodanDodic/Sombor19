@@ -1,3 +1,2 @@
-export { LandingPage } from "./LandingPage";
-export { ReviewCard } from "./ReviewCard";
-export { IntroSection } from "./IntroSection";
+export { HomePage } from "./HomePage";
+export { IntroPage } from "./IntroPage";
