@@ -46,13 +46,13 @@ export function LandingPage({ home, lang }: IHome) {
       </div>
 
       <div className="absolute bottom-5 lg:bottom-6 2xl:bottom-9 left-1/2 transform -translate-x-1/2 z-30 flex flex-col items-center justify-center w-screen px-2 font-semibold">
-        <p className="px-5 py-4 text-center text-xs text-shadow-sm shadow-black text-white/90">{home.visit}</p>
+        <p className="px-5 py-4 text-center text-xs text-shadow-sm shadow-black text-white/90">{home.query.visit}</p>
         <Inputs home={home} />
         <Link
           href={`/${lang}/contact`}
           className="flex w-[200px] sm:w-[308px] h-7 rounded border-0 text-xs text-start sm:text-center items-center justify-center text-white/90 ring-2 ring-white/70 bg-amber-600/60"
         >
-          {home.submit}
+          {home.query.submit}
         </Link>
 
         <BiSolidDownArrow className="mt-3 h-5 w-5 text-amber-600" />

@@ -7,13 +7,13 @@ import AnimatedCounter from "./AnimatedCounter";
 
 export function ReviewCard({ home }: IHome) {
   const categories = [
-    { title: home.staff, rating: 9.9 },
-    { title: home.facilities, rating: 9.8 },
-    { title: home.cleanliness, rating: 9.9 },
-    { title: home.comfort, rating: 9.8 },
-    { title: home.value, rating: 9.8 },
-    { title: home.location, rating: 9.9 },
-    { title: home.wifi, rating: 9.9 },
+    { title: home.booking.staff, rating: 9.9 },
+    { title: home.booking.facilities, rating: 9.8 },
+    { title: home.booking.cleanliness, rating: 9.9 },
+    { title: home.booking.comfort, rating: 9.8 },
+    { title: home.booking.value, rating: 9.8 },
+    { title: home.booking.location, rating: 9.9 },
+    { title: home.booking.wifi, rating: 9.9 },
   ];
 
   return (
@@ -39,7 +39,7 @@ export function ReviewCard({ home }: IHome) {
           <AnimatedCounter from={0} to={9.8} className="flex justify-center w-10" />
         </div>
         <div className="flex text-sm font-semibold text-stone-700 bg-amber-600 py-2 px-3 rounded-e uppercase">
-          {home.booking}
+          {home.booking.average}
         </div>
       </div>
 
