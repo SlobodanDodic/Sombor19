@@ -19,8 +19,9 @@ export default function Menu({ lang, navigation }: IMenu) {
   };
 
   return (
-    <div>
+    <>
       <div className={`menu-icon ${navActive ? "nav-active" : ""}`} onClick={toggleNav}>
+        {/* <div className="absolute w-10 h-10 -top-4 -left-2 bg-white/80 rounded-full" /> */}
         <span className="menu-icon__line menu-icon__line-left"></span>
         <span className="menu-icon__line menu-icon__line-center"></span>
         <span className="menu-icon__line menu-icon__line-right"></span>
@@ -38,30 +39,42 @@ export default function Menu({ lang, navigation }: IMenu) {
           ))} */}
 
       <div
-        className={
-          navActive ? "absolute top-0 left-0 w-screen h-screen bg-black/70 text-stone-600 z-50 flex flex-col" : "hidden"
-        }
+        className={`clippy-bg-null absolute top-0 left-0 w-screen h-[100svh] flex flex-col bg-black/70 z-40 ${
+          navActive ? "clippy-bg" : ""
+        }`}
       />
-      <div
-        className={`clippy-one-null absolute top-0 left-0 w-screen h-screen flex bg-amber-800/95 z-50 ${
+      <Link
+        href={`/${lang}/`}
+        className={`clippy-one-null absolute top-0 left-0 w-screen h-[100svh] flex bg-amber-800/95 z-40 ${
           navActive ? "clippy-one" : ""
         }`}
-      ></div>
-      <div
-        className={`clippy-two-null absolute top-1 -left-1 w-screen h-screen flex bg-amber-600/95 z-50 ${
+      >
+        <h1 className="absolute top-16 left-1/4 transform -translate-x-1/2 text-stone-800">{navigation.home}</h1>
+      </Link>
+      <Link
+        href={`/${lang}/about`}
+        className={`clippy-two-null absolute top-1 -left-1 w-screen h-[100svh] flex bg-amber-600/95 z-40 ${
           navActive ? "clippy-two" : ""
         }`}
-      ></div>
-      <div
-        className={`clippy-three-null absolute -top-[1px] left-1 w-screen h-screen flex bg-amber-500/95 z-50 ${
+      >
+        <h1 className="absolute top-[60%] left-[20%] text-stone-800 capitalize">{navigation.about}</h1>
+      </Link>
+      <Link
+        href={`/${lang}/rooms`}
+        className={`clippy-three-null absolute -top-[1px] left-1 w-screen h-[100svh] flex bg-amber-400/95 z-40 ${
           navActive ? "clippy-three" : ""
         }`}
-      ></div>
-      <div
-        className={`clippy-four-null absolute top-0 left-0 w-screen h-screen flex bg-amber-400/95 z-50 ${
+      >
+        <h1 className="absolute top-[30%] right-[15%] text-stone-800 capitalize">{navigation.rooms}</h1>
+      </Link>
+      <Link
+        href={`/${lang}/contact`}
+        className={`clippy-four-null absolute top-0 left-0 w-screen h-[100svh] flex bg-amber-400/95 z-40 ${
           navActive ? "clippy-four" : ""
         }`}
-      ></div>
-    </div>
+      >
+        <h1 className="absolute bottom-16 right-1/4 transform translate-x-1/2 text-stone-800">{navigation.contact}</h1>
+      </Link>
+    </>
   );
 }

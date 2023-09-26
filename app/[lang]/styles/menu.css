@@ -1,7 +1,6 @@
 :root {
   --stone: #2a2622;
   --amber: #d97700;
-  --white: #ffffff;
 }
 
 .menu-icon {
@@ -22,9 +21,9 @@
 .menu-icon__line-left {
   width: 12px;
 }
-.menu-icon__line-center {
+/* .menu-icon__line-center {
   background: linear-gradient(179deg, var(--stone), var(--amber));
-}
+} */
 .menu-icon__line-right {
   width: 12px;
   float: right;
@@ -42,7 +41,7 @@
 
 .clippy-one-null {
   clip-path: polygon(0 0, 0 0, 0 0, 0 0);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in;
 }
 .clippy-one {
   clip-path: polygon(0 0, 100% 0, 0 30%, 0 30%);
@@ -50,7 +49,7 @@
 
 .clippy-two-null {
   clip-path: polygon(83% 74%, 33% 21%, 33% 21%, 83% 74%);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-out 0.5s;
 }
 .clippy-two {
   clip-path: polygon(83% 74%, 33% 21%, 0% 31%, 0% 99%);
@@ -58,7 +57,7 @@
 
 .clippy-three-null {
   clip-path: polygon(83% 74%, 33% 21%, 33% 21%, 83% 74%);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-out 0.5s;
 }
 .clippy-three {
   clip-path: polygon(83% 74%, 33% 21%, 100% 1%, 100% 69%);
@@ -66,8 +65,22 @@
 
 .clippy-four-null {
   clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in;
 }
 .clippy-four {
   clip-path: polygon(60% 82%, 0 100%, 100% 100%, 100% 70%);
 }
+
+.clippy-bg-null {
+  clip-path: circle(0% at 50% 50%);
+  transition: all 0.3s ease-in-out;
+}
+.clippy-bg {
+  clip-path: circle(75% at 50% 50%);
+}
+
+/* background-color: white;
+border-radius: 50%;
+width: 42px;
+height: 42px;
+border-right: 1px solid #ce7205; */
