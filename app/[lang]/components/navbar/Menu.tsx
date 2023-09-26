@@ -39,7 +39,7 @@ export default function Menu({ lang, navigation }: IMenu) {
           ))} */}
 
       <div
-        className={`clippy-bg-null fixed top-0 left-0 w-screen h-[100svh] flex flex-col bg-black/70 z-40 ${
+        className={`clippy-bg-null fixed top-0 left-0 w-screen h-screen flex flex-col bg-black/70 z-40 ${
           navActive ? "clippy-bg" : ""
         }`}
       />
