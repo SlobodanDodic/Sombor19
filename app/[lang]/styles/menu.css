@@ -40,35 +40,35 @@
 }
 
 .clippy-one-null {
-  clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   transition: all 0.5s ease-in;
 }
 .clippy-one {
-  clip-path: polygon(0 0, 100% 0, 0 30%, 0 30%);
+  clip-path: polygon(0 0, 100% 0, 100% 10%, 0 30%);
 }
 
 .clippy-two-null {
-  clip-path: polygon(83% 74%, 33% 21%, 33% 21%, 83% 74%);
+  clip-path: polygon(40% 22%, 40% 22%, 72% 76%, 72% 76%);
   transition: all 0.5s ease-out 0.5s;
 }
 .clippy-two {
-  clip-path: polygon(83% 74%, 33% 21%, 0% 31%, 0% 99%);
+  clip-path: polygon(0 30%, 40% 22%, 72% 76%, 0 90%);
 }
 
 .clippy-three-null {
-  clip-path: polygon(83% 74%, 33% 21%, 33% 21%, 83% 74%);
+  clip-path: polygon(40% 22%, 40% 22%, 85% 100%, 85% 100%);
   transition: all 0.5s ease-out 0.5s;
 }
 .clippy-three {
-  clip-path: polygon(83% 74%, 33% 21%, 100% 1%, 100% 69%);
+  clip-path: polygon(100% 10%, 40% 22%, 85% 100%, 100% 100%);
 }
 
 .clippy-four-null {
-  clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+  clip-path: polygon(0 100%, 0% 100%, 0% 100%, 0% 100%);
   transition: all 0.5s ease-in;
 }
 .clippy-four {
-  clip-path: polygon(60% 82%, 0 100%, 100% 100%, 100% 70%);
+  clip-path: polygon(0 90%, 71% 76%, 85% 100%, 0% 100%);
 }
 
 .clippy-bg-null {
@@ -78,9 +78,3 @@
 .clippy-bg {
   clip-path: circle(75% at 50% 50%);
 }
-
-/* background-color: white;
-border-radius: 50%;
-width: 42px;
-height: 42px;
-border-right: 1px solid #ce7205; */
