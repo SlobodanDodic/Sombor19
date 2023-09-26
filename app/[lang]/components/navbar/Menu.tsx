@@ -73,7 +73,7 @@ export default function Menu({ lang, navigation }: IMenu) {
           navActive ? "clippy-four" : ""
         }`}
       >
-        <h1 className="fixed bottom-16 right-1/4 transform translate-x-1/2 text-stone-800">{navigation.contact}</h1>
+        <h1 className="fixed bottom-[10%] right-1/4 transform translate-x-1/2 text-stone-800">{navigation.contact}</h1>
       </Link>
     </>
   );
