@@ -1,13 +1,12 @@
-// import { Grenze_Gotisch } from "next/font/google";
 import "./styles/globals.css";
 import type { Metadata } from "next";
 import { Locale, i18n } from "@/i18n.config";
-import { Arima } from "next/font/google";
+import { El_Messiri } from "next/font/google";
 import Navbar from "./components/navbar";
 import type { IRootLayout } from "./types";
 import { FormProvider } from "./context/FormContext";
 
-const myFont = Arima({ subsets: ["latin"] });
+const myFont = El_Messiri({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Apartments 19",

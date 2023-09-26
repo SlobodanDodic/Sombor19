@@ -23,7 +23,6 @@ export function HomePage() {
       </svg>
 
       <div className="hidden relative md:flex flex-col mt-10 w-[33%]">
-        {/* <div className="absolute -top-3 left-10 transform rotate-45 w-20 h-20 bg-amber-600 border-4 drop-shadow border-white" /> */}
         <div className="flex hexa w-full">
           <Image
             src={homeLeft}

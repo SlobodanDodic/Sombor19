@@ -10,7 +10,6 @@ export function IntroPage({ home, lang }: IHome) {
         <Fade direction="up" delay={1500} duration={4000}>
           <h1 className="w-screen max-w-6xl justify-center text-center text-4xl md:text-6xl xl:text-7xl shadow-black text-shadow-md">
             {home.title}
-            {/* {`⋆ ` + home.title + ` ⋆`} */}
           </h1>
         </Fade>
         <Typewriter
