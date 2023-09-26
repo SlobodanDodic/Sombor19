@@ -45,7 +45,7 @@ export default function Menu({ lang, navigation }: IMenu) {
       />
       <Link
         href={`/${lang}/`}
-        className={`clippy-one-null fixed top-0 left-0 w-screen h-screen flex bg-amber-800/95 z-40 ${
+        className={`clippy-one-null fixed top-0 left-0 w-screen h-[100svh] flex bg-amber-800/95 z-40 ${
           navActive ? "clippy-one" : ""
         }`}
       >
@@ -53,7 +53,7 @@ export default function Menu({ lang, navigation }: IMenu) {
       </Link>
       <Link
         href={`/${lang}/about`}
-        className={`clippy-two-null fixed top-1 -left-1 w-screen h-screen flex bg-amber-600/95 z-40 ${
+        className={`clippy-two-null fixed top-1 -left-1 w-screen h-[100svh] flex bg-amber-600/95 z-40 ${
           navActive ? "clippy-two" : ""
         }`}
       >
@@ -61,7 +61,7 @@ export default function Menu({ lang, navigation }: IMenu) {
       </Link>
       <Link
         href={`/${lang}/rooms`}
-        className={`clippy-three-null fixed -top-[1px] left-1 w-screen h-screen flex bg-amber-400/95 z-40 ${
+        className={`clippy-three-null fixed -top-[1px] left-1 w-screen h-[100svh] flex bg-amber-400/95 z-40 ${
           navActive ? "clippy-three" : ""
         }`}
       >
@@ -69,11 +69,11 @@ export default function Menu({ lang, navigation }: IMenu) {
       </Link>
       <Link
         href={`/${lang}/contact`}
-        className={`clippy-four-null fixed top-0 left-0 w-screen h-screen flex bg-amber-400/95 z-40 ${
+        className={`clippy-four-null fixed top-0 left-0 w-screen h-[100svh] flex bg-amber-400/95 z-40 ${
           navActive ? "clippy-four" : ""
         }`}
       >
-        <h1 className="fixed top-[90%] right-1/4 transform translate-x-1/2 text-stone-800">{navigation.contact}</h1>
+        <h1 className="fixed bottom-16 right-1/4 transform translate-x-1/2 text-stone-800">{navigation.contact}</h1>
       </Link>
     </>
   );
