@@ -86,6 +86,16 @@
   clip-path: circle(75% at 50% 50%);
 }
 
+.span-main {
+  @apply relative ml-2 text-stone-700 group-hover:text-stone-700/50 transition-all duration-500;
+}
 .span-circle {
-  @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 group-hover:w-44 group-hover:h-44 transition-all duration-500 brightness-90 rounded-full shadow-inner shadow-black bg-gradient-to-br from-transparent to-black/30 -z-10;
+  @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-28 h-28 group-hover:w-40 group-hover:h-40 transition-all duration-500 brightness-90 rounded-full shadow-inner shadow-black bg-gradient-to-br from-transparent to-black/30 -z-10;
+}
+.span-circle-inner {
+  @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 group-hover:w-28 group-hover:h-28 group-hover:left-0 transition-all duration-300 brightness-90 rounded-full shadow-inner shadow-black bg-gradient-to-br from-transparent to-black/30 -z-10;
+}
+
+.bg-png {
+  @apply absolute bg-no-repeat bg-contain w-44 h-44 lg:w-64 lg:h-64 opacity-5 -z-20;
 }

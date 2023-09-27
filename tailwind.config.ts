@@ -18,6 +18,9 @@ const config: Config = {
     extend: {
       backgroundImage: {
         navbar: "url('../assets/navbar/letter.png')",
+        home: "url('../assets/hero/icons/home.png')",
+        about: "url('../assets/hero/icons/about.png')",
+        rooms: "url('../assets/hero/icons/rooms.png')",
       },
       textShadow: {
         sm: '0 1px 1px var(--tw-shadow-color)',

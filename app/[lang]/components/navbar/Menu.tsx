@@ -36,10 +36,13 @@ export default function Menu({ lang, navigation }: IMenu) {
           navActive ? "clippy-one" : ""
         }`}
       >
+        <div className="bg-png bg-home top-10 left-1/3 transform -translate-x-1/2" />
+
         <h2 className="absolute top-16 lg:top-20 left-1/2 transform -translate-x-1/2">
           {navigation.home}
-          <span className="relative ml-2">
-            <span className="span-circle" />♜
+          <span className="span-main">
+            <span className="span-circle-inner" />
+            <span className="span-circle" /> ♜
           </span>
         </h2>
       </Link>
@@ -50,10 +53,13 @@ export default function Menu({ lang, navigation }: IMenu) {
           navActive ? "clippy-two" : ""
         }`}
       >
+        <div className="bg-png bg-about top-[30%] left-[10%]" />
+
         <h2 className="absolute top-[60%] left-[15%]">
           {navigation.about}
-          <span className="relative ml-2">
-            <span className="span-circle" />♞
+          <span className="span-main">
+            <span className="span-circle-inner" />
+            <span className="span-circle" />♚
           </span>
         </h2>
       </Link>
@@ -64,9 +70,12 @@ export default function Menu({ lang, navigation }: IMenu) {
           navActive ? "clippy-three" : ""
         }`}
       >
+        <div className="bg-png bg-rooms top-[50%] right-[5%]" />
+
         <h2 className="absolute top-[35%] right-[15%]">
           {navigation.rooms}
-          <span className="relative ml-2">
+          <span className="span-main">
+            <span className="span-circle-inner" />
             <span className="span-circle" />♛
           </span>
         </h2>
@@ -80,8 +89,9 @@ export default function Menu({ lang, navigation }: IMenu) {
       >
         <h2 className="absolute bottom-14 lg:bottom-20 right-1/2 transform translate-x-1/2">
           {navigation.contact}
-          <span className="relative ml-2">
-            <span className="span-circle" />♟
+          <span className="span-main">
+            <span className="span-circle-inner" />
+            <span className="span-circle" />♞
           </span>
         </h2>
       </Link>
