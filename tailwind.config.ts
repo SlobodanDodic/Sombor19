@@ -39,6 +39,7 @@ const config: Config = {
         { values: theme('textShadow') }
       )
     }),
+    require('tailwindcss-animated')
   ],
 }
-export default config
+export default config;

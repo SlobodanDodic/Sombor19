@@ -40,7 +40,7 @@
 }
 
 .clippy-one-null {
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  clip-path: polygon(100% 0%, 100% 0%, 100% 10%, 100% 10%);
   transition: all 0.5s ease-in;
 }
 .clippy-one {
@@ -48,33 +48,44 @@
 }
 
 .clippy-two-null {
-  clip-path: polygon(40% 22%, 40% 22%, 72% 76%, 72% 76%);
-  transition: all 0.5s ease-out 0.5s;
+  clip-path: polygon(0 30%, 40% 22%, 40% 22%, 0 30%);
+  transition: all 0.5s ease-out 0.4s;
 }
 .clippy-two {
   clip-path: polygon(0 30%, 40% 22%, 72% 76%, 0 90%);
 }
 
 .clippy-three-null {
-  clip-path: polygon(40% 22%, 40% 22%, 85% 100%, 85% 100%);
-  transition: all 0.5s ease-out 0.5s;
+  clip-path: polygon(100% 100%, 85% 100%, 85% 100%, 100% 100%);
+  transition: all 0.5s ease-out 0.4s;
 }
 .clippy-three {
   clip-path: polygon(100% 10%, 40% 22%, 85% 100%, 100% 100%);
 }
 
 .clippy-four-null {
-  clip-path: polygon(0 100%, 0% 100%, 0% 100%, 0% 100%);
+  clip-path: polygon(0% 90%, 0% 90%, 0% 100%, 0% 100%);
   transition: all 0.5s ease-in;
 }
 .clippy-four {
   clip-path: polygon(0 90%, 71% 76%, 85% 100%, 0% 100%);
 }
 
-.clippy-bg-null {
+.clippy-bg-one-null {
   clip-path: circle(0% at 50% 50%);
   transition: all 0.3s ease-in-out;
 }
-.clippy-bg {
+.clippy-bg-one {
   clip-path: circle(75% at 50% 50%);
+}
+.clippy-bg-two-null {
+  clip-path: circle(0% at 50% 50%);
+  transition: all 0.4s ease-in-out 0.7s;
+}
+.clippy-bg-two {
+  clip-path: circle(75% at 50% 50%);
+}
+
+.span-circle {
+  @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 group-hover:w-44 group-hover:h-44 transition-all duration-500 brightness-90 rounded-full shadow-inner shadow-black bg-gradient-to-br from-transparent to-black/30 -z-10;
 }
