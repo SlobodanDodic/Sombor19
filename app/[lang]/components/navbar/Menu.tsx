@@ -36,7 +36,7 @@ export default function Menu({ lang, navigation }: IMenu) {
           navActive ? "clippy-one" : ""
         }`}
       >
-        <div className="bg-png bg-home top-10 left-1/3 transform -translate-x-1/2" />
+        <div className="bg-png bg-home top-1 left-10 sm:left-[20%] xl:left-[35%]" />
 
         <h2 className="absolute top-16 lg:top-20 left-1/2 transform -translate-x-1/2">
           {navigation.home}
@@ -87,6 +87,8 @@ export default function Menu({ lang, navigation }: IMenu) {
           navActive ? "clippy-four" : ""
         }`}
       >
+        <div className="bg-png bg-contact bottom-1 left-10 sm:left-[20%] xl:left-[35%]" />
+
         <h2 className="absolute bottom-14 lg:bottom-20 right-1/2 transform translate-x-1/2">
           {navigation.contact}
           <span className="span-main">
