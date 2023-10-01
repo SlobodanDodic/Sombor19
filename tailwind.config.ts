@@ -22,6 +22,9 @@ const config: Config = {
         about: "url('../assets/hero/icons/about.png')",
         rooms: "url('../assets/hero/icons/rooms.png')",
         contact: "url('../assets/hero/icons/contact.png')",
+        19: "url('../assets/hero/19/19.png')",
+        1: "url('../assets/hero/19/1.png')",
+        9: "url('../assets/hero/19/9.png')",
       },
       textShadow: {
         sm: '0 1px 1px var(--tw-shadow-color)',
@@ -29,6 +32,8 @@ const config: Config = {
         DEFAULT: '0 2px 4px var(--tw-shadow-color)',
         lg: '0 8px 16px var(--tw-shadow-color)',
         down: '0 7px 8px var(--tw-shadow-color)',
+        drop: '2px 4px 6px var(--tw-shadow-color)',
+        heading: '-1px -1px 2px var(--tw-shadow-color)',
       },
     },
   },

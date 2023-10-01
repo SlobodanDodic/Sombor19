@@ -57,10 +57,12 @@ export interface IHome {
   lang?: Locale;
   home: {
     flag: string;
-    headline: string;
+    central: string;
+    apartment: string;
     welcome: string;
-    title: string;
     introText: string;
+    // headline: string;
+    // welcome: string;
 
     query: {
       visit: string;

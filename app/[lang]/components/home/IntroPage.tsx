@@ -1,32 +1,59 @@
 "use client";
 import type { IHome } from "../../types";
-import { Fade } from "react-awesome-reveal";
-import Typewriter from "../typewriter";
+import Link from "next/link";
+// import { useRef } from "react";
+// import { motion, useScroll, useTransform, useSpring, MotionValue } from "framer-motion";
+// import Typewriter from "../typewriter";
+
+// function useParallax(value: MotionValue<number>, distance: number) {
+//   return useTransform(value, [0, 1], [-distance, distance]);
+// }
 
 export function IntroPage({ home, lang }: IHome) {
+  // const ref = useRef(null);
+  // const { scrollYProgress } = useScroll({ target: ref });
+  // const y = useParallax(scrollYProgress, 300);
+
   return (
-    <div className="relative flex flex-col bg-white mx-auto w-screen max-w-6xl md:justify-center mt-10 md:mt-14">
-      <div className="w-screen max-w-6xl justify-center mt-5 mb-14">
-        <Fade direction="up" delay={1500} duration={4000}>
-          <h1 className="w-screen max-w-6xl justify-center text-center text-4xl md:text-6xl xl:text-7xl shadow-black text-shadow-md">
-            {home.title}
-          </h1>
-        </Fade>
-        <Typewriter
-          text={home.welcome}
-          delay={200}
-          className="absolute w-screen tracking-wide -top-5 left-1/2 transform -translate-x-1/2 lowercase text-white text-shadow-down shadow-stone-600"
-        />
+    <div className="relative w-screen mx-auto overflow-hidden flex flex-col items-center mt-7">
+      {/* <div className="number" /> */}
+      <div className="flex flex-wrap w-screen justify-start md:justify-center">
+        <h1 className="relative text-5xl md:text-6xl xl:text-7xl shadow-stone-800 tracking-[1px] text-shadow-heading font-extrabold px-3 z-0">
+          {home.central}
+        </h1>
+        <h1 className="relative text-5xl md:text-6xl xl:text-7xl shadow-stone-800 tracking-[1px] text-shadow-heading font-extrabold px-3 z-0">
+          {home.apartment}
+        </h1>
+        <h1 className="relative text-5xl md:text-6xl xl:text-7xl shadow-stone-800 tracking-[1px] text-shadow-heading font-extrabold px-3 z-0">
+          19
+          <span className="absolute top-1 lg:top-1 right-3 md:right-5 w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 rounded-full bg-[#57534e] -z-10" />
+        </h1>
+        <h1 className="w-full text-5xl md:text-6xl xl:text-7xl justify-start md:justify-center shadow-stone-800 tracking-[1px] text-shadow-heading font-extrabold px-3 mb-3 z-0">
+          S<span className="text-[31px] md:text-[40px] xl:text-[50px] mt-3 md:mt-[15px] lg:mt-[17px]">☯</span>
+          mb
+          <span className="text-[31px] md:text-[40px] xl:text-[50px] mt-3 md:mt-[15px] lg:mt-[17px]">☯</span>r
+        </h1>
       </div>
 
-      <Fade direction="left" cascade={true} duration={1500} triggerOnce={true} className="relative">
-        <h3 className="px-4 font-bold">{home.headline}</h3>
-        <div className="absolute bottom-0 left-2 w-full max-w-xs h-10 triangle bg-amber-600" />
-      </Fade>
+      {/* <Typewriter
+        text={home.title}
+        delay={100}
+        className="text-6xl md:text-7xl xl:text-8xl shadow-stone-800 text-shadow-drop -mt-24 px-4 z-0"
+      /> */}
 
-      <Fade duration={3000}>
-        <h3 className="px-4 py-2">{home.introText}</h3>
-      </Fade>
+      <h3 className="p-4 max-w-3xl ">{home.introText}</h3>
+      <h3 className="p-4 max-w-3xl ">{home.introText}</h3>
+      <h3 className="p-4 max-w-3xl ">{home.introText}</h3>
+      <h3 className="p-4 max-w-3xl ">{home.introText}</h3>
+      <h3 className="p-4 max-w-3xl ">{home.introText}</h3>
+      <h3 className="p-4 max-w-3xl ">{home.introText}</h3>
+
+      <Link
+        href={`/${lang}/about`}
+        className="w-screen flex justify-center items-center my-10 p-5 bg-amber-600 text-white"
+      >
+        My story
+      </Link>
     </div>
   );
 }

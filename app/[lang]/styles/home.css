@@ -6,11 +6,12 @@
   clip-path: polygon(10% 25%, 50% 0%, 90% 25%, 95% 75%, 50% 95%, 5% 75%);
 }
 .parallel-up {
-  clip-path: polygon(0% 0%, 90% 20%, 90% 100%, 0% 80%);
+  clip-path: polygon(0% 0%, 90% 14%, 90% 100%, 0% 86%);
 }
 .parallel-down {
-  clip-path: polygon(10% 0%, 100% 20%, 100% 100%, 10% 80%);
+  clip-path: polygon(10% 0%, 100% 14%, 100% 100%, 10% 86%);
 }
+
 .flt_svg {
   visibility: hidden;
   position: absolute;
@@ -20,7 +21,8 @@
 .svg-parent {
   filter: url("#flt_tag");
 }
+
 /* IntroPage */
-.triangle {
-  clip-path: polygon(0 90%, 7% 100%, 100% 90%);
+.number {
+  @apply bg-19 bg-contain bg-center bg-no-repeat drop-shadow-[-5px_-6px_1px_rgba(42,38,34,50%)] max-w-[39vh] w-[39vw] max-h-[39vh] h-[39vw] min-w-[19rem] min-h-[19rem] z-0;
 }

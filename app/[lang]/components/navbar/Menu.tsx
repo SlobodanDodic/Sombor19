@@ -32,7 +32,7 @@ export default function Menu({ lang, navigation }: IMenu) {
       <Link
         onClick={toggleNav}
         href={`/${lang}/`}
-        className={`clippy-one-null fixed top-0 left-0 w-screen h-[100svh] bg-amber-600/95 flex group z-40 ${
+        className={`clippy-one-null fixed top-0 left-0 w-screen h-[100svh] bg-amber-600/95 flex hover:-translate-y-6 group z-40 ${
           navActive ? "clippy-one" : ""
         }`}
       >
@@ -49,13 +49,13 @@ export default function Menu({ lang, navigation }: IMenu) {
       <Link
         onClick={toggleNav}
         href={`/${lang}/about`}
-        className={`clippy-two-null fixed top-2 -left-[1%] scale-x-[0.98] w-screen h-[100svh] bg-amber-500/95 flex group z-40 ${
+        className={`clippy-two-null fixed top-2 -left-[1%] scale-x-[0.98] w-screen h-[100svh] bg-amber-500/95 flex hover:scale-95 hover:-translate-x-10 group z-40 ${
           navActive ? "clippy-two" : ""
         }`}
       >
-        <div className="bg-png bg-about top-[30%] left-[10%]" />
+        <div className="bg-png bg-about top-[30%] left-[10%] md:left-[25%]" />
 
-        <h2 className="absolute top-[60%] left-[15%]">
+        <h2 className="absolute top-[60%] left-[10%]">
           {navigation.about}
           <span className="span-main">
             <span className="span-circle-inner" />
@@ -66,11 +66,11 @@ export default function Menu({ lang, navigation }: IMenu) {
       <Link
         onClick={toggleNav}
         href={`/${lang}/rooms`}
-        className={`clippy-three-null fixed top-1 left-1 w-screen h-[100svh] bg-amber-400/95 flex group z-40 ${
+        className={`clippy-three-null fixed top-1 left-1 w-screen h-[100svh] bg-amber-400/95 flex hover:scale-95 hover:translate-x-10 group z-40 ${
           navActive ? "clippy-three" : ""
         }`}
       >
-        <div className="bg-png bg-rooms top-[50%] right-[5%]" />
+        <div className="bg-png bg-rooms top-[45%] right-0 md:right-[10%]" />
 
         <h2 className="absolute top-[35%] right-[15%]">
           {navigation.rooms}
@@ -83,13 +83,13 @@ export default function Menu({ lang, navigation }: IMenu) {
       <Link
         onClick={toggleNav}
         href={`/${lang}/contact`}
-        className={`clippy-four-null fixed top-4 left-0 w-screen h-[100svh] flex bg-amber-700/95 group z-40 ${
+        className={`clippy-four-null fixed top-4 left-0 w-screen h-[100svh] bg-amber-700/95 flex  hover:translate-y-6 group z-40 ${
           navActive ? "clippy-four" : ""
         }`}
       >
-        <div className="bg-png bg-contact bottom-1 left-10 sm:left-[20%] xl:left-[35%]" />
+        <div className="bg-png bg-contact bottom-4 right-1/2" />
 
-        <h2 className="absolute bottom-14 lg:bottom-20 right-1/2 transform translate-x-1/2">
+        <h2 className="absolute bottom-24 left-1/2 trasnform -translate-x-1/2">
           {navigation.contact}
           <span className="span-main">
             <span className="span-circle-inner" />

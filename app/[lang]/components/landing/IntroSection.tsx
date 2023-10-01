@@ -10,7 +10,8 @@ export interface IntroSectionProps {
   home: {
     flag: string;
     headline: string;
-    title: string;
+    central: string;
+    apartment: string;
     check: string;
     visit: string;
     welcome: string;

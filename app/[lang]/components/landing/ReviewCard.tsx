@@ -31,7 +31,8 @@ export function ReviewCard({ home }: IHome) {
 
       <div className="flex flex-col text-xl w-screen justify-center items-center pt-5 pb-10 font-bold text-white bg-stone-800">
         <p>{home.welcome}</p>
-        <p>{home.title}</p>
+        <p>{home.central}</p>
+        <p>{home.apartment} 19</p>
       </div>
 
       <div className="flex justify-between items-center my-10 -z-10">
