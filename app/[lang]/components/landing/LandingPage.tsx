@@ -41,7 +41,7 @@ export function LandingPage({ home, lang }: IHome) {
 
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 backdrop-blur-[1px] bg-white/80 border-y-4 border-amber-600 backdrop-brightness-75 text-center">
         <div className="w-screen font-thin text-shadow-sm shadow-stone-800 py-4 text-4xl sm:text-5xl tracking-tighter text-white border-y border-white/20">
-          {home.headline}
+          {/* {home.headline} */}
         </div>
       </div>
 
