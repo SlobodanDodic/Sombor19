@@ -6,10 +6,10 @@
   clip-path: polygon(10% 25%, 50% 0%, 90% 25%, 95% 75%, 50% 95%, 5% 75%);
 }
 .parallel-up {
-  clip-path: polygon(0% 0%, 90% 14%, 90% 100%, 0% 86%);
+  clip-path: polygon(0% 0%, 90% 17%, 90% 100%, 0% 83%);
 }
 .parallel-down {
-  clip-path: polygon(10% 0%, 100% 14%, 100% 100%, 10% 86%);
+  clip-path: polygon(10% 0%, 100% 17%, 100% 100%, 10% 83%);
 }
 .circle-null {
   clip-path: circle(0% at 50% 50%);

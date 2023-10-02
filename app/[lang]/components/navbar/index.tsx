@@ -15,7 +15,7 @@ export default async function Navbar({ lang }: { lang: Locale }) {
         </div>
 
         <div className="relative flex flex-auto justify-center items-center bg-navbar bg-center bg-contain bg-no-repeat">
-          <p className="flex font-serif text-6xl font-bold text-white text-shadow-md shadow-stone-800/30">XIX</p>
+          <p className="flex font-serif text-5xl font-bold text-white text-shadow-md shadow-stone-800/30">XIX</p>
           <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center tracking-[0.2em] font-light text-stone-700">
             ap<span className="font-medium text-amber-600">art</span>ment
           </p>
