@@ -11,6 +11,12 @@
 .parallel-down {
   clip-path: polygon(10% 0%, 100% 14%, 100% 100%, 10% 86%);
 }
+.circle-null {
+  clip-path: circle(0% at 50% 50%);
+}
+.circle {
+  clip-path: circle(50% at 50% 50%);
+}
 
 .flt_svg {
   visibility: hidden;

@@ -61,8 +61,6 @@ export interface IHome {
     apartment: string;
     welcome: string;
     introText: string;
-    // headline: string;
-    // welcome: string;
 
     query: {
       visit: string;

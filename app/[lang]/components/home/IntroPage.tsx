@@ -3,9 +3,6 @@ import type { IHome } from "../../types";
 import Link from "next/link";
 // import Inputs from "../inputs";
 // import { BiSolidDownArrow } from "react-icons/bi";
-// import { useRef } from "react";
-// import { motion, useScroll, useTransform, useSpring, MotionValue } from "framer-motion";
-// import Typewriter from "../typewriter";
 
 // function useParallax(value: MotionValue<number>, distance: number) {
 //   return useTransform(value, [0, 1], [-distance, distance]);
@@ -37,12 +34,6 @@ export function IntroPage({ home, lang }: IHome) {
         </h1>
       </div>
 
-      {/* <Typewriter
-        text={home.title}
-        delay={100}
-        className="text-6xl md:text-7xl xl:text-8xl shadow-stone-800 text-shadow-drop -mt-24 px-4 z-0"
-      /> */}
-
       {/* <div className="">
         <p className="">{home.query.visit}</p>
         <Inputs home={home} />
@@ -56,11 +47,6 @@ export function IntroPage({ home, lang }: IHome) {
         <BiSolidDownArrow className="mt-3 h-5 w-5 text-amber-600" />
       </div> */}
 
-      <h3 className="p-4 max-w-3xl ">{home.introText}</h3>
-      <h3 className="p-4 max-w-3xl ">{home.introText}</h3>
-      <h3 className="p-4 max-w-3xl ">{home.introText}</h3>
-      <h3 className="p-4 max-w-3xl ">{home.introText}</h3>
-      <h3 className="p-4 max-w-3xl ">{home.introText}</h3>
       <h3 className="p-4 max-w-3xl ">{home.introText}</h3>
 
       <Link
