@@ -33,7 +33,7 @@ const config: Config = {
         lg: '0 8px 16px var(--tw-shadow-color)',
         down: '0 7px 8px var(--tw-shadow-color)',
         drop: '2px 4px 6px var(--tw-shadow-color)',
-        heading: '-1px -1px 2px var(--tw-shadow-color)',
+        heading: '3px -2px 4px var(--tw-shadow-color)',
       },
     },
   },

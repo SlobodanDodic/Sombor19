@@ -32,7 +32,7 @@ export default function Menu({ lang, navigation }: IMenu) {
       <Link
         onClick={toggleNav}
         href={`/${lang}/`}
-        className={`clippy-one-null fixed top-0 left-0 w-screen h-[100svh] bg-amber-600/95 flex hover:-translate-y-6 group z-40 ${
+        className={`clippy-one-null fixed top-0 left-0 w-screen h-[100svh] bg-amber-600/95 flex group z-40 ${
           navActive ? "clippy-one" : ""
         }`}
       >
@@ -49,7 +49,7 @@ export default function Menu({ lang, navigation }: IMenu) {
       <Link
         onClick={toggleNav}
         href={`/${lang}/about`}
-        className={`clippy-two-null fixed top-2 -left-[1%] scale-x-[0.98] w-screen h-[100svh] bg-amber-500/95 flex hover:scale-95 hover:-translate-x-10 group z-40 ${
+        className={`clippy-two-null fixed top-2 -left-[1%] scale-x-[0.98] w-screen h-[100svh] bg-amber-500/95 flex group z-40 ${
           navActive ? "clippy-two" : ""
         }`}
       >
@@ -66,7 +66,7 @@ export default function Menu({ lang, navigation }: IMenu) {
       <Link
         onClick={toggleNav}
         href={`/${lang}/rooms`}
-        className={`clippy-three-null fixed top-1 left-1 w-screen h-[100svh] bg-amber-400/95 flex hover:scale-95 hover:translate-x-10 group z-40 ${
+        className={`clippy-three-null fixed top-1 left-1 w-screen h-[100svh] bg-amber-400/95 flex group z-40 ${
           navActive ? "clippy-three" : ""
         }`}
       >
@@ -83,7 +83,7 @@ export default function Menu({ lang, navigation }: IMenu) {
       <Link
         onClick={toggleNav}
         href={`/${lang}/contact`}
-        className={`clippy-four-null fixed top-4 left-0 w-screen h-[100svh] bg-amber-700/95 flex  hover:translate-y-6 group z-40 ${
+        className={`clippy-four-null fixed top-4 left-0 w-screen h-[100svh] bg-amber-700/95 flex group z-40 ${
           navActive ? "clippy-four" : ""
         }`}
       >

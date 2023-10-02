@@ -23,9 +23,6 @@
 .menu-icon__line-left {
   width: 14px;
 }
-/* .menu-icon__line-center {
-  background: linear-gradient(179deg, var(--stone), var(--amber));
-} */
 .menu-icon__line-right {
   width: 14px;
   float: right;
@@ -98,5 +95,5 @@
 }
 
 .bg-png {
-  @apply absolute bg-no-repeat bg-contain w-44 h-44 lg:w-64 lg:h-64 opacity-5 -z-20;
+  @apply absolute bg-no-repeat bg-contain w-44 h-44 lg:w-64 lg:h-64 opacity-5 group-hover:scale-[175%] transition-all -z-20;
 }

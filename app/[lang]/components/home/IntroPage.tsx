@@ -1,6 +1,8 @@
 "use client";
 import type { IHome } from "../../types";
 import Link from "next/link";
+// import Inputs from "../inputs";
+// import { BiSolidDownArrow } from "react-icons/bi";
 // import { useRef } from "react";
 // import { motion, useScroll, useTransform, useSpring, MotionValue } from "framer-motion";
 // import Typewriter from "../typewriter";
@@ -40,6 +42,19 @@ export function IntroPage({ home, lang }: IHome) {
         delay={100}
         className="text-6xl md:text-7xl xl:text-8xl shadow-stone-800 text-shadow-drop -mt-24 px-4 z-0"
       /> */}
+
+      {/* <div className="">
+        <p className="">{home.query.visit}</p>
+        <Inputs home={home} />
+        <Link
+          href={`/${lang}/contact`}
+          className="flex w-[200px] sm:w-[308px] h-7 rounded border-0 text-xs text-start sm:text-center items-center justify-center text-white/90 ring-2 ring-white/70 bg-amber-600/60"
+        >
+          {home.query.submit}
+        </Link>
+
+        <BiSolidDownArrow className="mt-3 h-5 w-5 text-amber-600" />
+      </div> */}
 
       <h3 className="p-4 max-w-3xl ">{home.introText}</h3>
       <h3 className="p-4 max-w-3xl ">{home.introText}</h3>
