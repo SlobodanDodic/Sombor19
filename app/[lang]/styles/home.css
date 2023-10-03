@@ -6,6 +6,15 @@
   clip-path: polygon(0 0, 100% 10%, 100% 80%, 0% 100%);
 }
 
+/* .shadow-top {
+  text-shadow: 1px 1px #000000, 2px 2px #111111, 3px 3px #222222, 4px 4px #333333, 5px 5px #444444, 6px 6px #555555,
+    7px 7px #666666, 8px 8px #777777, 9px 9px #888888, 10px 10px #999999, 11px 11px #aaaaaa, 12px 12px #bbbbbb,
+    13px 13px #cccccc, 14px 14px #dddddd, 15px 15px #eeeeee;
+}
+.shadow-bottom {
+  text-shadow: -1px -1px 1px #46392c40, 2px 1px 1px #2a2622;
+} */
+
 .hexa {
   clip-path: polygon(5% 25%, 50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%);
 }
