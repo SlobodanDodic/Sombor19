@@ -38,7 +38,7 @@ export default function Menu({ lang, navigation }: IMenu) {
       >
         <div className="bg-png bg-home top-1 left-10 sm:left-[20%] xl:left-[35%]" />
 
-        <h2 className="absolute top-16 lg:top-20 left-1/2 transform -translate-x-1/2">
+        <h2 className="absolute top-10 lg:top-20 left-[40%] transform -translate-x-1/2">
           {navigation.home}
           <span className="span-main">
             <span className="span-circle-inner" />
@@ -89,7 +89,7 @@ export default function Menu({ lang, navigation }: IMenu) {
       >
         <div className="bg-png bg-contact bottom-4 right-1/2" />
 
-        <h2 className="absolute bottom-24 left-1/2 trasnform -translate-x-1/2">
+        <h2 className="absolute bottom-16 left-[35%] trasnform -translate-x-1/2">
           {navigation.contact}
           <span className="span-main">
             <span className="span-circle-inner" />
