@@ -17,7 +17,11 @@ export function HeadingPage({ home }: IHome) {
         <h1 className="text-4xl lg:text-5xl tracking-[1px]">
           <span className="relative text-7xl lg:text-8xl -mt-1 px-1">
             <SvgFilter />
-            <span className="absolute letter-a rounded-lg top-0 left-0 w-full h-full bg-amber-600 -z-10" />
+            <span
+              className={`absolute letter-a-null rounded-lg top-0 left-0 w-full h-full bg-amber-600 transition-all duration-1000 -z-10 ${
+                isLoaded ? "letter-a" : ""
+              }`}
+            />
             {home.apartment.substring(0, 1)}
           </span>
         </h1>
