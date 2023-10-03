@@ -8,7 +8,7 @@ import Link from "next/link";
 //   return useTransform(value, [0, 1], [-distance, distance]);
 // }
 
-export function IntroPage({ home, lang }: IHome) {
+export function PrologPage({ home, lang }: IHome) {
   // const ref = useRef(null);
   // const { scrollYProgress } = useScroll({ target: ref });
   // const y = useParallax(scrollYProgress, 300);

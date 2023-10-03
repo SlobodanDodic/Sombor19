@@ -1,4 +1,8 @@
 /* HomePage */
+.letter-a {
+  clip-path: polygon(0 0, 100% 10%, 100% 80%, 0% 100%);
+}
+
 .hexa {
   clip-path: polygon(5% 25%, 50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%);
 }

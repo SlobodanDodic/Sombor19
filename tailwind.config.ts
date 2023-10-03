@@ -22,9 +22,7 @@ const config: Config = {
         about: "url('../assets/hero/icons/about.png')",
         rooms: "url('../assets/hero/icons/rooms.png')",
         contact: "url('../assets/hero/icons/contact.png')",
-        19: "url('../assets/hero/19/19.png')",
-        1: "url('../assets/hero/19/1.png')",
-        9: "url('../assets/hero/19/9.png')",
+        19: "url('../assets/hero/19.png')",
       },
       textShadow: {
         sm: '0 1px 1px var(--tw-shadow-color)',

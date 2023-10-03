@@ -1,3 +1,4 @@
+"use client";
 import { animate, motion, useInView, useMotionValue, useTransform } from "framer-motion";
 import { useEffect, useRef } from "react";
 
@@ -7,7 +8,7 @@ type AnimatedCounterProps = {
   className: string;
 };
 
-function AnimatedCounter({ from, to, className }: AnimatedCounterProps) {
+export function CounterPage({ from, to, className }: AnimatedCounterProps) {
   const ref = useRef(null);
   const isInView = useInView(ref);
 
@@ -26,5 +27,3 @@ function AnimatedCounter({ from, to, className }: AnimatedCounterProps) {
     </motion.span>
   );
 }
-
-export default AnimatedCounter;

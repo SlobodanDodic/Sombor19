@@ -1,11 +1,9 @@
 "use client";
-import { motion } from "framer-motion";
-import Image from "next/image";
-import bgImg from "../../assets/ten.svg";
 import type { IHome } from "../../types";
-import AnimatedCounter from "./AnimatedCounter";
+import { motion } from "framer-motion";
+import { CounterPage } from "./CounterPage";
 
-export function ReviewCard({ home }: IHome) {
+export function ReviewPage({ home }: IHome) {
   const categories = [
     { title: home.booking.staff, rating: 9.9 },
     { title: home.booking.facilities, rating: 9.8 },
@@ -18,17 +16,6 @@ export function ReviewCard({ home }: IHome) {
 
   return (
     <div className="relative flex flex-col items-center justify-center mb-10 w-screen mx-auto">
-      <Image
-        src={bgImg}
-        alt="home"
-        width="1200"
-        height="600"
-        sizes="100vw"
-        quality={100}
-        style={{ objectFit: "cover" }}
-        className="absolute top-10 transform left-1/2 -translate-x-1/2 h-full w-full opacity-5 -z-10"
-      />
-
       <div className="flex flex-col text-xl w-screen justify-center items-center pt-5 pb-10 font-bold text-white bg-stone-800">
         <p>{home.welcome}</p>
         <p>{home.central}</p>
@@ -37,7 +24,7 @@ export function ReviewCard({ home }: IHome) {
 
       <div className="flex justify-between items-center my-10 -z-10">
         <div className="flex bg-stone-800 text-amber-600 text-sm font-semibold py-2 px-3 rounded-s">
-          <AnimatedCounter from={0} to={9.8} className="flex justify-center w-10" />
+          <CounterPage from={0} to={9.8} className="flex justify-center w-10" />
         </div>
         <div className="flex text-sm font-semibold text-stone-700 bg-amber-600 py-2 px-3 rounded-e uppercase">
           {home.booking.average}
@@ -59,11 +46,7 @@ export function ReviewCard({ home }: IHome) {
                 </div>
 
                 <span className="flex justify-center items-center text-sm font-medium h-11 w-11 bg-amber-600 p-2 rounded-full text-white text-shadow-sm shadow-stone-800 border-2 border-stone-400">
-                  <AnimatedCounter
-                    className="flex justify-center items-center w-11 h-11"
-                    from={0}
-                    to={category.rating}
-                  />
+                  <CounterPage className="flex justify-center items-center w-11 h-11" from={0} to={category.rating} />
                 </span>
               </div>
             </div>
