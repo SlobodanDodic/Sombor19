@@ -60,6 +60,7 @@ export interface IHome {
     central: string;
     apartment: string;
     welcome: string;
+    sombor: string;
     introText: string;
 
     query: {
