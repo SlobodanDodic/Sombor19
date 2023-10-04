@@ -1,9 +1,16 @@
 "use client";
+import { useEffect, useState } from "react";
 import type { IHome } from "../../types";
 import { motion } from "framer-motion";
 import { CounterPage } from "./CounterPage";
 
-export function ReviewPage({ home }: IHome) {
+export function ReviewsPage({ home }: IHome) {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   const categories = [
     { title: home.booking.staff, rating: 9.9 },
     { title: home.booking.facilities, rating: 9.8 },
@@ -16,10 +23,19 @@ export function ReviewPage({ home }: IHome) {
 
   return (
     <div className="relative flex flex-col items-center justify-center mb-10 w-screen mx-auto">
-      <div className="flex flex-col text-xl w-screen justify-center items-center pt-5 pb-10 font-bold text-white bg-stone-800">
-        <p>{home.welcome}</p>
-        <p>{home.central}</p>
-        <p>{home.apartment} 19</p>
+      <div className="flex flex-col items-center justify-center text-xl w-screen text-center tracking-[1px] py-5 font-bold text-white bg-stone-800">
+        <p>{home.booking.headingGuest}</p>
+        <div className="relative w-screen flex justify-center items-center">
+          <div className="p-2 z-10 bg-stone-800">
+            <p className="rounded-full h-7 w-7 text-stone-800 bg-amber-600 shadow-sm shadow-white">&</p>
+          </div>
+          <span
+            className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[1px] bg-amber-600 z-0 transition-all duration-[2000ms] ${
+              isLoaded ? "w-1/2 " : "w-0"
+            }`}
+          />
+        </div>
+        <p>{home.booking.headingHost}</p>
       </div>
 
       <div className="flex justify-between items-center my-10 -z-10">

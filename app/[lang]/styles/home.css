@@ -40,3 +40,55 @@
 .number {
   @apply bg-19 bg-contain bg-center bg-no-repeat drop-shadow-[-5px_-6px_1px_rgba(42,38,34,50%)] max-w-[39vh] w-[39vw] max-h-[39vh] h-[39vw] min-w-[19rem] min-h-[19rem] z-0;
 }
+
+.btn {
+  background-color: #d97700;
+  border: none;
+  color: #2a2622;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  padding: 12px 40px;
+  position: relative;
+  border-radius: 7px 0px;
+}
+.btn:before,
+.btn:after {
+  border-color: transparent;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+.btn:before {
+  border-color: #d97700;
+  border-right-width: 2px;
+  border-top-width: 2px;
+  right: -5px;
+  top: -5px;
+}
+.btn:after {
+  border-bottom-width: 2px;
+  border-color: #d97700;
+  border-left-width: 2px;
+  bottom: -5px;
+  left: -5px;
+}
+.btn:hover,
+.btn.hover {
+  background-color: #2a2622;
+  color: #d97700;
+}
+.btn:hover:before,
+.btn.hover:before,
+.btn:hover:after,
+.btn.hover:after {
+  height: 100%;
+  width: 100%;
+}

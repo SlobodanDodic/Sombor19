@@ -29,7 +29,7 @@ export function DateRange({ value, placeholder }: IDateRange) {
       range
       className="rmdp-mobile green bg-dark"
       format="dd-MMM-YYYY"
-      inputClass="flex w-[200px] h-7 bg-amber-600/60 text-xs font-normal text-center items-center rounded border-0 text-white/90 ring-2 sm:mr-2 mb-2 sm:mb-0 ring-white/70 placeholder:text-white/90 hover:cursor-pointer"
+      inputClass="flex w-[200px] h-7 bg-amber-600 text-xs font-normal text-center items-center rounded border-0 text-white/90 ring-2 sm:mr-2 mb-2 sm:mb-0 ring-white/70 placeholder:text-white/90 hover:cursor-pointer"
       value={placeValue}
       placeholder={value?.start === "" ? placeholder : placeValue}
       onChange={handleValueChange}

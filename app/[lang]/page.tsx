@@ -1,6 +1,6 @@
 import type { Locale } from "@/i18n.config";
 import { getDictionary } from "@/lib/dictionary";
-import { HeadingPage, SvgPage, PrologPage } from "./components/home";
+import { HeadingPage, SvgPage, PrologPage, QueryPage, ReviewsPage } from "./components/home";
 
 export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {
   const { home } = await getDictionary(lang);
@@ -12,6 +12,8 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
         <SvgPage />
       </div>
       <PrologPage home={home} lang={lang} />
+      <ReviewsPage home={home} />
+      <QueryPage home={home} lang={lang} />
     </>
   );
 }

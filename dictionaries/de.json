@@ -11,14 +11,11 @@
     "apartment": "Apartment",
     "welcome": "Willkommen",
     "sombor": "in Sombor!",
+    "accommodation": "Unterkunft im zentralen Apartment 19",
     "introText": "Mitten im Herzen der Stadt Sombor ist dieses entzückende Apartment der perfekte Ort zum Entspannen und die Sehenswürdigkeiten zu erkunden. Sie werden einen eigenen Eingang, ein gemütliches Wohnzimmer, eine voll ausgestattete Küche, ein bequemes Queensize-Bett und ein zusätzliches Schlafsofa für zwei Personen haben. Außerdem haben wir einen schönen Garten, in dem Sie sich jederzeit während des Tages entspannen können.",
-    "query": {
-      "visit": "Überprüfen Sie verfügbare Termine und besuchen Sie uns!",
-      "select": "Wähle Daten",
-      "guests": "Gäste",
-      "submit": "Absenden"
-    },
     "booking": {
+      "headingGuest": "Gästebewertungen",
+      "headingHost": "Gastgeberimpression",
       "average": "durchschnittliche Bewertung",
       "staff": "Staff",
       "facilities": "Einrichtungen",
@@ -27,6 +24,12 @@
       "value": "Preis-Leistungs-Verhältnis",
       "location": "Lage",
       "wifi": "Kostenloses WLAN"
+    },
+    "query": {
+      "visit": "Überprüfen Sie verfügbare Termine und besuchen Sie uns!",
+      "select": "Wähle Daten",
+      "guests": "Gäste",
+      "submit": "Absenden"
     }
   },
   "about": {

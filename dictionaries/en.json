@@ -11,14 +11,11 @@
     "apartment": "Apartment",
     "welcome": "Welcome",
     "sombor": "to Sombor!",
+    "accommodation": "Accommodation in Central Apartment 19",
     "introText": "Right in the heart of Sombor town, this delightful apartment is the perfect place to relax and explore the sights. You'll have a private entrance, a cozy living room, a fully equipped kitchen, a comfortable queen-size bed, and an extra sofa bed for two. Plus, we have a charming garden for your relaxation anytime during the day.",
-    "query": {
-      "visit": "Check available dates and visit us!",
-      "select": "select dates",
-      "guests": "guests",
-      "submit": "submit"
-    },
     "booking": {
+      "headingGuest": "Guest Ratings",
+      "headingHost": "Host Impression",
       "average": "average rating",
       "staff": "Staff",
       "facilities": "Facilities",
@@ -27,6 +24,12 @@
       "value": "Value for money",
       "location": "Location",
       "wifi": "Free WiFi"
+    },
+    "query": {
+      "visit": "Check available dates and visit us!",
+      "select": "select dates",
+      "guests": "guests",
+      "submit": "submit"
     }
   },
   "about": {

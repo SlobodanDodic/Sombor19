@@ -11,14 +11,11 @@
     "apartment": "Lakosztály",
     "welcome": "Üdvözöljük",
     "sombor": "Somborban!",
+    "accommodation": "Szállás a Központi Apartmanban 19",
     "introText": "Pont Sombor város szívében található ez a bájos lakás, tökéletes hely a pihenéshez és a látnivalók felfedezéséhez. Lesz egy saját bejárat, egy hangulatos nappali, teljesen felszerelt konyha, kényelmes queen-size ágy és egy plusz kanapéágy két személy részére. Ráadásul van egy bájos kert is, ahol bármikor pihenhet a nap folyamán.",
-    "query": {
-      "visit": "Ellenőrizze az elérhető dátumokat és látogasson el hozzánk!",
-      "select": "Válassz dátumokat",
-      "guests": "Vendégek",
-      "submit": "Küldés"
-    },
     "booking": {
+      "headingGuest": "Vendégértékelések",
+      "headingHost": "Házigazda Benyomás",
       "average": "átlagos értékelés",
       "staff": "Személyzet",
       "facilities": "Felszerelés",
@@ -27,6 +24,12 @@
       "value": "Pénz értéke",
       "location": "Helyszín",
       "wifi": "Ingyenes WiFi"
+    },
+    "query": {
+      "visit": "Ellenőrizze az elérhető dátumokat és látogasson el hozzánk!",
+      "select": "Válassz dátumokat",
+      "guests": "Vendégek",
+      "submit": "Küldés"
     }
   },
   "about": {

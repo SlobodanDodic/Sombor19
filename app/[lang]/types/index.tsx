@@ -61,16 +61,12 @@ export interface IHome {
     apartment: string;
     welcome: string;
     sombor: string;
+    accommodation: string;
     introText: string;
 
-    query: {
-      visit: string;
-      select: string;
-      guests: string;
-      submit: string;
-    };
-
     booking: {
+      headingGuest: string;
+      headingHost: string;
       average: string;
       staff: string;
       facilities: string;
@@ -79,6 +75,13 @@ export interface IHome {
       value: string;
       location: string;
       wifi: string;
+    };
+
+    query: {
+      visit: string;
+      select: string;
+      guests: string;
+      submit: string;
     };
   };
 }
