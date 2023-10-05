@@ -7,7 +7,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
 
   return (
     <>
-      <div className="relative w-screen mt-4 md:mt-10">
+      <div className="relative w-screen mt-2 md:mt-10">
         <HeadingPage home={home} />
         <SvgPage />
       </div>

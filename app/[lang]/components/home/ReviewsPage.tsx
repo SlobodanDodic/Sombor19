@@ -36,7 +36,7 @@ export function ReviewsPage({ home }: IHome) {
         <p>{home.booking.headingHost}</p>
       </div>
 
-      <div className="flex justify-between items-center my-10 -z-10">
+      <div className="flex justify-between items-center my-14 -z-10">
         <div className="flex bg-stone-800 text-amber-600 text-sm font-semibold py-2 px-3 rounded-s">
           <CounterPage from={0} to={9.8} className="flex justify-center w-10" />
         </div>
@@ -45,7 +45,7 @@ export function ReviewsPage({ home }: IHome) {
         </div>
       </div>
 
-      <div className="flex -z-10">
+      <div className="flex my-5 -z-10">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {categories.map((category, i) => (
             <div key={i} className="w-60 bg-stone-800/10 rounded-e-lg p-2">
