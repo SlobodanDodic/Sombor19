@@ -10,9 +10,9 @@ export function ReviewsPage({ home }: IHome) {
 
   const categories = [
     { title: home.booking.staff, rating: 9.9 },
-    { title: home.booking.facilities, rating: 9.8 },
+    { title: home.booking.facilities, rating: 9.7 },
     { title: home.booking.cleanliness, rating: 9.9 },
-    { title: home.booking.comfort, rating: 9.8 },
+    { title: home.booking.comfort, rating: 9.7 },
     { title: home.booking.value, rating: 9.8 },
     { title: home.booking.location, rating: 9.9 },
     { title: home.booking.wifi, rating: 9.9 },

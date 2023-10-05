@@ -7,10 +7,11 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
 
   return (
     <>
-      <div className="relative w-screen md:mt-4">
+      <div className="relative w-screen mt-4 md:mt-10">
         <HeadingPage home={home} />
         <SvgPage />
       </div>
+
       <PrologPage home={home} lang={lang} navigation={navigation} />
       <ReviewsPage home={home} />
       <QueryPage home={home} lang={lang} />
