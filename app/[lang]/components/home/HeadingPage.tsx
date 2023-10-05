@@ -1,11 +1,14 @@
 "use client";
-import { useEffect, useState } from "react";
 import type { IHome } from "../../types";
+import { useEffect, useState, useRef } from "react";
+import { useInView } from "framer-motion";
 import Typewriter from "../typewriter";
 import SvgFilter from "./SvgFilter";
 
 export function HeadingPage({ home }: IHome) {
   const [isLoaded, setIsLoaded] = useState(false);
+  const ref = useRef(null);
+  const isInView = useInView(ref);
 
   useEffect(() => {
     setIsLoaded(true);
@@ -36,15 +39,22 @@ export function HeadingPage({ home }: IHome) {
         </div>
       </div>
 
-      <div className="absolute w-screen -bottom-12 left-1/2 transform -translate-x-1/2 z-10">
-        <div className="flex flex-col justify-center items-center mx-10 mt-4">
+      <div ref={ref} className="absolute w-screen -bottom-12 left-1/2 transform -translate-x-1/2 z-10">
+        <div
+          className="flex flex-col justify-center items-center mx-10 mt-4"
+          style={{
+            transform: isInView ? "none" : "translateX(-200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          }}
+        >
           <div className="flex w-[90%] max-w-xs">
-            <h1 className="text-4xl md:text-[2rem] lg:text-5xl tracking-[1px] font-extrabold text-amber-600 text-shadow-heading shadow-stone-900 underline decoration-amber-600">
+            <h1 className="text-4xl md:text-[2rem] lg:text-5xl tracking-[1px] font-extrabold text-amber-600 text-shadow-heading shadow-stone-900 italic">
               {home.welcome}
             </h1>
           </div>
           <div className="flex w-[90%] max-w-xs justify-end">
-            <h1 className="text-4xl md:text-[2rem] lg:text-5xl tracking-[1px] font-extrabold text-amber-600 text-shadow-heading shadow-stone-900 underline decoration-amber-600">
+            <h1 className="text-4xl md:text-[2rem] lg:text-5xl tracking-[1px] font-extrabold text-amber-600 text-shadow-heading shadow-stone-900 italic">
               {home.sombor}
             </h1>
           </div>

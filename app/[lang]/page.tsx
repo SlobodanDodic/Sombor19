@@ -3,7 +3,7 @@ import { getDictionary } from "@/lib/dictionary";
 import { HeadingPage, SvgPage, PrologPage, QueryPage, ReviewsPage } from "./components/home";
 
 export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {
-  const { home } = await getDictionary(lang);
+  const { home, navigation } = await getDictionary(lang);
 
   return (
     <>
@@ -11,7 +11,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
         <HeadingPage home={home} />
         <SvgPage />
       </div>
-      <PrologPage home={home} lang={lang} />
+      <PrologPage home={home} lang={lang} navigation={navigation} />
       <ReviewsPage home={home} />
       <QueryPage home={home} lang={lang} />
     </>

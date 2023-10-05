@@ -1,15 +1,12 @@
 "use client";
-import { useEffect, useState } from "react";
 import type { IHome } from "../../types";
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import { CounterPage } from "./CounterPage";
 
 export function ReviewsPage({ home }: IHome) {
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    setIsLoaded(true);
-  }, []);
+  const ref = useRef(null);
+  const isInView = useInView(ref);
 
   const categories = [
     { title: home.booking.staff, rating: 9.9 },
@@ -26,12 +23,13 @@ export function ReviewsPage({ home }: IHome) {
       <div className="flex flex-col items-center justify-center text-xl w-screen text-center tracking-[1px] py-5 font-bold text-white bg-stone-800">
         <p>{home.booking.headingGuest}</p>
         <div className="relative w-screen flex justify-center items-center">
-          <div className="p-2 z-10 bg-stone-800">
+          <div className="pb-1 px-2 z-10 bg-stone-800">
             <p className="rounded-full h-7 w-7 text-stone-800 bg-amber-600 shadow-sm shadow-white">&</p>
           </div>
           <span
+            ref={ref}
             className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[1px] bg-amber-600 z-0 transition-all duration-[2000ms] ${
-              isLoaded ? "w-1/2 " : "w-0"
+              isInView ? "w-1/2 " : "w-0"
             }`}
           />
         </div>

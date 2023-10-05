@@ -1,6 +1,8 @@
 import { Locale } from "@/i18n.config";
-import { MotionValue } from "framer-motion";
 import { Dispatch, ReactNode, SetStateAction } from "react";
+
+// import { MotionValue } from "framer-motion";
+// onClick?: Dispatch<SetStateAction<any>>;
 
 export interface IChildren {
   children: ReactNode;
@@ -42,6 +44,10 @@ export interface ITypewriter {
   className: string;
 }
 
+// Dictionaries:
+
+export type CombinedProps = IHome & IMenu;
+
 export interface IMenu {
   lang: Locale;
   navigation: {
@@ -50,7 +56,6 @@ export interface IMenu {
     rooms: string;
     contact: string;
   };
-  // onClick?: Dispatch<SetStateAction<any>>;
 }
 
 export interface IHome {

@@ -8,7 +8,7 @@ export default function Inputs({ home }: IHome) {
   const { formData } = useFormState();
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center mb-2 md:mr-2 font-semibold text-xs">
+    <div className="flex flex-col md:flex-row items-center justify-center mb-2 md:mb-0 md:mr-2 font-semibold text-xs">
       <DateRange value={formData.dateRange} placeholder={home.query.select} />
 
       <GuestsSelect defaultValue={formData.guests} guests={home.query.guests} />

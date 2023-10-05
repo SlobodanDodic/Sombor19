@@ -7,7 +7,7 @@ export function QueryPage({ home, lang }: IHome) {
     <div className="flex flex-col w-screen justify-center items-center my-10">
       <div></div>
 
-      <h4 className="mb-3 font-semibold">{home.query.visit}</h4>
+      <h4 className="mb-5 px-10 text-center font-semibold">{home.query.visit}</h4>
 
       <div className="flex flex-col md:flex-row w-screen items-center justify-center">
         <Inputs home={home} />
