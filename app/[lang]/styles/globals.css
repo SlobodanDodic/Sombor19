@@ -35,8 +35,10 @@
 }
 
 /* GuestsSelect in components/input */
-.select-btn {
+#guests,
+#guests option {
   text-align: center;
+  text-align-last: center;
   text-align: -webkit-center;
   text-align: -moz-center;
 }
