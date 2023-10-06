@@ -33,3 +33,10 @@
     @apply flex text-justify text-stone-600 text-base md:text-xl xl:text-2xl -tracking-[0.5px] leading-5;
   }
 }
+
+/* GuestsSelect in components/input */
+.select-btn {
+  text-align: center;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+}
