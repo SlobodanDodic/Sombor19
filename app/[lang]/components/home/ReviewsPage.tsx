@@ -36,7 +36,7 @@ export function ReviewsPage({ home }: IHome) {
         <p>{home.booking.headingHost}</p>
       </div>
 
-      <div className="flex justify-between items-center my-14 -z-10">
+      <div className="flex justify-between items-center mt-10 mb-6 -z-10">
         <div className="flex bg-stone-800 text-amber-600 text-sm font-semibold py-2 px-3 rounded-s">
           <CounterPage from={0} to={9.8} className="flex justify-center w-10" />
         </div>
@@ -48,8 +48,11 @@ export function ReviewsPage({ home }: IHome) {
       <div className="flex my-5 -z-10">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {categories.map((category, i) => (
-            <div key={i} className="w-60 bg-stone-800/10 rounded-e-lg p-2">
-              <div className="text-sm font-medium text-stone-700 tracking-wide">{category.title}</div>
+            <div
+              key={i}
+              className="w-60 bg-stone-700 rounded-tr-2xl rounded-bl-xl p-2 border-4 border-double border-white"
+            >
+              <div className="text-sm font-medium text-white tracking-[1px]">{category.title}</div>
               <div className="flex items-center mb-3">
                 <div className="w-full bg-stone-800 rounded h-3 mr-2">
                   <motion.div
@@ -59,7 +62,7 @@ export function ReviewsPage({ home }: IHome) {
                   />
                 </div>
 
-                <span className="flex justify-center items-center text-sm font-medium h-11 w-11 bg-amber-600 p-2 rounded-full text-white text-shadow-sm shadow-stone-800 border-2 border-stone-400">
+                <span className="flex justify-center items-center text-sm font-medium h-11 w-11 bg-amber-600 p-2 rounded-full text-white text-shadow-sm shadow-stone-800 border border-dotted border-white">
                   <CounterPage className="flex justify-center items-center w-11 h-11" from={0} to={category.rating} />
                 </span>
               </div>

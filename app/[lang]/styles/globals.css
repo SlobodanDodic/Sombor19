@@ -5,6 +5,11 @@
 @import "home.css";
 @import "menu.css";
 
+:root {
+  --stone: #2a2622;
+  --amber: #d97700;
+}
+
 ::-webkit-scrollbar {
   display: none;
   -ms-overflow-style: none; /* IE and Edge */
@@ -13,7 +18,7 @@
 
 @layer base {
   html {
-    @apply text-stone-800;
+    color: var(--stone);
   }
   h1 {
     @apply flex justify-center font-semibold text-stone-600 text-4xl md:text-5xl xl:text-6xl -tracking-[1px];

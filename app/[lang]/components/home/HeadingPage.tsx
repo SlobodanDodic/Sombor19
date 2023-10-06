@@ -1,7 +1,7 @@
 "use client";
 import type { IHome } from "../../types";
 import { useEffect, useState, useRef } from "react";
-import { useInView } from "framer-motion";
+import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import Typewriter from "../typewriter";
 import SvgFilter from "./SvgFilter";
 
@@ -9,6 +9,10 @@ export function HeadingPage({ home }: IHome) {
   const [isLoaded, setIsLoaded] = useState(false);
   const ref = useRef(null);
   const isInView = useInView(ref);
+
+  const { scrollY } = useScroll();
+  const y1 = useTransform(scrollY, [0, 220], [0, 50]);
+  const y2 = useTransform(scrollY, [0, 250], [0, 30]);
 
   useEffect(() => {
     setIsLoaded(true);
@@ -18,7 +22,7 @@ export function HeadingPage({ home }: IHome) {
     <>
       <div className="absolute top-1 left-0 w-[90%] md:w-screen md:left-1/2 md:transform md:-translate-x-1/2 max-w-6xl flex">
         <div className="flex pl-3 ml-[5%] md:ml-[33%] mt-4 svg-parent">
-          <h1 className="text-4xl md:text-[2rem] lg:text-5xl tracking-[1px] text-shadow-heading shadow-stone-900">
+          <h1 className="text-4xl md:text-[2.5rem] lg:text-5xl tracking-[1px] text-shadow-heading shadow-stone-900">
             <span className="relative text-[5rem] leading-none lg:text-8xl -mt-1 px-1 text-stone-700">
               <SvgFilter />
               <span
@@ -34,12 +38,12 @@ export function HeadingPage({ home }: IHome) {
           <Typewriter
             text={home.apartment.substring(1)}
             delay={200}
-            className="text-4xl md:text-[2rem] lg:text-5xl tracking-[1px] -ml-3 text-shadow-heading shadow-stone-900 text-amber-600 z-0"
+            className="text-4xl md:text-[2.5rem] lg:text-5xl tracking-[1px] -ml-3 text-shadow-heading shadow-stone-900 text-amber-600 z-0"
           />
         </div>
       </div>
 
-      <div ref={ref} className="absolute w-screen -bottom-12 left-1/2 transform -translate-x-1/2 z-10">
+      <div ref={ref} className="absolute w-screen -bottom-10 left-1/2 transform -translate-x-1/2 z-10">
         <div
           className="flex flex-col justify-center items-center mx-10 mt-4"
           style={{
@@ -48,16 +52,16 @@ export function HeadingPage({ home }: IHome) {
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
         >
-          <div className="flex w-[90%] max-w-xs">
-            <h1 className="text-4xl md:text-[2rem] lg:text-5xl tracking-[1px] font-extrabold text-amber-600 text-shadow-heading shadow-stone-900 italic">
+          <motion.div style={{ y: y1, x: 0 }} className="flex w-[90%] max-w-xs">
+            <h1 className="text-4xl md:text-[2.5rem] lg:text-5xl tracking-[1px] font-extrabold text-amber-600 text-shadow-heading shadow-stone-900 italic">
               {home.welcome}
             </h1>
-          </div>
-          <div className="flex w-[90%] max-w-xs justify-end">
-            <h1 className="text-4xl md:text-[2rem] lg:text-5xl tracking-[1px] font-extrabold text-amber-600 text-shadow-heading shadow-stone-900 italic">
+          </motion.div>
+          <motion.div style={{ y: y2, x: 0 }} className="flex w-[90%] max-w-xs justify-end">
+            <h1 className="text-4xl md:text-[2.5rem] lg:text-5xl tracking-[1px] font-extrabold text-amber-600 text-shadow-heading shadow-stone-900 italic">
               {home.sombor}
             </h1>
-          </div>
+          </motion.div>
         </div>
       </div>
     </>

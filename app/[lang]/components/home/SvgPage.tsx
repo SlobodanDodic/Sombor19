@@ -14,9 +14,8 @@ export function SvgPage() {
           <Image
             src={homeLeft}
             alt="homeLeft"
-            priority={true}
-            placeholder="blur"
             quality={100}
+            priority={true}
             style={{ objectFit: "cover" }}
             className="h-full brightness-[80%] bg-stone-800 z-10"
           />
@@ -31,9 +30,8 @@ export function SvgPage() {
             <Image
               src={homeUp}
               alt="homeUp"
-              priority={true}
-              placeholder="blur"
               quality={100}
+              priority={true}
               style={{ objectFit: "cover" }}
               className="h-full brightness-[80%] bg-stone-800 z-10"
             />
@@ -48,9 +46,8 @@ export function SvgPage() {
             <Image
               src={homeDown}
               alt="homeDown"
-              priority={true}
-              placeholder="blur"
               quality={100}
+              priority={true}
               style={{ objectFit: "cover" }}
               className="h-full brightness-[80%] bg-stone-800 z-10"
             />
@@ -65,9 +62,8 @@ export function SvgPage() {
           <Image
             src={homeRight}
             alt="homeRight"
-            priority={true}
-            placeholder="blur"
             quality={100}
+            priority={true}
             style={{ objectFit: "cover" }}
             className="h-full brightness-[80%] bg-stone-800 z-10"
           />

@@ -6,7 +6,7 @@ import Navbar from "./components/navbar";
 import type { IRootLayout } from "./types";
 import { FormProvider } from "./context/FormContext";
 
-const myFont = El_Messiri({ subsets: ["latin"] });
+const myFont = El_Messiri({ subsets: ["latin"], preload: true });
 
 export const metadata: Metadata = {
   title: "Apartments 19",
