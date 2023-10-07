@@ -11,8 +11,8 @@ export function HeadingPage({ home }: IHome) {
   const isInView = useInView(ref);
 
   const { scrollY } = useScroll();
-  const y1 = useTransform(scrollY, [0, 220], [0, 50]);
-  const y2 = useTransform(scrollY, [0, 250], [0, 30]);
+  const y1 = useTransform(scrollY, [0, 520], [5, 50]);
+  const y2 = useTransform(scrollY, [0, 550], [-5, 30]);
 
   useEffect(() => {
     setIsLoaded(true);

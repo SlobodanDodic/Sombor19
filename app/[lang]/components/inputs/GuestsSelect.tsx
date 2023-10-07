@@ -28,7 +28,7 @@ export function GuestsSelect({ defaultValue, guests }: GuestsSelectProps) {
   return (
     <select
       id="guests"
-      className="mx-auto w-[200px] h-7 sm:w-[100px] bg-amber-600 uppercase font-bold tracking-[1px] rounded border-0 text-white ring-2 ring-white/70 placeholder:text-white/90"
+      className="mx-auto w-[200px] h-7 sm:w-[100px] bg-amber-600 text-sm capitalize font-bold rounded border-0 text-white ring-2 ring-white/70 placeholder:text-white/90"
       defaultValue={defaultValue}
       onChange={handleInputChange}
     >

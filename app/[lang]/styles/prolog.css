@@ -1,48 +1,15 @@
-/* HeadingPage */
-.letter-a-null {
-  clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
-}
-.letter-a {
-  clip-path: polygon(0 0, 100% 10%, 100% 80%, 0% 100%);
-}
-
-/* SvgPage */
-.hexa {
-  clip-path: polygon(5% 25%, 50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%);
-}
-.hexa-aside {
-  clip-path: polygon(10% 25%, 50% 0%, 90% 25%, 95% 75%, 50% 95%, 5% 75%);
-}
-.parallel-up {
-  clip-path: polygon(0% 0%, 90% 17%, 90% 100%, 0% 83%);
-}
-.parallel-down {
-  clip-path: polygon(10% 0%, 100% 17%, 100% 100%, 10% 83%);
-}
-.circle-null {
-  clip-path: circle(0% at 50% 50%);
-}
-.circle {
-  clip-path: circle(50% at 50% 50%);
-}
-
-.flt_svg {
-  visibility: hidden;
-  position: absolute;
-  width: 0px;
-  height: 0px;
-}
-.svg-parent {
-  filter: url("#hexa");
-}
-
 /* PrologPage */
+:root {
+  --stone: #2a2622;
+  --amber: #d97700;
+}
+
 .number {
   @apply bg-19 bg-contain bg-center bg-no-repeat drop-shadow-[-5px_-6px_1px_rgba(42,38,34,50%)] max-w-[39vh] w-[39vw] max-h-[39vh] h-[39vw] min-w-[19rem] min-h-[19rem] z-0;
 }
 
 .btn {
-  background-color: #d97700;
+  background-color: var(--amber);
   border: none;
   color: #2a2622e5;
   font-size: 1.25rem;
@@ -68,7 +35,7 @@
   width: 24px;
 }
 .btn:before {
-  border-color: #d97700;
+  border-color: var(--amber);
   border-right-width: 2px;
   border-top-width: 2px;
   right: -5px;
@@ -76,15 +43,15 @@
 }
 .btn:after {
   border-bottom-width: 2px;
-  border-color: #d97700;
+  border-color: var(--amber);
   border-left-width: 2px;
   bottom: -5px;
   left: -5px;
 }
 .btn:hover,
 .btn.hover {
-  background-color: #2a2622;
-  color: #d97700;
+  background-color: var(--stone);
+  color: var(--amber);
 }
 .btn:hover:before,
 .btn.hover:before,

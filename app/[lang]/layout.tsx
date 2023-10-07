@@ -1,12 +1,13 @@
 import "./styles/globals.css";
 import type { Metadata } from "next";
 import { Locale, i18n } from "@/i18n.config";
-import { El_Messiri } from "next/font/google";
+import { El_Messiri, Plaster } from "next/font/google";
 import Navbar from "./components/navbar";
 import type { IRootLayout } from "./types";
 import { FormProvider } from "./context/FormContext";
 
-const myFont = El_Messiri({ subsets: ["latin"], preload: true });
+const global = El_Messiri({ subsets: ["latin"], display: "swap", preload: true });
+export const plaster = Plaster({ weight: ["400"], style: ["normal"], subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   title: "Apartments 19",
@@ -20,7 +21,7 @@ export async function generateStaticParams() {
 export default function RootLayout({ children, params }: IRootLayout) {
   return (
     <html lang={params.lang}>
-      <body className={myFont.className}>
+      <body className={global.className}>
         <FormProvider>
           <Navbar lang={params.lang} />
           {children}

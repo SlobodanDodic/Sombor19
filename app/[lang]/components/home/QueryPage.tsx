@@ -13,7 +13,7 @@ export function QueryPage({ home, lang }: IHome) {
         <Inputs home={home} />
         <Link
           href={`/${lang}/contact`}
-          className="flex w-[200px] h-7 rounded border-0 text-xs uppercase font-bold tracking-[1px] items-center justify-center text-white ring-2 ring-white/70 bg-amber-600"
+          className="flex w-[200px] h-7 rounded border-0 text-sm capitalize font-bold items-center justify-center text-white ring-2 ring-white/70 bg-amber-600"
         >
           {home.query.submit}
         </Link>

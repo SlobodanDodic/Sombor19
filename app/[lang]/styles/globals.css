@@ -2,19 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "home.css";
 @import "menu.css";
+@import "svgpage.css";
+@import "prolog.css";
+@import "testimonials.css";
 
 :root {
   --stone: #2a2622;
   --amber: #d97700;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+} */
 
 @layer base {
   html {
@@ -32,6 +34,14 @@
   h4 {
     @apply flex text-justify text-stone-600 text-base md:text-xl xl:text-2xl -tracking-[0.5px] leading-5;
   }
+}
+
+/* HeadingPage */
+.letter-a-null {
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+.letter-a {
+  clip-path: polygon(0 0, 100% 10%, 100% 80%, 0% 100%);
 }
 
 /* GuestsSelect in components/input */
