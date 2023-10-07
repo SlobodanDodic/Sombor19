@@ -56,7 +56,7 @@ figure.snip1204 blockquote {
   position: relative;
   background-color: var(--stone);
   color: white;
-  padding: 30px 30px 50px;
+  padding: 35px 15px 45px;
   font-size: 0.8em;
   font-weight: 500;
   margin: 0 0 -40px;
@@ -65,7 +65,7 @@ figure.snip1204 blockquote {
 }
 figure.snip1204 blockquote:before,
 figure.snip1204 blockquote:after {
-  content: "\201C";
+  content: "“";
   position: absolute;
   font-size: 50px;
   color: var(--amber);
@@ -76,9 +76,9 @@ figure.snip1204 blockquote:before {
   left: 10px;
 }
 figure.snip1204 blockquote:after {
-  content: "\201D";
+  content: "„";
   right: 10px;
-  bottom: 25px;
+  bottom: 45px;
 }
 figure.snip1204 .author {
   margin: 0;
