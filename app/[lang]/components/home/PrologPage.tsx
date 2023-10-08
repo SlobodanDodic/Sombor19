@@ -1,6 +1,6 @@
 "use client";
 import type { CombinedProps } from "../../types";
-import { useScroll, motion, useTransform } from "framer-motion";
+import { useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 
 export function PrologPage({ home, lang, navigation }: CombinedProps) {

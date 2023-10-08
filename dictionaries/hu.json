@@ -32,6 +32,152 @@
       "submit": "Küldés"
     }
   },
+  "testimonials": [
+    {
+      "name": "Névtelen",
+      "date": "2023.09.30.",
+      "rating": "10",
+      "title": "Kivételes",
+      "visitorType": "Egyedül utazó",
+      "country": "🇨🇦 Kanada",
+      "text": "Az apartman tágas volt és rendkívül tiszta, mindenre szükséged lehet. Közel található a belvároshoz, és leparkoltam a járművemet, majd gyalog mentem vásárolni és bankba menni. Segítséget kaptam a csomagjaimmal mind érkezéskor, mind távozáskor, valamint tanácsokat kaptam a helyi szolgáltatásokról és tippeket a következő hetek utazásához. Nem kérhettem volna többet, és az ár nagyon elfogadható volt. Köszönöm a nagyszerű tartózkodást!"
+    },
+    {
+      "name": "Milutinovic",
+      "date": "2023.09.20.",
+      "rating": "9.0",
+      "title": "Egy rejtett kincs Sombor szívében",
+      "visitorType": "Család",
+      "country": "🇷🇸 Szerbia",
+      "text": "Az apartman a festői neoklasszicista építészeti homlokzat mögött található, magának, biztonságosnak, kényelmesnek, tágasnak és jól berendezettnek érzi magát. Felszerelt jó méretű ággyal, bőséges tárolóval, TV-vel, minibárral, tea- és kávéfőzővel, hajszárítóval és fürdőszobai kozmetikumokkal. A szállás tartalmaz egy közös kültéri teret is egy hangulatos terasszal és udvarral. Igény esetén ingyenes parkolás is elérhető. A házigazda barátságos, elérhető, amikor szükség van rá, és nagyszerű javaslatokkal szolgál arra vonatkozóan, mit érdemes megnézni és tenni Somborban és környékén. Sombor egy sétálható város, és a belváros rövid sétára található az apartmantól. Alig várom, hogy vendég legyek a következő látogatásom alkalmával."
+    },
+    {
+      "name": "Milijana",
+      "date": "2023.09.08.",
+      "rating": "10",
+      "title": "Kivételes",
+      "visitorType": "Pár",
+      "country": "🇷🇸 Szerbia",
+      "text": "Dragan kivételes házigazda, remek helyekre irányított minket Somborban. Háziállataink is üdvözölve voltak. A szállásnak gyönyörű és békés kertje van. Csak három percnyi sétára található a városközponttól. Ajánlottuk a szállást barátainknak is."
+    },
+    {
+      "name": "Gregor",
+      "date": "2023.08.13.",
+      "rating": "10",
+      "title": "Visszatérünk 😀",
+      "visitorType": "Család",
+      "country": "🇭🇷 Horvátország",
+      "text": "A házigazda nagyszerű ember! Tud helyeket javasolni. A szoba és a fürdőszoba tiszta volt. Szép nagy ágy. Igazán szép hátsó udvar a tulajdonon belül."
+    },
+    {
+      "name": "Janet",
+      "date": "2023.07.09.",
+      "rating": "10",
+      "title": "Kivételes",
+      "visitorType": "Pár",
+      "country": "🇺🇸 Egyesült Államok",
+      "text": "Az apartman szépen bútorozott és tágas, jól felszerelt. A kert üdvözlő és jól karbantartott. Egy öröm."
+    },
+    {
+      "name": "Vorkapic",
+      "date": "2023.02.17.",
+      "rating": "10",
+      "title": "Csendes és kényelmes",
+      "visitorType": "Egyedül utazó",
+      "country": "🇷🇸 Szerbia",
+      "text": "A házigazda fantasztikus, az apartman tiszta volt és minden rendelkezésre áll (törölköző, sampon, fogkrém, vízforraló, kávé, tea stb.). Emellett van egy nagyon szép kert, ahol pihenni lehet, és 3 perc alatt elérheti a városközpontot."
+    },
+    {
+      "name": "Roberta",
+      "date": "2022.12.30.",
+      "rating": "10",
+      "title": "Szép és otthonos",
+      "visitorType": "Pár",
+      "country": "🇩🇪 Németország",
+      "text": "A lakás sétatávolságra van a központtól. Annak ellenére, hogy egy forgalmas utca mellett van, elég volt aludni. Dragan nagyszerű házigazda és nagyon segítőkész. Negatívum: hogy télen jöttünk 😉 A gyönyörűnek nagyszerű nyári potenciálja van. Minden más csúcs volt, és újra eljövünk!"
+    },
+    {
+      "name": "Bronwyn",
+      "date": "2022.07.04.",
+      "rating": "10",
+      "title": "Kivételes",
+      "visitorType": "Pár",
+      "country": "🇬🇧 Nagy-Britannia",
+      "text": "Csodálatos kommunikáció Dragannal. A szoba gyönyörű, különféle kávék és teák, vízforraló, hűtőszekrény, légkondicionáló nagyszerű, zuhanytermékek stb. A belső udvar sok szép helyet kínál. Közel van a központhoz. Biztonságos hely a kerékpárok hagyásához, ha az EuroVelo úton utazik. Kiváló ár-érték arány."
+    },
+    {
+      "name": "Jelena",
+      "date": "2022.05.18.",
+      "rating": "10",
+      "title": "Biztosan visszatérnék ide",
+      "visitorType": "Pár",
+      "country": "🇷🇸 Szerbia",
+      "text": "Ez egy tiszta, kényelmes, tágas apartman kellemes kerttel, ahol lazíthat. Az apartman tiszta és csendes, mindent megkap, amire szüksége van, még egy parkolóhelyet is, így nem kell ezen aggódnia. A kommunikáció tökéletes volt a házigazdával. Az elhelyezkedés 2 perces sétára van a belvárostól."
+    },
+    {
+      "name": "Jean-Claude",
+      "date": "2021.09.26.",
+      "rating": "10",
+      "title": "Kivételes",
+      "visitorType": "Pár",
+      "country": "🇱🇺 Luxemburg",
+      "text": "Tökéletes elhelyezkedés Sombor központjában. Dragon egy csodálatos házigazda, aki szépen felújított városi házában fogadja Önt. Az apartman jól méretezett, tiszta és otthonos. Magán parkoló és egy szép kert abszolút előny. Tökéletes wifi, csend és minden, amire szüksége van, sétatávolságra. Nagyon ajánlott és jó ár-érték arány."
+    },
+    {
+      "name": "Benoit",
+      "date": "2021.09.24.",
+      "rating": "10",
+      "title": "Kivételes",
+      "visitorType": "Egyedül utazó",
+      "country": "🇫🇷 Franciaország",
+      "text": "Dragan tökéletes házigazda volt, nagyon vendégszerető. Élveztük a gyönyörű és csendes hátsó udvart, nagyon kényelmes, tiszta és jól felszerelt szobával. Az elhelyezkedés kiváló."
+    },
+    {
+      "name": "Oldřich",
+      "date": "2023.08.22.",
+      "rating": "10",
+      "title": "Kivételes",
+      "visitorType": "Pár",
+      "country": "🇨🇿 Csehország",
+      "text": "Jó kommunikáció a tulajdonossal. Megállapodás alapján már délben megérkezés. Dr. Dragan egy kellemes kommunikatív személy, aki mindent elmagyarázott nekünk, és azt ajánlotta, hova menjünk. Parkolás a ház előtt. 5 perc sétára a központtól. Tiszta apartman. Kényelmetlen kiegészítő ágy egy felnőtt számára."
+    },
+    {
+      "name": "Marko",
+      "date": "2023.06.26.",
+      "rating": "10",
+      "title": "Idill Somborban ❤️",
+      "visitorType": "Pár",
+      "country": "🇲🇪 Montenegró",
+      "text": "Az apartman rendkívül tiszta és kényelmes, gyönyörű bútorokkal, olyan, mint az arisztokraták házában. 1 perc séta a központtól. A kert kellemes és zölddel körülvett, ideális pihenésre. Egy ismeretlen foglalóhoz mentünk, és barátot, Dragan, szereztünk, aki nem tolakodó, de mindig elérhető bármilyen információért. Sombor=Sombor 19 Central Apartment❤️. Minden olyan, mint egy meseből ❤️."
+    },
+    {
+      "name": "Anton",
+      "date": "2021.04.24.",
+      "rating": "10",
+      "title": "Kivételes",
+      "visitorType": "Pár",
+      "country": "🇷🇺 Oroszország",
+      "text": "A tulajdonos Dragan, egy csodálatos ember. Nyitott, jószívű, mindig készen áll segíteni. Mindent elmondott nekünk, ami érdekelt minket. Az apartmanok maguk is otthonosak, csendesek és tiszták. Minden szükséges felszerelés megtalálható. Az elhelyezkedés kiváló, sétatávolságra a városközponttól. Az ingyenes parkoló közvetlenül az ajtó előtt található. Egy nagyon szép udvar - látható, hogy a tulajdonos beleteszi lelkét a rendezésébe. Nagyon ajánlom ezeket az apartmanokat."
+    },
+    {
+      "name": "Katarzyna",
+      "date": "2022.08.30.",
+      "rating": "10",
+      "title": "Kivételes",
+      "visitorType": "Család",
+      "country": "🇵🇱 Lengyelország",
+      "text": "A házigazda, Dragan, saját kezdeményezésére megjavította a foglalásomat egy kedvezőbbre - köszönhetően ennek, egymás mellett voltak a szobáink. Még küldött nekem egy videót, hogy milyen lesz. Egy csodálatos ember. A szállás tiszta szobákat, elegáns fürdőszobákat kínál, a szükséges kozmetikumokkal (és azokkal, amelyek jól jöhetnek ;)) Nagyon ajánlott!"
+    },
+    {
+      "name": "Marijanović",
+      "date": "2022.07.11.",
+      "rating": "10",
+      "title": "Kivételes",
+      "visitorType": "Egyedül utazó",
+      "country": "🇭🇷 Horvátország",
+      "text": "Gyönyörűen berendezett, egy lakosztály még szebb élőben egy gyönyörű udvarral, maximális élvezettel. Teljes tisztaság a legmagasabb szinten. Dragan házigazda teljesen előzékeny, egy ember nagy szívvel, aki nem nehézkes, hogy megörvendeztesse vendégeit. Nagyszerű ajánlás mindazoknak, akik szállást, kényelmet és békét keresnek Somborban. Köszönjük, Dragan, a kedvéért, ez a hely marad a szívemben, és szívesen visszatérek! Egyenes 10!"
+    }
+  ],
   "about": {
     "title": "Rólunk",
     "description": "Ez az Rólunk oldal"

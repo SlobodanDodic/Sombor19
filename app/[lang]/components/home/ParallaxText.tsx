@@ -51,7 +51,7 @@ export function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
         {Array.from({ length: 19 }, (_, index) => (
           <span
             key={index}
-            className="flex justify-center items-center text-2xl md:text-4xl text-white text-shadow-heading shadow-stone-700 leading-none -tracking-[1px]"
+            className="flex justify-center items-center text-2xl md:text-4xl text-stone-700 leading-none -tracking-[1px]"
           >
             <span className="flex justify-center items-center text-xl leading-none text-amber-600 mx-1">◆</span>
             {children}

@@ -1,9 +1,10 @@
 "use client";
+import type { ITestimonials } from "../../types";
 import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
-import { Testimonial } from ".";
+import { Testimonial } from "./Testimonial";
 
-export function TestimonialsPage() {
+export function TestimonialsPage({ testimonials }: ITestimonials) {
   const ref = useRef(null);
   const { scrollXProgress } = useScroll({ container: ref });
 
@@ -23,22 +24,9 @@ export function TestimonialsPage() {
         </svg>
       </div>
       <div ref={ref} className="flex py-5 mx-auto overflow-x-scroll ml-4 lg:ml-0">
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
+        {testimonials?.map((testimonial, i) => (
+          <Testimonial key={i} testimonial={testimonial} />
+        ))}
       </div>
     </div>
   );

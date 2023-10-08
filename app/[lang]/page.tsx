@@ -12,7 +12,7 @@ import {
 import { plaster } from "./layout";
 
 export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {
-  const { home, navigation } = await getDictionary(lang);
+  const { navigation, home, testimonials } = await getDictionary(lang);
 
   return (
     <>
@@ -29,7 +29,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
         <ParallaxText baseVelocity={2}>GUEST⋆REVIEWS</ParallaxText>
       </section>
 
-      <TestimonialsPage />
+      <TestimonialsPage testimonials={testimonials} />
 
       <QueryPage home={home} lang={lang} />
     </>

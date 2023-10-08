@@ -6,4 +6,3 @@ export { ReviewsPage } from "./ReviewsPage";
 export { QueryPage } from "./QueryPage";
 export { ParallaxText } from "./ParallaxText";
 export { TestimonialsPage } from "./TestimonialsPage";
-export { Testimonial } from "./Testimonial";

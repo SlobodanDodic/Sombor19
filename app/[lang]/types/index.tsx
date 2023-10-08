@@ -90,3 +90,17 @@ export interface IHome {
     };
   };
 }
+
+export interface ITestimonial {
+  name: string;
+  date: string;
+  rating: string;
+  title: string;
+  visitorType: string;
+  country: string;
+  text: string;
+}
+
+export interface ITestimonials {
+  testimonials: ITestimonial[];
+}

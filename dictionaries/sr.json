@@ -32,6 +32,152 @@
       "submit": "pošalji"
     }
   },
+  "testimonials": [
+    {
+      "name": "Anonimni",
+      "date": "30.09.2023.",
+      "rating": "10",
+      "title": "Izuzetno",
+      "visitorType": "Samostalni putnik",
+      "country": "🇨🇦 Kanada",
+      "text": "Apartman je prostran i izuzetno čist sa svim što vam je potrebno. Nalazi se blizu centra grada i parkirao sam vozilo, šetajući kupio namirnice i otišao do banke. Dobio sam pomoć oko prtljaga prilikom dolaska i odlaska, kao i savete o lokalnim sadržajima, kao i preporuke za područja koja vredi posetiti u narednoj nedelji ili tako nešto. Nisam mogao da tražim više, a cena je bila veoma razumna. Hvala na sjajnom boravku!"
+    },
+    {
+      "name": "Milutinović",
+      "date": "20.09.2023.",
+      "rating": "9.0",
+      "title": "Skrivena dragocenost u srcu Sombora",
+      "visitorType": "Porodica",
+      "country": "🇷🇸 Srbija",
+      "text": "Nalazi se iza slikovite neoklasicističke fasade, apartman je privatna, sigurna, udobna, prostrana i lepo uređena. Opremljen je velikim krevetom, dovoljno prostora za odlaganje, TV-om, mini frižiderom, čajnom i kafanskom opremom, fenom za kosu i toaletnim potrepštinama. Objekat uključuje zajednički spoljni prostor sa udobnim tremom i dvorištem. Po zahtevu, dostupno je besplatno parkiranje. Vlasnik je ljubazan, dostupan kada je potrebno i pruža odlične sugestije o stvarima koje treba videti i raditi u Somboru i okolini. Sombor je grad pogodan za šetnju i centar grada je udaljen šetnjom od apartmana. Radujem se povratku kao gost na mom sledećem posetu."
+    },
+    {
+      "name": "Milijana",
+      "date": "08.09.2023.",
+      "rating": "10",
+      "title": "Izuzetno",
+      "visitorType": "Par",
+      "country": "🇷🇸 Srbija",
+      "text": "Dragan je izuzetan domaćin, usmerio nas je ka odličnim mestima i restoranima u Somboru. Naši ljubimci su takođe dobrodošli. Smestaj ima prelep i miran vrt. Nalazi se samo tri minuta od centra grada. Preporučili smo smeštaj i našim prijateljima."
+    },
+    {
+      "name": "Gregor",
+      "date": "13.08.2023.",
+      "rating": "10",
+      "title": "Ponovo dolazimo 😀",
+      "visitorType": "Porodica",
+      "country": "🇭🇷 Hrvatska",
+      "text": "Domaćin je sjajan čovek! Može da predloži mesta za posetu. Soba i kupatilo su bili čisti. Veliki udoban krevet. Zaista lep dvorišni deo unutar objekta."
+    },
+    {
+      "name": "Janet",
+      "date": "09.07.2023.",
+      "rating": "10",
+      "title": "Izuzetno",
+      "visitorType": "Par",
+      "country": "🇺🇸 SAD",
+      "text": "Apartman je lepo namešten, prostran i dobro opremljen. Bašta je ugodna i lepo održavana. Pravo uživanje."
+    },
+    {
+      "name": "Vorkapić",
+      "date": "17.02.2023.",
+      "rating": "10",
+      "title": "Tiho i udobno",
+      "visitorType": "Samostalni putnik",
+      "country": "🇷🇸 Srbija",
+      "text": "Domaćin je neverovatan, apartman je bio čist i imao sve što vam je potrebno (peškire, šampon, pastu za zube, čajnik, kafu, čaj itd). Takođe, postoji veoma lep vrt u kojem možete da se opustite, a do centra grada treba 3 minuta hoda."
+    },
+    {
+      "name": "Roberta",
+      "date": "30.12.2022.",
+      "rating": "10",
+      "title": "Lepo i udobno",
+      "visitorType": "Par",
+      "country": "🇩🇪 Nemačka",
+      "text": "Apartman je na šetališnoj udaljenosti od centra. Iako je blizu prometne ulice, bilo je dovoljno tiho za spavanje. Dragan je sjajan domaćin i veoma koristan. Negativno: što smo došli zimi 😉 Lepo ima veliki potencijal tokom leta. Sve ostalo je bilo vrhunsko i ponovo ćemo doći!"
+    },
+    {
+      "name": "Bronvin",
+      "date": "04.07.2022.",
+      "rating": "10",
+      "title": "Izuzetno",
+      "visitorType": "Par",
+      "country": "🇬🇧 Velika Britanija",
+      "text": "Divna komunikacija sa Draganom. Soba je divna, različite vrste kafe i čaja, čajnik, frižider, odličan klima uređaj, proizvodi za tuširanje itd. Dvorište sa puno lepih mesta za sedenje. Blizu centra. Obezbeđeno mesto za bicikle ako putujete EuroVelo stazom. Odličan odnos cene i kvaliteta."
+    },
+    {
+      "name": "Jelena",
+      "date": "18.05.2022.",
+      "rating": "10",
+      "title": "Svratila bih ponovo ovde",
+      "visitorType": "Par",
+      "country": "🇷🇸 Srbija",
+      "text": "To je čist, udoban, prostran apartman sa prijatnim dvorištem gde možete da se opustite. Apartman je čist i tih, ima sve što vam je potrebno, čak i parking mesto tako da se ne morate brinuti za to. Komunikacija sa domaćinom je bila savršena. Lokacija je udaljena 2 minuta hoda od centra grada."
+    },
+    {
+      "name": "Žan-Klod",
+      "date": "26.09.2021.",
+      "rating": "10",
+      "title": "Izuzetno",
+      "visitorType": "Par",
+      "country": "🇱🇺 Luksemburg",
+      "text": "Savršena lokacija u centru Sombora. Dragan je divan domaćin koji vas dočekuje u svojoj lepo renoviranoj kući u centru grada. Apartman je dovoljno velik, čist i udoban. Privatno parking mesto i lep vrt su apsolutni plus. Odličan wifi, tiho i sve što vam je potrebno je na pešačkoj udaljenosti. Toplo preporučujemo i odličan odnos cene i kvaliteta."
+    },
+    {
+      "name": "Benoa",
+      "date": "24.09.2021.",
+      "rating": "10",
+      "title": "Izuzetno",
+      "visitorType": "Samostalni putnik",
+      "country": "🇫🇷 Francuska",
+      "text": "Dragan je bio savršen domaćin, veoma gostoljubiv. Uživali smo u prelepom i mirnom dvorištu, veoma udobnoj, čistoj i dobro opremljenoj sobi. Lokacija je odlična."
+    },
+    {
+      "name": "Oldrih",
+      "date": "22.08.2023.",
+      "rating": "10",
+      "title": "Izuzetno",
+      "visitorType": "Par",
+      "country": "🇨🇿 Češka",
+      "text": "Dobra komunikacija sa vlasnikom. Prema dogovoru, dolazak već u podne. Gospodin Dragan je prijatan komunikativni čovek koji nam je sve objasnio i preporučio gde da idemo. Parking ispred kuće. 5 minuta hoda do centra. Čist apartman. Manje udoban pomoćni krevet za odraslu osobu."
+    },
+    {
+      "name": "Marko",
+      "date": "26.06.2023.",
+      "rating": "10",
+      "title": "Idila u Somboru ❤️",
+      "visitorType": "Par",
+      "country": "🇲🇪 Crna Gora",
+      "text": "Apartman je izuzetno čist i udoban, sa prelepim nameštajem, kao u aristokratskim kućama. 1 min. hoda od centra. Dvorište je prijatno i okruženo zelenilom, idealno za odmor. Otišli smo kod nepoznatog iznajmljivača i stekli prijatelja Dragana, koji je nenametljiv, ali uvek dostupan za sve informacije. Urbani karakter, proputovao je svet i primenjuje svoja bogata iskustva stečena širom sveta. Sombor=Sombor 19 Central Apartment❤️. Sve je kao iz bajke❤️."
+    },
+    {
+      "name": "Anton",
+      "date": "24.04.2021.",
+      "rating": "10",
+      "title": "Izuzetno",
+      "visitorType": "Par",
+      "country": "🇷🇺 Rusija",
+      "text": "Vlasnik je Dragan, divna osoba. Otvoren, dobroćudan, uvek spreman da pomogne. Rekao nam je sve što nas je interesovalo. Sami apartmani su udobni, tihi, čisti. Sve potrebne opreme. Lokacija je odlična, na pešačkoj udaljenosti od centra grada. Besplatan parking odmah ispred kapije. Veoma lepo dvorište - jasno je da vlasnik ulaže svoju dušu u uređenje. Toplo preporučujem ove apartmane."
+    },
+    {
+      "name": "Kataržina",
+      "date": "30.08.2022.",
+      "rating": "10",
+      "title": "Izuzetno",
+      "visitorType": "Porodica",
+      "country": "🇵🇱 Poljska",
+      "text": "Domaćin Dragan, svojevoljno je ispravio moju rezervaciju za povoljniju - zahvaljujući tome, imali smo sobe jednu pored druge. Čak mi je poslao video kako će to izgledati. Divan čovek. Smestaj čiste sobe, elegantne kupaonice, sa neophodnim kozmetičkim proizvodima (i onima koji mogu zatrebati ;)) Toplo preporučujem!"
+    },
+    {
+      "name": "Marijanović",
+      "date": "11.07.2022.",
+      "rating": "10",
+      "title": "Izuzetno",
+      "visitorType": "Samostalni putnik",
+      "country": "🇭🇷 Hrvatska",
+      "text": "Prelepo uređeno, apartman još lepši uživo sa prelepim dvorištem, punim zelenila sa slobodom da uživate maksimalno. Higijena prostora na najvišem nivou. Domaćin Dragan je potpuno susretljiv, čovek sa velikim srcem koji nema problema u tome da obraduje svoje goste. Odlična preporuka za sve one koji traže smeštaj, udobnost i mir u Somboru. Hvala ti, Dragan, zbog tebe, ovaj prostor će ostati u mom srcu i rado ću se vratiti! Čista desetka!"
+    }
+  ],
   "about": {
     "title": "O nama",
     "description": "Ovo je stranica o nama"
