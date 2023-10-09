@@ -1,12 +1,18 @@
 "use client";
 import type { ITestimonials } from "../../types";
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import { Testimonial } from "./Testimonial";
+import AppContext from "../../context/AppContext";
 
 export function TestimonialsPage({ testimonials }: ITestimonials) {
   const ref = useRef(null);
   const { scrollXProgress } = useScroll({ container: ref });
+  const { setSelectedTestimonial } = useContext(AppContext);
+
+  const handleReadMore = (testimonial: any) => {
+    setSelectedTestimonial(testimonial);
+  };
 
   return (
     <div className="testimonials relative w-screen max-w-6xl mx-auto mb-7">
@@ -25,7 +31,7 @@ export function TestimonialsPage({ testimonials }: ITestimonials) {
       </div>
       <div ref={ref} className="flex py-5 mx-auto overflow-x-scroll ml-4 lg:ml-0">
         {testimonials?.map((testimonial, i) => (
-          <Testimonial key={i} testimonial={testimonial} />
+          <Testimonial key={i} testimonial={testimonial} onReadMore={() => handleReadMore(testimonial)} />
         ))}
       </div>
     </div>

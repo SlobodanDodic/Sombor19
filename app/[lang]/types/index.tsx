@@ -1,12 +1,5 @@
 import { Locale } from "@/i18n.config";
-import { Dispatch, ReactNode, SetStateAction } from "react";
-
-// import { MotionValue } from "framer-motion";
-// onClick?: Dispatch<SetStateAction<any>>;
-
-export interface IChildren {
-  children: ReactNode;
-}
+import { ReactNode, Dispatch, SetStateAction } from "react";
 
 export interface IFormData {
   dateRange: {
@@ -16,17 +9,25 @@ export interface IFormData {
   guests: string;
 }
 
+export interface IAppContext {
+  formData: IFormData;
+  setFormData: Dispatch<SetStateAction<any>>;
+  openTestimonial: boolean;
+  toggleTestimonialModal: () => void;
+  selectedTestimonial: ITestimonial;
+  setSelectedTestimonial: Dispatch<SetStateAction<any>>;
+}
+
+export interface IChildren {
+  children: ReactNode;
+}
+
 export interface IDateRange {
   value: {
     start: string;
     end: string;
   };
   placeholder: string;
-}
-
-export interface IFormContext {
-  formData: IFormData;
-  setFormData: Dispatch<SetStateAction<any>>;
 }
 
 export interface IRootLayout {
@@ -101,6 +102,12 @@ export interface ITestimonial {
   text: string;
 }
 
+export interface ITestimonialSelected {
+  testimonial: ITestimonial;
+  onReadMore: () => void;
+}
+
 export interface ITestimonials {
   testimonials: ITestimonial[];
+  onReadMore?: () => void;
 }

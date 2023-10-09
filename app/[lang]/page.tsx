@@ -8,6 +8,7 @@ import {
   ReviewsPage,
   ParallaxText,
   TestimonialsPage,
+  TestimonialModal,
 } from "./components/home";
 import { plaster } from "./layout";
 
@@ -30,6 +31,8 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
       </section>
 
       <TestimonialsPage testimonials={testimonials} />
+
+      <TestimonialModal />
 
       <QueryPage home={home} lang={lang} />
     </>

@@ -4,7 +4,7 @@ import { Locale, i18n } from "@/i18n.config";
 import { El_Messiri, Plaster } from "next/font/google";
 import Navbar from "./components/navbar";
 import type { IRootLayout } from "./types";
-import { FormProvider } from "./context/FormContext";
+import { AppProvider } from "./context/AppContext";
 
 const global = El_Messiri({ subsets: ["latin"], display: "swap", preload: true });
 export const plaster = Plaster({ weight: ["400"], style: ["normal"], subsets: ["latin"], display: "swap" });
@@ -22,10 +22,10 @@ export default function RootLayout({ children, params }: IRootLayout) {
   return (
     <html lang={params.lang}>
       <body className={global.className}>
-        <FormProvider>
+        <AppProvider>
           <Navbar lang={params.lang} />
           {children}
-        </FormProvider>
+        </AppProvider>
       </body>
     </html>
   );
