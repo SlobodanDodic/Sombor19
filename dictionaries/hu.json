@@ -28,7 +28,7 @@
     "query": {
       "visit": "Ellenőrizze az elérhető dátumokat és látogasson el hozzánk!",
       "select": "Válassz dátumokat",
-      "guests": "Vendégek",
+      "guests": "vendégszám",
       "submit": "Küldés"
     }
   },

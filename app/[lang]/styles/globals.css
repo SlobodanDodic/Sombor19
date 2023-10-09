@@ -52,3 +52,19 @@
   text-align: -webkit-center;
   text-align: -moz-center;
 }
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select {
+  text-align-last: center;
+}

@@ -28,7 +28,7 @@
     "query": {
       "visit": "Überprüfen Sie verfügbare Termine und besuchen Sie uns!",
       "select": "Wähle Daten",
-      "guests": "Gäste",
+      "guests": "Anzahl der Gäste",
       "submit": "Absenden"
     }
   },

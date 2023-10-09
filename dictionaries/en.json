@@ -28,7 +28,7 @@
     "query": {
       "visit": "Check available dates and visit us!",
       "select": "select dates",
-      "guests": "guests",
+      "guests": "guests number",
       "submit": "submit"
     }
   },

@@ -28,7 +28,7 @@
     "query": {
       "visit": "Proverite dostupne datume i posetite nas!",
       "select": "izaberite datume",
-      "guests": "gosti",
+      "guests": "broj gostiju",
       "submit": "pošalji"
     }
   },
