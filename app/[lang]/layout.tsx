@@ -5,6 +5,7 @@ import { El_Messiri, Plaster } from "next/font/google";
 import Navbar from "./components/navbar";
 import type { IRootLayout } from "./types";
 import { AppProvider } from "./context/AppContext";
+import { Footer } from "./components/footer";
 
 const global = El_Messiri({ subsets: ["latin"], display: "swap", preload: true });
 export const plaster = Plaster({ weight: ["400"], style: ["normal"], subsets: ["latin"], display: "swap" });
@@ -25,6 +26,7 @@ export default function RootLayout({ children, params }: IRootLayout) {
         <AppProvider>
           <Navbar lang={params.lang} />
           {children}
+          <Footer lang={params.lang} />
         </AppProvider>
       </body>
     </html>
