@@ -30,7 +30,7 @@ export default function About() {
 
         <div className="relative flex w-full min-h-[192px] justify-center items-center md:items-end md:mt-4">
           <p className="text-sm md:text-base text-right md:text-left px-12 py-6 md:py-0 text-shadow-drop shadow-black/40">
-            Greetings! I'm your friendly host in Sombor, passionate about welcoming travelers to our beautiful
+            Greetings! I&apos;m your friendly host in Sombor, passionate about welcoming travelers to our beautiful
             apartments. Traveling is my ultimate joy, allowing me to explore diverse cultures and make lifelong friends.
             I cherish the camaraderie of my extensive social circle and love connecting with people from all walks of
             life. As an easy-going individual, I find immense pleasure in creating a warm and inviting atmosphere for my
@@ -57,11 +57,11 @@ export default function About() {
             style={{ shapeOutside: "circle(50%)" }}
           />
           <p className="text-justify md:text-right text-sm md:text-base text-shadow-drop shadow-black/40 px-8 md:pt-4">
-            In my apartments, you'll discover more than just a place to stay; you'll find a home away from home. I pour
-            my love for travel and my zest for life into every detail, ensuring your stay is not just comfortable but
-            also filled with delightful moments. Join me on this journey in Sombor, where you can experience the city's
-            beauty and culture through my eyes. Prepare for a memorable adventure, full of laughter, new friendships,
-            and cherished memories. Can't wait to welcome you!
+            In my apartments, you&apos;ll discover more than just a place to stay; you&apos;ll find a home away from
+            home. I pour my love for travel and my zest for life into every detail, ensuring your stay is not just
+            comfortable but also filled with delightful moments. Join me on this journey in Sombor, where you can
+            experience the city&apos;s beauty and culture through my eyes. Prepare for a memorable adventure, full of
+            laughter, new friendships, and cherished memories. Can&apos;t wait to welcome you!
           </p>
         </div>
       </div>
