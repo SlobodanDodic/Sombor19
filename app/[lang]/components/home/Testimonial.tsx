@@ -3,6 +3,7 @@ import { useContext } from "react";
 import AppContext from "../../context/AppContext";
 import Image from "next/image";
 import avatar from "../../assets/hero/avatar.png";
+import { PiDotsThreeOutlineDuotone } from "react-icons/pi";
 
 export function Testimonial({ testimonial, onReadMore }: ITestimonialSelected) {
   const { toggleTestimonialModal } = useContext(AppContext);
@@ -20,8 +21,8 @@ export function Testimonial({ testimonial, onReadMore }: ITestimonialSelected) {
           <span className="absolute bottom-28 right-2 text-5xl text-amber-600 z-20">„</span>
           <div className="relative -mb-10 h-44 rounded-lg bg-stone-800 text-sm text-white pt-7 pb-12 px-7">
             <p className="line-clamp-3">{testimonial.text}</p>
-            <button onClick={onClickReadMore} className="text-base mt-2 text-amber-600">
-              Read more
+            <button onClick={onClickReadMore} className="text-base mt-1 text-amber-600">
+              <PiDotsThreeOutlineDuotone className="w-7 h-7" />
             </button>
           </div>
           <div className="relative flex justify-end items-center h-20">

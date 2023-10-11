@@ -12,9 +12,9 @@ export async function Footer({ lang }: { lang: Locale }) {
 
   return (
     <>
-      <svg className="w-screen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg className="w-screen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 300">
         <path
-          fill="#2a2622"
+          fill="#292524"
           fillOpacity="1"
           d="M0,192L48,170.7C96,149,192,107,288,101.3C384,96,480,128,576,144C672,160,768,160,864,138.7C960,117,1056,75,1152,74.7C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
@@ -22,8 +22,14 @@ export async function Footer({ lang }: { lang: Locale }) {
       <footer className="flex flex-col justify-center -mt-1 bg-stone-800">
         <div className="max-w-2xl mx-auto text-white pb-5">
           <div className="flex flex-col justify-center items-center">
-            <h3 className="text-3xl text-white/80">{home.apartment}</h3>
-            <p className="pt-2 text-sm text-amber-600">phone number, mail, address</p>
+            <h3 className="text-3xl text-white/80">{home.apartment} 19</h3>
+            <p className="pt-2 text-sm text-amber-600">
+              <span className="text-amber-500">+381</span> 63 <span className="text-amber-700">540433</span>
+            </p>
+            <p className="text-sm text-amber-600">
+              sombor<span className="text-amber-500">19</span>apartments<span className="text-amber-800">@</span>
+              gmail.com
+            </p>
           </div>
 
           <div className="flex w-full justify-center items-center pt-7 pb-8">
@@ -65,7 +71,7 @@ export async function Footer({ lang }: { lang: Locale }) {
             </Link>
           </div>
 
-          <div className="flex flex-col md:flex-row md:justify-between items-center text-sm text-white/80">
+          <div className="flex flex-col md:flex-row md:justify-between items-center text-sm text-white/80 pb-5">
             <p className="order-2 md:order-1 mt-3 md:mt-0">&copy; 2023 Central Apartment 19</p>
             <div className="order-1 md:order-2">
               <Link href={`/${lang}`} className="px-2">
