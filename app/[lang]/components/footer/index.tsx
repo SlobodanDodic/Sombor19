@@ -37,8 +37,11 @@ export async function Footer({ lang }: { lang: Locale }) {
               <Image
                 src={booking}
                 alt="booking"
-                width={22}
-                height={22}
+                width={64}
+                // height={24}
+                loading="lazy"
+                decoding="async"
+                data-nimg="1"
                 className="brightness-125 md:w-7 md:h-7 mx-2 grayscale hover:grayscale-0 transform transition-all"
               />
             </Link>
@@ -46,8 +49,11 @@ export async function Footer({ lang }: { lang: Locale }) {
               <Image
                 src={facebook}
                 alt="facebook"
-                width={24}
-                height={24}
+                width={64}
+                // height={24}
+                loading="lazy"
+                decoding="async"
+                data-nimg="1"
                 className="md:w-7 md:h-7 mx-2 grayscale hover:grayscale-0 transform transition-all"
               />
             </Link>
@@ -55,8 +61,11 @@ export async function Footer({ lang }: { lang: Locale }) {
               <Image
                 src={instagram}
                 alt="instagram"
-                width={24}
-                height={24}
+                width={64}
+                // height={24}
+                loading="lazy"
+                decoding="async"
+                data-nimg="1"
                 className="md:w-7 md:h-7 mx-2 grayscale hover:grayscale-0 transform transition-all"
               />
             </Link>
@@ -64,8 +73,11 @@ export async function Footer({ lang }: { lang: Locale }) {
               <Image
                 src={twitter}
                 alt="twitter"
-                width={22}
-                height={22}
+                width={64}
+                // height={24}
+                loading="lazy"
+                decoding="async"
+                data-nimg="1"
                 className="md:w-7 md:h-7 mx-2 grayscale hover:grayscale-0 transform transition-all"
               />
             </Link>

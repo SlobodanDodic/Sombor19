@@ -3,6 +3,7 @@ import me1 from "../assets/about/me-1.png";
 import me2 from "../assets/about/me-2.jpg";
 import brush1 from "../assets/about/brush-1.png";
 import brush2 from "../assets/about/brush-2.png";
+import stain from "../assets/about/stain.png";
 import Gallery from "../components/about/Gallery";
 
 export default function About() {
@@ -22,10 +23,12 @@ export default function About() {
           <Image
             src={me1}
             alt="me"
-            width={200}
-            height={200}
-            style={{ objectFit: "contain" }}
+            width={300}
+            loading="lazy"
+            decoding="async"
+            data-nimg="1"
             className="w-full h-full rounded-3xl"
+            style={{ objectFit: "contain" }}
           />
         </div>
 
@@ -41,26 +44,23 @@ export default function About() {
         <Image
           src={brush1}
           alt="brush"
-          width={200}
-          height={200}
+          width={1845}
+          loading="lazy"
+          decoding="async"
+          data-nimg="1"
           className="absolute -bottom-3 md:-bottom-16 left-0 w-full -rotate-6 -z-10"
         />
       </div>
 
       <div className="relative flex w-full max-w-3xl justify-center items-center mt-20">
-        <Image
-          src={brush2}
-          alt="brush"
-          width={200}
-          height={200}
-          className="absolute -bottom-7 -left-4 w-48 h-48 rotate-6 -z-10"
-        />
         <div className="relative">
           <Image
             src={me2}
             alt="me2"
             width={500}
-            height={500}
+            loading="lazy"
+            decoding="async"
+            data-nimg="1"
             className="w-52 h-52 rounded-full float-right mx-4 drop-shadow-sm"
             style={{ shapeOutside: "circle(50%)" }}
           />
@@ -74,17 +74,19 @@ export default function About() {
         </div>
       </div>
 
-      {/* <Image
-        src={sombor}
-        alt="sombor"
-        width={1200}
-        height={468}
-        style={{ objectFit: "contain" }}
-        className="w-full my-20"
-      /> */}
-
-      <h1 className="mt-16">My hometown</h1>
-      <h1 className="">Sombor</h1>
+      <div className="relative mt-16">
+        <Image
+          src={stain}
+          alt="stain"
+          width={501}
+          loading="lazy"
+          decoding="async"
+          data-nimg="1"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 opacity-80 -z-10"
+        />
+        <h1>My hometown</h1>
+        <h1>Sombor</h1>
+      </div>
 
       <div className="relative flex flex-col w-full max-w-3xl justify-center items-center mt-5">
         <p className="text-sm md:text-base font-bold text-stone-600 px-8 py-4">
@@ -98,21 +100,33 @@ export default function About() {
 
         <Gallery />
 
-        <p className="text-sm md:text-base font-bold text-stone-600 px-8 py-8">
-          However, tranquility here does not mean monotony. Sombor teems with opportunities for adventure. Embark on
-          horseback journeys, explore waterways by boat, pedal through scenic trails, dance to your heart&apos;s
-          content, or take a plunge into the refreshing waters. Our cultural tapestry is woven with diverse threads,
-          from gripping theatrical performances to the thrill of fishing. Sombor isn&apos;t just a location; it&apos;s a
-          vibrant canvas awaiting the strokes of exploration, inviting travelers to immerse themselves in a plethora of
-          enriching experiences.
-        </p>
-        <p className="text-sm md:text-base font-bold text-stone-600 px-8 pb-4">
-          Adding to its allure, Sombor (Serbian Cyrillic: Сомбор) stands as a city and the administrative center of the
-          West Bačka District in the autonomous province of Vojvodina, Serbia. The city boasts a population of 41,814,
-          while its administrative area, encompassing neighboring villages, shelters 71,521 inhabitants. This rich
-          cultural tapestry, combined with the city&apos;s tranquil charm, creates a unique haven for travelers seeking
-          both serenity and excitement.
-        </p>
+        <div className="relative flex flex-col">
+          <Image
+            src={brush2}
+            alt="brush2"
+            width={1142}
+            loading="lazy"
+            decoding="async"
+            data-nimg="1"
+            className="absolute top-1/2 left-0 -translate-y-1/2 w-48 h-48 rotate-6 -z-10"
+          />
+
+          <p className="text-sm md:text-base font-bold text-stone-600 px-8 py-8">
+            However, tranquility here does not mean monotony. Sombor teems with opportunities for adventure. Embark on
+            horseback journeys, explore waterways by boat, pedal through scenic trails, dance to your heart&apos;s
+            content, or take a plunge into the refreshing waters. Our cultural tapestry is woven with diverse threads,
+            from gripping theatrical performances to the thrill of fishing. Sombor isn&apos;t just a location; it&apos;s
+            a vibrant canvas awaiting the strokes of exploration, inviting travelers to immerse themselves in a plethora
+            of enriching experiences.
+          </p>
+          <p className="text-sm md:text-base font-bold text-stone-600 px-8 pb-4">
+            Adding to its allure, Sombor (Serbian Cyrillic: Сомбор) stands as a city and the administrative center of
+            the West Bačka District in the autonomous province of Vojvodina, Serbia. The city boasts a population of
+            41,814, while its administrative area, encompassing neighboring villages, shelters 71,521 inhabitants. This
+            rich cultural tapestry, combined with the city&apos;s tranquil charm, creates a unique haven for travelers
+            seeking both serenity and excitement.
+          </p>
+        </div>
       </div>
     </div>
   );
