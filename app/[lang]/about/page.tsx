@@ -92,25 +92,26 @@ export default function About() {
           an artistic haven. After a day of dedicated work, I seek solace in the rhythmic pedal strokes along our
           picturesque canal, savor invigorating swims in the Danube, and relish the aroma of freshly brewed coffee
           drifting from our myriad cafes. As evening descends, Sombor transforms into a culinary paradise where I
-          indulge in elegant dining at fine restaurants. It's a sanctuary of tranquility, inviting weary souls to unwind
-          amidst the gentle ebb of time, a stark contrast to the hurried pace of urban life.
+          indulge in elegant dining at fine restaurants. It&apos;s a sanctuary of tranquility, inviting weary souls to
+          unwind amidst the gentle ebb of time, a stark contrast to the hurried pace of urban life.
         </p>
 
         <Gallery />
 
         <p className="text-sm md:text-base font-bold text-stone-600 px-8 py-8">
           However, tranquility here does not mean monotony. Sombor teems with opportunities for adventure. Embark on
-          horseback journeys, explore waterways by boat, pedal through scenic trails, dance to your heart's content, or
-          take a plunge into the refreshing waters. Our cultural tapestry is woven with diverse threads, from gripping
-          theatrical performances to the thrill of fishing. Sombor isn't just a location; it's a vibrant canvas awaiting
-          the strokes of exploration, inviting travelers to immerse themselves in a plethora of enriching experiences.
+          horseback journeys, explore waterways by boat, pedal through scenic trails, dance to your heart&apos;s
+          content, or take a plunge into the refreshing waters. Our cultural tapestry is woven with diverse threads,
+          from gripping theatrical performances to the thrill of fishing. Sombor isn&apos;t just a location; it&apos;s a
+          vibrant canvas awaiting the strokes of exploration, inviting travelers to immerse themselves in a plethora of
+          enriching experiences.
         </p>
         <p className="text-sm md:text-base font-bold text-stone-600 px-8 pb-4">
           Adding to its allure, Sombor (Serbian Cyrillic: Сомбор) stands as a city and the administrative center of the
           West Bačka District in the autonomous province of Vojvodina, Serbia. The city boasts a population of 41,814,
           while its administrative area, encompassing neighboring villages, shelters 71,521 inhabitants. This rich
-          cultural tapestry, combined with the city's tranquil charm, creates a unique haven for travelers seeking both
-          serenity and excitement.
+          cultural tapestry, combined with the city&apos;s tranquil charm, creates a unique haven for travelers seeking
+          both serenity and excitement.
         </p>
       </div>
     </div>
