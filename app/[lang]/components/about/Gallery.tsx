@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, SetStateAction, Dispatch } from "react";
+import React, { useState, SetStateAction, Dispatch, useEffect } from "react";
 import Image from "next/image";
 import { VscEyeClosed } from "react-icons/vsc";
 
@@ -39,6 +39,7 @@ export default function Gallery() {
   const openLightbox = (index: number) => {
     setSelectedImage(index);
   };
+  const [loading, setLoading] = useState(false);
 
   const closeLightbox = () => {
     setSelectedImage(null);
@@ -61,6 +62,10 @@ export default function Gallery() {
       return null;
     });
   };
+
+  useEffect(() => {
+    setLoading(false);
+  }, [selectedImage]);
 
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-5">
@@ -105,11 +110,18 @@ export default function Gallery() {
             >
               <VscEyeClosed />
             </button>
-            <Image
-              src={images[selectedImage].src}
-              alt={images[selectedImage].alt}
-              style={{ objectFit: "cover", borderRadius: "20px", maxHeight: "90vh", height: "auto" }}
-            />
+
+            {loading && (
+              <div className="absolute inset-0 flex items-center justify-center text-white text-xl">Loading...</div>
+            )}
+
+            {!loading && (
+              <Image
+                src={images[selectedImage].src}
+                alt={images[selectedImage].alt}
+                style={{ objectFit: "cover", borderRadius: "20px", maxHeight: "90vh", height: "auto" }}
+              />
+            )}
           </div>
         </div>
       )}

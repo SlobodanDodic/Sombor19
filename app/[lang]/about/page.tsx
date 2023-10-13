@@ -1,6 +1,7 @@
 import Image from "next/image";
 import me1 from "../assets/about/me-1.png";
 import me2 from "../assets/about/me-2.jpg";
+import throne from "../assets/about/throne.png";
 import brush1 from "../assets/about/brush-1.png";
 import brush2 from "../assets/about/brush-2.png";
 import stain from "../assets/about/stain.png";
@@ -12,14 +13,17 @@ export default function About() {
       <h1>Who am I?</h1>
 
       <div className="relative flex flex-col md:flex-row justify-center items-center w-screen max-w-3xl pt-4">
+        <Image
+          src={throne}
+          alt="throne"
+          width={1142}
+          loading="lazy"
+          decoding="async"
+          data-nimg="1"
+          className="absolute top-0 left-1/2 -translate-x-1/2 md:-left-7 md:-translate-x-0 w-[19rem] md:w-64 h-auto -z-10"
+          style={{ objectFit: "cover" }}
+        />
         <div className="relative flex w-64 justify-center items-center md:items-end drop-shadow-[2px_4px_6px_black]">
-          <svg viewBox="10 25 159 159" className="absolute top-0 left-0 -z-10" xmlns="http://www.w3.org/2000/svg">
-            <path
-              fill="#D97700"
-              d="M33.3,-56.1C41.2,-46.7,44.2,-34.2,52.2,-22.2C60.2,-10.3,73.1,1.1,75.4,13.4C77.6,25.8,69.1,39.1,55.7,40.3C42.3,41.4,24,30.3,9.3,37C-5.4,43.8,-16.3,68.4,-24.6,71.6C-32.9,74.7,-38.4,56.4,-48.3,43C-58.1,29.6,-72.3,21,-74.8,10.1C-77.4,-0.8,-68.4,-13.9,-59.5,-24.6C-50.6,-35.2,-41.8,-43.3,-31.9,-51.8C-22,-60.3,-11,-69.1,0.8,-70.5C12.7,-71.8,25.4,-65.5,33.3,-56.1Z"
-              transform="translate(100 100)"
-            />
-          </svg>
           <Image
             src={me1}
             alt="me"
@@ -45,7 +49,8 @@ export default function About() {
           src={brush1}
           alt="brush"
           width={1845}
-          loading="lazy"
+          // loading="lazy"
+          priority={true}
           decoding="async"
           data-nimg="1"
           className="absolute -bottom-3 md:-bottom-16 left-0 w-full -rotate-6 -z-10"
