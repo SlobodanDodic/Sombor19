@@ -1,5 +1,5 @@
 import type { IHome } from "../../types";
-import CustomImage from "../custom-img";
+import { CustomImage } from "../custom-img";
 import Inputs from "../inputs";
 import Link from "next/link";
 import SvgFilter from "./SvgFilter";

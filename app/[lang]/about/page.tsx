@@ -1,4 +1,3 @@
-import Image from "next/image";
 import me1 from "../assets/about/me-1.png";
 import me2 from "../assets/about/me-2.jpg";
 import throne from "../assets/about/throne.png";
@@ -6,6 +5,7 @@ import brush1 from "../assets/about/brush-1.png";
 import brush2 from "../assets/about/brush-2.png";
 import stain from "../assets/about/stain.png";
 import Gallery from "../components/about/Gallery";
+import { SimpleImage } from "../components/custom-img";
 
 export default function About() {
   return (
@@ -13,27 +13,13 @@ export default function About() {
       <h1>Who am I?</h1>
 
       <div className="relative flex flex-col md:flex-row justify-center items-center w-screen max-w-3xl pt-4">
-        <Image
+        <SimpleImage
           src={throne}
-          alt="throne"
-          width={1142}
-          loading="lazy"
-          decoding="async"
-          data-nimg="1"
-          className="absolute top-0 left-1/2 -translate-x-1/2 md:-left-7 md:-translate-x-0 w-[19rem] md:w-64 h-auto -z-10"
           style={{ objectFit: "cover" }}
+          className="absolute top-0 left-1/2 -translate-x-1/2 md:-left-7 md:-translate-x-0 w-[19rem] md:w-64 h-auto -z-10"
         />
         <div className="relative flex w-64 justify-center items-center md:items-end drop-shadow-[2px_4px_6px_black]">
-          <Image
-            src={me1}
-            alt="me"
-            width={300}
-            loading="lazy"
-            decoding="async"
-            data-nimg="1"
-            className="w-full h-full rounded-3xl"
-            style={{ objectFit: "contain" }}
-          />
+          <SimpleImage src={me1} style={{ objectFit: "contain" }} className="w-full h-full rounded-3xl" />
         </div>
 
         <div className="relative flex w-full min-h-[192px] justify-center items-center md:items-end md:mt-4">
@@ -45,27 +31,18 @@ export default function About() {
             guests.
           </p>
         </div>
-        <Image
+
+        <SimpleImage
           src={brush1}
-          alt="brush"
-          width={1845}
-          // loading="lazy"
           priority={true}
-          decoding="async"
-          data-nimg="1"
           className="absolute -bottom-3 md:-bottom-16 left-0 w-full -rotate-6 -z-10"
         />
       </div>
 
       <div className="relative flex w-full max-w-3xl justify-center items-center mt-20">
         <div className="relative">
-          <Image
+          <SimpleImage
             src={me2}
-            alt="me2"
-            width={500}
-            loading="lazy"
-            decoding="async"
-            data-nimg="1"
             className="w-52 h-52 rounded-full float-right mx-4 drop-shadow-sm"
             style={{ shapeOutside: "circle(50%)" }}
           />
@@ -80,15 +57,11 @@ export default function About() {
       </div>
 
       <div className="relative mt-16">
-        <Image
+        <SimpleImage
           src={stain}
-          alt="stain"
-          width={501}
-          loading="lazy"
-          decoding="async"
-          data-nimg="1"
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 opacity-80 -z-10"
         />
+
         <h1>My hometown</h1>
         <h1>Sombor</h1>
       </div>
@@ -106,15 +79,7 @@ export default function About() {
         <Gallery />
 
         <div className="relative flex flex-col">
-          <Image
-            src={brush2}
-            alt="brush2"
-            width={1142}
-            loading="lazy"
-            decoding="async"
-            data-nimg="1"
-            className="absolute top-1/2 left-0 -translate-y-1/2 w-48 h-48 rotate-6 -z-10"
-          />
+          <SimpleImage src={brush2} className="absolute top-1/2 left-0 -translate-y-1/2 w-48 h-48 rotate-6 -z-10" />
 
           <p className="text-sm md:text-base font-bold text-stone-600 px-8 py-8">
             However, tranquility here does not mean monotony. Sombor teems with opportunities for adventure. Embark on

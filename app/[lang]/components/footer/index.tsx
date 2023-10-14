@@ -7,6 +7,29 @@ import instagram from "../../assets/media-icons/instagram.png";
 import twitter from "../../assets/media-icons/twitter.png";
 import Link from "next/link";
 
+const socialLinks = [
+  {
+    url: "https://www.booking.com/hotel/rs/sombor-19-central-apartment.en-gb.html",
+    icon: booking,
+    alt: "Booking",
+  },
+  {
+    url: "https://www.facebook.com/milosevic.dragan.3",
+    icon: facebook,
+    alt: "Facebook",
+  },
+  {
+    url: "https://www.instagram.com/your_instagram_username/",
+    icon: instagram,
+    alt: "Instagram",
+  },
+  {
+    url: "https://twitter.com/your_twitter_username",
+    icon: twitter,
+    alt: "Twitter",
+  },
+];
+
 export async function Footer({ lang }: { lang: Locale }) {
   const { navigation, home } = await getDictionary(lang);
 
@@ -33,54 +56,19 @@ export async function Footer({ lang }: { lang: Locale }) {
           </div>
 
           <div className="flex w-full justify-center items-center pt-7 pb-8">
-            <Link href="https://www.booking.com/hotel/rs/sombor-19-central-apartment.en-gb.html">
-              <Image
-                src={booking}
-                alt="booking"
-                width={64}
-                // height={24}
-                loading="lazy"
-                decoding="async"
-                data-nimg="1"
-                className="brightness-125 md:w-7 md:h-7 mx-2 grayscale hover:grayscale-0 transform transition-all"
-              />
-            </Link>
-            <Link href="https://www.facebook.com/milosevic.dragan.3">
-              <Image
-                src={facebook}
-                alt="facebook"
-                width={64}
-                // height={24}
-                loading="lazy"
-                decoding="async"
-                data-nimg="1"
-                className="md:w-7 md:h-7 mx-2 grayscale hover:grayscale-0 transform transition-all"
-              />
-            </Link>
-            <Link href="">
-              <Image
-                src={instagram}
-                alt="instagram"
-                width={64}
-                // height={24}
-                loading="lazy"
-                decoding="async"
-                data-nimg="1"
-                className="md:w-7 md:h-7 mx-2 grayscale hover:grayscale-0 transform transition-all"
-              />
-            </Link>
-            <Link href="">
-              <Image
-                src={twitter}
-                alt="twitter"
-                width={64}
-                // height={24}
-                loading="lazy"
-                decoding="async"
-                data-nimg="1"
-                className="md:w-7 md:h-7 mx-2 grayscale hover:grayscale-0 transform transition-all"
-              />
-            </Link>
+            {socialLinks.map((link, index) => (
+              <Link href={link.url} key={index} target="_blank">
+                <Image
+                  src={link.icon}
+                  alt={link.alt}
+                  width={64}
+                  loading="lazy"
+                  decoding="async"
+                  data-nimg="1"
+                  className="w-7 h-7 mx-2 grayscale hover:grayscale-0 transform transition-all brightness-125"
+                />
+              </Link>
+            ))}
           </div>
 
           <div className="flex flex-col md:flex-row md:justify-between items-center text-sm text-white/80 pb-5">

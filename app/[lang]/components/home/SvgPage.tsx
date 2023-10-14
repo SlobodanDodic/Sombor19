@@ -2,7 +2,7 @@ import homeLeft from "../../assets/hero/hero-left.jpg";
 import homeUp from "../../assets/hero/hero-up.jpg";
 import homeDown from "../../assets/hero/hero-down.jpg";
 import homeRight from "../../assets/hero/hero-right.jpg";
-import CustomImage from "../custom-img";
+import { CustomImage } from "../custom-img";
 import SvgFilter from "./SvgFilter";
 
 export function SvgPage() {
