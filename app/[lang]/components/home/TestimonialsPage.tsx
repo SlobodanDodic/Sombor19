@@ -1,5 +1,5 @@
 "use client";
-import type { ITestimonials } from "../../types";
+import type { ITestimonial, ITestimonials } from "../../types";
 import { useContext, useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import { Testimonial } from "./Testimonial";
@@ -10,7 +10,7 @@ export function TestimonialsPage({ testimonials }: ITestimonials) {
   const { scrollXProgress } = useScroll({ container: ref });
   const { setSelectedTestimonial } = useContext(AppContext);
 
-  const handleReadMore = (testimonial: any) => {
+  const handleReadMore = (testimonial: ITestimonial) => {
     setSelectedTestimonial(testimonial);
   };
 

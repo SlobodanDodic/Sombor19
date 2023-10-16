@@ -33,7 +33,7 @@ const images = [
 
 const initialState: number | null = null;
 
-export default function Gallery() {
+export function Gallery() {
   const [selectedImage, setSelectedImage]: [number | null, Dispatch<SetStateAction<number | null>>] =
     useState(initialState);
 

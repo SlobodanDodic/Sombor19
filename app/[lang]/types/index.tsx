@@ -102,12 +102,25 @@ export interface ITestimonial {
   text: string;
 }
 
+export interface ITestimonials {
+  testimonials: ITestimonial[];
+}
+
 export interface ITestimonialSelected {
   testimonial: ITestimonial;
   onReadMore: () => void;
 }
 
-export interface ITestimonials {
-  testimonials: ITestimonial[];
-  onReadMore?: () => void;
+export interface IAbout {
+  lang?: Locale;
+  about: {
+    title: string;
+    greetings: string;
+    prolog: string;
+    hometown: string;
+    sombor: string;
+    soText1: string;
+    soText2: string;
+    soText3: string;
+  };
 }

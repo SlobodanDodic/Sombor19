@@ -179,7 +179,13 @@
     }
   ],
   "about": {
-    "title": "O nama",
-    "description": "Ovo je stranica o nama"
+    "title": "Ko sam ja?",
+    "greetings": "Pozdrav! Ja sam vaš ljubazni domaćin u Somboru, koji uživa da ugosti  putnike. Putovanja su moja najveća radost, jer mi omogućavaju da istražujem različite kulture i sklapam prijateljstva za celi život. Cenim prijateljstvo svog društvenog kruga i volim povezivanje sa ljudima iz svih sfera života. Kao osoba koja je lagodna, nalazim ogromno zadovoljstvo u stvaranju tople i privlačne atmosfere za svoje goste.",
+    "prolog": "U mojim apartmanima ćete pronaći više od običnog mesta za boravak; pronaći ćete dom daleko od kuće. Trudim se da svoju ljubav prema putovanjima i životu pretočim u svaki detalj, obezbeđujući da vaš boravak nije samo udoban, već i ispunjen divnim trenucima. Pridružite mi se na ovom putovanju u Somboru, gde možete doživeti lepotu i kulturu grada kroz moje oči. Pripremite se za nezaboravnu avanturu, punu smeha, novih prijateljstava, dragih uspomena i jedinstvenih lokalnih doživljaja. Nestrpljivo vas čekam!",
+    "hometown": "Moj rodni grad",
+    "sombor": "Sombor",
+    "soText1": "Smešten u srcu Srbije, moj rodni grad Sombor kombinuje šarm prijatnog kafića sa živošću umetničkog utočišta. Posle dana predanog rada, utehu tražim u ritmičnim udarcima pedala duž našeg živopisnog kanala, uživam u okrepljujućem kupanju u Dunavu ili uživam u aromi sveže skuvane kafe koja se širi iz naših bezbrojnih kafića. Kako se veče spušta, Sombor se pretvara u kulinarski raj u kojem se prepuštam elegantnom obedovanju u finim restoranima. To je utočište mira, koje poziva umorne duše da se opuste usred blagog protoka vremena, što je očigledan kontrast užurbanom tempu urbanog života.",
+    "soText2": "Međutim, spokoj ovde ne znači monotoniju. Sombor vrvi od raznih opcija za avanturu. Jahanje konja, istraživanje vodenih puteva čamcem, pedaliranje kroz slikovite staze, plesanje ili plivanje u osvežavajućim vodama. Naša kulturna tapiserija je protkana raznim nitima, od zanosnih pozorišnih predstava do uzbuđenja ribolova. Sombor nije samo lokacija; to je živopisno platno koje čeka poteze istraživanja, pozivajući putnike da se urone u mnoštvo obogaćujućih iskustava.",
+    "soText3": "Svojoj privlačnosti Sombor (srpska ćirilica: Sombor) dobija i kao grad i kao administrativni centar Zapadnobačkog okruga u Autonomnoj pokrajini Vojvodini, Srbija. Grad ima 41.814 stanovnika, dok u njegovom administrativnom području, koje obuhvata susedna sela, živi 71.521 stanovnika. Ova bogata kulturna tapiserija, u kombinaciji sa mirnim šarmom grada, stvara jedinstveno utočište za putnike koji traže i spokoj i uzbuđenje."
   }
 }

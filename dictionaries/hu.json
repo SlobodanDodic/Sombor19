@@ -179,7 +179,13 @@
     }
   ],
   "about": {
-    "title": "Rólunk",
-    "description": "Ez az Rólunk oldal"
+    "title": "Ki vagyok én?",
+    "greetings": "Üdvözöljük! Én vagyok a barátságos házigazda Somborban, szenvedélyesen fogadom az utazókat a gyönyörű apartmanjaimban. Az utazás az én végső örömöm, lehetőséget nyújt a különböző kultúrák felfedezésére és hosszú távú barátságok kialakítására. Értékelem az átfogó társadalmi körömben lévő barátságokat és imádom kapcsolódni az emberekhez minden életpályán. Laza egyénként hatalmas örömet találok abban, hogy meleg és invitáló légkört teremtek vendégeim számára.",
+    "prolog": "Az apartmanjaimban többet talál, mint csak egy helyet az alváshoz; egy otthont fog találni távol otthonától. Szeretetemet az utazás és az élet iránt minden részletbe beleadom, hogy biztosítsam, hogy az itt eltöltött idő ne csak kényelmes legyen, hanem kellemes pillanatokkal is teli. Csatlakozzon hozzám ezen az úton Somborban, ahol a város szépségét és kultúráját átélheti a szemem által. Készüljön egy emlékezetes kalandra, tele nevetéssel, új barátságokkal, becsült emlékekkel és egyedi helyi élményekkel. Alig várom, hogy üdvözöljem önt!",
+    "hometown": "Szülőváros",
+    "sombor": "Sombor",
+    "soText1": "Szívem mélyén Sombor, a szülővárosom, ötvözi a hangulatos kávézók báját a művészi menedékhelyek vibrálásával. Egy kemény munkanap után én a ritmusos pedálozás nyugalmát keresem a festői csatornánk mentén, élvezem a frissítő fürdőket a Duna vizében és gyönyörködöm a frissen főzött kávé illatában, ami számos kávézónkból száll. Ahogy az este lebukik, Sombor átalakul egy gasztronómiai paradicsommá, ahol elegáns éttermekben élvezem az ínycsiklandó vacsorákat. Ez egy nyugalom szigete, ahol fáradt lelkeket hívogat a lazítás időtlen hulláma, az urbánus élet sietős tempójának éles ellentéte.",
+    "soText2": "Azonban itt a nyugalom nem egyhangúságot jelent. Sombor hemzseg az kalandok lehetőségeitől. Lovagoljon lovakkal, fedezze fel a vízutakat hajóval, kerékpározzon festői ösvényeken, táncoljon szíve szerint vagy merüljön bele a frissítő vizekbe. Kulturális szövetünk sokféle szállal van szőve, az izgalmas színházi előadásoktól a horgászat izgalmáig. Sombor nem csupán egy hely; ez egy élénk vászon, amely várja az felfedezés ecsetvonásait, és utazókat hív, hogy merüljenek el számos gazdagító élményben.",
+    "soText3": "Hozzájárulva vonzerejéhez, Sombor (Szerb cirill: Сомбор) városként és az autonóm Vajdaság tartományban, Szerbiában található Nyugat-Bácska körzet adminisztratív központjaként áll. A városnak 41 814 lakosa van, míg területi területe, amely a szomszédos falvakat is magában foglalja, 71 521 lakost befogad. Ez a gazdag kulturális szövet, amelyet a város nyugodt bájával kombinálva, egyedi menedék a nyugalmat és izgalmat kereső utazók számára."
   }
 }

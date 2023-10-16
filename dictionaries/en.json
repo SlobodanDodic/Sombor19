@@ -40,7 +40,7 @@
       "title": "Exceptional",
       "visitorType": "1-Solo traveler",
       "country": "🇨🇦 Canada",
-      "text": "The apartment was spacious and super clean with everything you&apos;d need. It is located close to downtown and I parked my vehicle and walked to buy groceries and get to a bank. I received help with my bags both arriving and leaving as well as advice on local amenities as well as tips for upcoming travel areas for the next week or so. I couldn&apos;t have asked for more and the price was very reasonable. Thanks for a great stay!"
+      "text": "The apartment was spacious and super clean with everything you'd need. It is located close to downtown and I parked my vehicle and walked to buy groceries and get to a bank. I received help with my bags both arriving and leaving as well as advice on local amenities as well as tips for upcoming travel areas for the next week or so. I couldn't have asked for more and the price was very reasonable. Thanks for a great stay!"
     },
     {
       "name": "Milutinovic",
@@ -179,7 +179,13 @@
     }
   ],
   "about": {
-    "title": "About Us",
-    "description": "This is the about page"
+    "title": "Who am I?",
+    "greetings": "Greetings! I'm your friendly host in Sombor, passionate about welcoming travelers to my beautiful apartments. Traveling is my ultimate joy, allowing me to explore diverse cultures and make lifelong friends. I cherish the friendship of my extensive social circle and love connecting with people from all walks of life. As an easy-going individual, I find immense pleasure in creating a warm and inviting atmosphere for my guests.",
+    "prolog": "In my apartments, you'll discover more than just a place to stay; you'll find a home away from home. I pour my love for travel and life into every detail, ensuring your stay is not just comfortable but also filled with delightful moments. Join me on this journey in Sombor, where you can experience the city's beauty and culture through my eyes. Prepare for a memorable adventure, full of laughter, new friendships, cherished memories, and unique local experiences. Can't wait to welcome you!",
+    "hometown": "Hometown",
+    "sombor": "Sombor",
+    "soText1": "Nestled within the heart of Serbia, my hometown Sombor combines the charm of a cozy café with the vibrancy of an artistic haven. After a day of dedicated work, I seek solace in the rhythmic pedal strokes along our picturesque canal, savor invigorating swims in the Danube, and relish the aroma of freshly brewed coffee drifting from our myriad cafes. As evening descends, Sombor transforms into a culinary paradise where I indulge in elegant dining at fine restaurants. It's a sanctuary of tranquility, inviting weary souls to unwind amidst the gentle ebb of time, a stark contrast to the hurried pace of urban life.",
+    "soText2": "However, tranquility here does not mean monotony. Sombor teems with opportunities for adventure. Embark on horseback journeys, explore waterways by boat, pedal through scenic trails, dance to your heart's content, or take a plunge into the refreshing waters. Our cultural tapestry is woven with diverse threads, from gripping theatrical performances to the thrill of fishing. Sombor isn't just a location; it's a vibrant canvas awaiting the strokes of exploration, inviting travelers to immerse themselves in a plethora of enriching experiences.",
+    "soText3": "Adding to its allure, Sombor (Serbian Cyrillic: Сомбор) stands as a city and the administrative center of the West Bačka District in the autonomous province of Vojvodina, Serbia. The city boasts a population of 41,814, while its administrative area, encompassing neighboring villages, shelters 71,521 inhabitants. This rich cultural tapestry, combined with the city's tranquil charm, creates a unique haven for travelers seeking both serenity and excitement."
   }
 }

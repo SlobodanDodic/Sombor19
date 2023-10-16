@@ -1,12 +1,8 @@
 "use client";
 import type { CombinedProps } from "../../types";
-import { useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 
 export function PrologPage({ home, lang, navigation }: CombinedProps) {
-  const { scrollY } = useScroll();
-  const y = useTransform(scrollY, [150, 350], [-20, 50]);
-
   return (
     <div className="relative w-screen mx-auto flex flex-col items-center mt-24">
       <h3 className="px-7 w-screen max-w-3xl">{home.accommodation}</h3>
