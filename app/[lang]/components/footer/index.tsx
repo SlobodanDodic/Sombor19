@@ -47,10 +47,10 @@ export async function Footer({ lang }: { lang: Locale }) {
           <div className="flex flex-col justify-center items-center">
             <h3 className="text-3xl text-white/80">{home.apartment} 19</h3>
             <p className="pt-2 text-sm text-amber-600">
-              <span className="text-amber-500">+381</span> 63 <span className="text-amber-700">540433</span>
+              +381 <span className="text-white/80">63</span> 540433
             </p>
             <p className="text-sm text-amber-600">
-              sombor<span className="text-amber-500">19</span>apartments<span className="text-amber-800">@</span>
+              sombor<span className="text-white/80">19</span>apartments<span className="text-white/80">@</span>
               gmail.com
             </p>
           </div>

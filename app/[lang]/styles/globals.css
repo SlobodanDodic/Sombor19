@@ -34,6 +34,18 @@
   h4 {
     @apply flex text-justify text-stone-600 text-base md:text-xl xl:text-2xl -tracking-[0.5px] leading-5;
   }
+
+  .card {
+    @apply flex flex-col justify-center items-center h-full w-full transition-all duration-500 bg-cover bg-center bg-no-repeat md:rounded-lg;
+  }
+  @media screen and (min-width: 300px) {
+    .card-tall {
+      @apply row-[span_2_/_auto];
+    }
+    .card-wide {
+      @apply col-[span_2_/_auto];
+    }
+  }
 }
 
 /* HeadingPage */
@@ -68,3 +80,42 @@ select::-ms-expand {
 select {
   text-align-last: center;
 }
+
+/*  */
+/* .image-mosaic {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 240px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #353535;
+  font-size: 3rem;
+  color: #fff;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  transition: all 500ms;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .card-tall {
+    grid-row: span 2 / auto;
+  }
+
+  .card-wide {
+    grid-column: span 2 / auto;
+  }
+} */

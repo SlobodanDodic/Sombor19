@@ -71,7 +71,9 @@ export function Gallery() {
             src={image.src}
             alt={image.alt}
             fill
-            sizes="(min-width: 780px) 176px, 160px"
+            quality={100}
+            // sizes="(min-width: 780px) 176px, 160px"
+            sizes="(min-width: 60em) 24vw, (min-width: 28em) 45vw, 100vw"
             style={{ objectFit: "cover", borderRadius: "10px" }}
           />
         </div>

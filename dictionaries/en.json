@@ -187,5 +187,30 @@
     "soText1": "Nestled within the heart of Serbia, my hometown Sombor combines the charm of a cozy café with the vibrancy of an artistic haven. After a day of dedicated work, I seek solace in the rhythmic pedal strokes along our picturesque canal, savor invigorating swims in the Danube, and relish the aroma of freshly brewed coffee drifting from our myriad cafes. As evening descends, Sombor transforms into a culinary paradise where I indulge in elegant dining at fine restaurants. It's a sanctuary of tranquility, inviting weary souls to unwind amidst the gentle ebb of time, a stark contrast to the hurried pace of urban life.",
     "soText2": "However, tranquility here does not mean monotony. Sombor teems with opportunities for adventure. Embark on horseback journeys, explore waterways by boat, pedal through scenic trails, dance to your heart's content, or take a plunge into the refreshing waters. Our cultural tapestry is woven with diverse threads, from gripping theatrical performances to the thrill of fishing. Sombor isn't just a location; it's a vibrant canvas awaiting the strokes of exploration, inviting travelers to immerse themselves in a plethora of enriching experiences.",
     "soText3": "Adding to its allure, Sombor (Serbian Cyrillic: Сомбор) stands as a city and the administrative center of the West Bačka District in the autonomous province of Vojvodina, Serbia. The city boasts a population of 41,814, while its administrative area, encompassing neighboring villages, shelters 71,521 inhabitants. This rich cultural tapestry, combined with the city's tranquil charm, creates a unique haven for travelers seeking both serenity and excitement."
+  },
+  "rooms": {
+    "title": "Accomodation",
+    "intro": "Commencing on June 15, 2019, Sombor 19 Central Apartment warmly welcomes guests, providing comfortable accommodation complemented by complimentary WiFi, efficient air conditioning, and the added charm of a garden with an inviting terrace, offering a delightful stay experience.",
+    "featureTitle": "Accommodation Features",
+    "features": {
+      "parkTitle": "Parking",
+      "parkDesc": "Free private parking is possible on site (reservation is needed).",
+      "wifiTitle": "Internet Access",
+      "wifiDesc": "WiFi is available in all areas and is free of charge.",
+      "checkInTitle": "Check In",
+      "checkInDesc": "From 15:00 to 21:00",
+      "checkOutTitle": "Check Out",
+      "checkOutDesc": "From 09:00 to 12:00",
+      "smokeTitle": "Smoking",
+      "smokeDesc": "Smoking is not allowed in the premises.",
+      "cashTitle": "Cash",
+      "cashDesc": "This property only accepts cash payments.",
+      "petsTitle": "Pets",
+      "petsDesc": "Pets are allowed on request. No extra charges.",
+      "accessTitle": "Accessibility",
+      "accessDesc": "Entire unit located on ground floor.",
+      "langTitle": "Languages spoken",
+      "langDesc": "English & Serbian"
+    }
   }
 }

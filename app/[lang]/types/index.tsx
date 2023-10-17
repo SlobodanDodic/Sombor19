@@ -124,3 +124,36 @@ export interface IAbout {
     soText3: string;
   };
 }
+
+export interface IFeatures {
+  features: {
+    parkTitle: string;
+    parkDesc: string;
+    wifiTitle: string;
+    wifiDesc: string;
+    checkInTitle: string;
+    checkInDesc: string;
+    checkOutTitle: string;
+    checkOutDesc: string;
+    smokeTitle: string;
+    smokeDesc: string;
+    cashTitle: string;
+    cashDesc: string;
+    petsTitle: string;
+    petsDesc: string;
+    accessTitle: string;
+    accessDesc: string;
+    langTitle: string;
+    langDesc: string;
+  };
+}
+
+export interface IRooms {
+  lang?: Locale;
+  about: {
+    title: string;
+    intro: string;
+    featureTitle: string;
+    features: IFeatures;
+  };
+}

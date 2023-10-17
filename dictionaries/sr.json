@@ -187,5 +187,30 @@
     "soText1": "Smešten u srcu Srbije, moj rodni grad Sombor kombinuje šarm prijatnog kafića sa živošću umetničkog utočišta. Posle dana predanog rada, utehu tražim u ritmičnim udarcima pedala duž našeg živopisnog kanala, uživam u okrepljujućem kupanju u Dunavu ili uživam u aromi sveže skuvane kafe koja se širi iz naših bezbrojnih kafića. Kako se veče spušta, Sombor se pretvara u kulinarski raj u kojem se prepuštam elegantnom obedovanju u finim restoranima. To je utočište mira, koje poziva umorne duše da se opuste usred blagog protoka vremena, što je očigledan kontrast užurbanom tempu urbanog života.",
     "soText2": "Međutim, spokoj ovde ne znači monotoniju. Sombor vrvi od raznih opcija za avanturu. Jahanje konja, istraživanje vodenih puteva čamcem, pedaliranje kroz slikovite staze, plesanje ili plivanje u osvežavajućim vodama. Naša kulturna tapiserija je protkana raznim nitima, od zanosnih pozorišnih predstava do uzbuđenja ribolova. Sombor nije samo lokacija; to je živopisno platno koje čeka poteze istraživanja, pozivajući putnike da se urone u mnoštvo obogaćujućih iskustava.",
     "soText3": "Svojoj privlačnosti Sombor (srpska ćirilica: Sombor) dobija i kao grad i kao administrativni centar Zapadnobačkog okruga u Autonomnoj pokrajini Vojvodini, Srbija. Grad ima 41.814 stanovnika, dok u njegovom administrativnom području, koje obuhvata susedna sela, živi 71.521 stanovnika. Ova bogata kulturna tapiserija, u kombinaciji sa mirnim šarmom grada, stvara jedinstveno utočište za putnike koji traže i spokoj i uzbuđenje."
+  },
+  "rooms": {
+    "title": "Smeštaj",
+    "intro": "Počevši od 15. juna 2019. godine, Sombor 19 Central Apartment srdačno dočekuje goste, pružajući udoban smeštaj uz besplatan WiFi, efikasnu klimatizaciju, a dodatni šarm obezbeđuje terasa, nudeći prijatan boravak.",
+    "featureTitle": "Smeštajne mogućnosti",
+    "features": {
+      "parkTitle": "Parking",
+      "parkDesc": "Besplatan privatni parking je moguć na licu mesta (potrebna je rezervacija).",
+      "wifiTitle": "Internet Pristup",
+      "wifiDesc": "WiFi je dostupan u svim prostorijama i besplatan je.",
+      "checkInTitle": "Dolazak",
+      "checkInDesc": "Od 15:00 do 21:00",
+      "checkOutTitle": "Odlazak",
+      "checkOutDesc": "Od 09:00 do 12:00",
+      "smokeTitle": "Pušenje",
+      "smokeDesc": "Pušenje nije dozvoljeno u objektu.",
+      "cashTitle": "Gotovina",
+      "cashDesc": "Ovaj objekat prihvata samo plaćanje gotovinom.",
+      "petsTitle": "Kućni ljubimci",
+      "petsDesc": "Kućni ljubimci su dozvoljeni na zahtev. Nema dodatnih troškova.",
+      "accessTitle": "Pristupačnost",
+      "accessDesc": "Čitava jedinica smeštena je u prizemlju.",
+      "langTitle": "Jezici",
+      "langDesc": "Engleski & Srpski"
+    }
   }
 }

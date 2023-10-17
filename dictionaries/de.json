@@ -187,5 +187,30 @@
     "soText1": "Inmitten des Herzens von Serbien vereint meine Heimatstadt Sombor den Charme eines gemütlichen Cafés mit der Lebendigkeit eines künstlerischen Zuhauses. Nach einem Tag harter Arbeit finde ich Trost in den rhythmischen Pedaltritten entlang unseres malerischen Kanals, genieße erfrischende Schwimme im Donau und liebe den Duft von frisch gebrühtem Kaffee aus unseren zahlreichen Cafés. Wenn der Abend hereinbricht, verwandelt sich Sombor in ein kulinarisches Paradies, wo ich in feinen Restaurants elegant speise. Es ist ein Zufluchtsort der Ruhe, der müde Seelen einlädt, sich zu entspannen, während sie sich im sanften Fluss der Zeit treiben lassen, ein deutlicher Kontrast zum hektischen Tempo des Stadtlebens.",
     "soText2": "Allerdings bedeutet Ruhe hier nicht Eintönigkeit. Sombor bietet zahlreiche Abenteuermöglichkeiten. Unternehmen Sie Ausritte zu Pferd, erkunden Sie Wasserwege mit dem Boot, radeln Sie durch malerische Pfade, tanzen Sie nach Herzenslust oder tauchen Sie in erfrischende Gewässer ein. Unser kultureller Reichtum ist mit vielfältigen Fäden gewebt, von fesselnden Theateraufführungen bis zum Nervenkitzel des Fischens. Sombor ist nicht nur ein Ort; es ist eine lebendige Leinwand, die darauf wartet, mit den Pinselstrichen der Erkundung gefüllt zu werden, die Reisende einlädt, sich in eine Vielzahl bereichernder Erfahrungen zu vertiefen.",
     "soText3": "Um seine Anziehungskraft zu steigern, steht Sombor (serbisch kyrillisch: Сомбор) als Stadt und Verwaltungszentrum des Bezirks Westbačka in der autonomen Provinz Vojvodina, Serbien. Die Stadt hat eine Bevölkerung von 41.814 Menschen, während ihr Verwaltungsgebiet, das benachbarte Dörfer einschließt, 71.521 Einwohner beherbergt. Dieses reiche kulturelle Erbe, kombiniert mit dem ruhigen Charme der Stadt, schafft einen einzigartigen Zufluchtsort für Reisende, die sowohl nach Ruhe als auch nach Aufregung suchen."
+  },
+  "rooms": {
+    "title": "Unterkunft",
+    "intro": "Beginnend am 15. Juni 2019 heißt das Sombor 19 Central Apartment Gäste herzlich willkommen. Es bietet komfortable Unterkünfte mit kostenlosem WLAN, effizienter Klimaanlage und dem zusätzlichen Charme eines Gartens mit einer einladenden Terrasse, um einen wundervollen Aufenthalt zu ermöglichen.",
+    "featureTitle": "Unterkunftsfunktionen",
+    "features": {
+      "parkTitle": "Parkplatz",
+      "parkDesc": "Kostenlose private Parkplätze stehen vor Ort zur Verfügung (Reservierung ist erforderlich).",
+      "wifiTitle": "Internetzugang",
+      "wifiDesc": "WiFi ist in allen Bereichen nutzbar und kostenfrei.",
+      "checkInTitle": "Check-in",
+      "checkInDesc": "Von 15:00 bis 21:00 Uhr",
+      "checkOutTitle": "Check-out",
+      "checkOutDesc": "Von 09:00 bis 12:00 Uhr",
+      "smokeTitle": "Rauchen",
+      "smokeDesc": "Rauchen ist in den Räumlichkeiten nicht gestattet.",
+      "cashTitle": "Bargeld",
+      "cashDesc": "Diese Unterkunft akzeptiert nur Barzahlungen.",
+      "petsTitle": "Haustiere",
+      "petsDesc": "Haustiere sind auf Anfrage gestattet. Keine zusätzlichen Gebühren.",
+      "accessTitle": "Barrierefreiheit",
+      "accessDesc": "Die gesamte Wohneinheit befindet sich im Erdgeschoss.",
+      "langTitle": "Gesprochene Sprachen",
+      "langDesc": "Englisch & Serbisch"
+    }
   }
 }
