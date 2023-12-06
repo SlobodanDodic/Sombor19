@@ -22,17 +22,17 @@ export default async function Rooms({ params: { lang } }: { params: { lang: Loca
       </div>
 
       <div className="mt-14">
-        <h2>{rooms.apartmentGallery}</h2>
+        <h3 className="justify-center">{rooms.apartmentGallery}</h3>
         <Gallery images={apartmentImages} />
       </div>
 
       <div className="mt-14">
-        <h2>{rooms.groundApartmentGallery}</h2>
+        <h3 className="justify-center">{rooms.groundApartmentGallery}</h3>
         <Gallery images={groundImages} />
       </div>
 
       <div className="mt-14">
-        <h2>{rooms.roomGallery}</h2>
+        <h3 className="justify-center">{rooms.roomGallery}</h3>
         <Gallery images={roomImages} />
       </div>
     </div>
