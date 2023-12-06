@@ -211,6 +211,10 @@
       "accessDesc": "Entire unit located on ground floor.",
       "langTitle": "Languages spoken",
       "langDesc": "English & Serbian"
-    }
+    },
+    "apartmentGallery": "Apartment Gallery",
+    "roomGallery": "Room Gallery",
+    "groundApartmentGallery": "Ground Apartment Gallery",
+    "gardenGallery": "Garden Gallery"
   }
 }

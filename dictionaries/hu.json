@@ -211,6 +211,10 @@
       "accessDesc": "Az egység teljes területe a földszinten található.",
       "langTitle": "Beszélt Nyelvek",
       "langDesc": "Angol & Szerb"
-    }
+    },
+    "apartmentGallery": "Apartman Galéria",
+    "roomGallery": "Szoba Galéria",
+    "groundApartmentGallery": "Földszinti Apartman Galéria",
+    "gardenGallery": "Kert Galéria"
   }
 }

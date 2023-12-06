@@ -211,6 +211,10 @@
       "accessDesc": "Čitava jedinica smeštena je u prizemlju.",
       "langTitle": "Jezici",
       "langDesc": "Engleski & Srpski"
-    }
+    },
+    "apartmentGallery": "Galerija apartmana",
+    "roomGallery": "Galerija sobe",
+    "groundApartmentGallery": "Galerija prizemnog apartmana",
+    "gardenGallery": "Galerija bašte"
   }
 }

@@ -18,16 +18,16 @@ const socialLinks = [
     icon: facebook,
     alt: "Facebook",
   },
-  {
-    url: "https://www.instagram.com/your_instagram_username/",
-    icon: instagram,
-    alt: "Instagram",
-  },
-  {
-    url: "https://twitter.com/your_twitter_username",
-    icon: twitter,
-    alt: "Twitter",
-  },
+  // {
+  //   url: "https://www.instagram.com/your_instagram_username/",
+  //   icon: instagram,
+  //   alt: "Instagram",
+  // },
+  // {
+  //   url: "https://twitter.com/your_twitter_username",
+  //   icon: twitter,
+  //   alt: "Twitter",
+  // },
 ];
 
 export async function Footer({ lang }: { lang: Locale }) {

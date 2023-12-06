@@ -1,10 +1,10 @@
-import no1 from "../../assets/rooms/gallery/1.jpeg";
-import no2 from "../../assets/rooms/gallery/2.jpeg";
-import no3 from "../../assets/rooms/gallery/3.jpeg";
-import no4 from "../../assets/rooms/gallery/4.jpeg";
-import no5 from "../../assets/rooms/gallery/5.jpeg";
-import no6 from "../../assets/rooms/gallery/6.jpeg";
-import no7 from "../../assets/rooms/gallery/7.jpeg";
+import no1 from "../../assets/rooms/garden/1.jpeg";
+import no2 from "../../assets/rooms/garden/2.jpeg";
+import no3 from "../../assets/rooms/garden/3.jpeg";
+import no4 from "../../assets/rooms/garden/4.jpeg";
+import no5 from "../../assets/rooms/garden/5.jpeg";
+import no6 from "../../assets/rooms/garden/6.jpeg";
+import no7 from "../../assets/rooms/garden/7.jpeg";
 
 export function IntroGallery() {
   const images = [no1, no2, no3, no4, no5, no6, no7];
@@ -15,13 +15,7 @@ export function IntroGallery() {
         <div
           key={index}
           className={
-            index === 0
-              ? "card card-tall card-wide"
-              : index === 1
-              ? "card card-tall"
-              : index === 6
-              ? "card card-wide"
-              : "card"
+            index === 0 ? "card card-tall card-wide" : index === 1 ? "card card-tall" : index === 6 ? "card card-wide" : "card"
           }
           style={{ backgroundImage: `url(${url.src})` }}
         />

@@ -15,7 +15,7 @@ export function QueryPage({ home, lang }: IHome) {
         <div className="flex w-[30%] mr-[4%] parallel-down bg-amber-600 z-0" />
       </div>
 
-      <h4 className="mb-5 px-10 text-center font-semibold">{home.query.visit}</h4>
+      {/* <h4 className="mb-5 px-10 text-center font-semibold">{home.query.visit}</h4>
 
       <div className="flex flex-col md:flex-row w-screen items-center justify-center">
         <Inputs home={home} />
@@ -25,7 +25,7 @@ export function QueryPage({ home, lang }: IHome) {
         >
           {home.query.submit}
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 }

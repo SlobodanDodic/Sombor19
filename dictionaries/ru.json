@@ -211,6 +211,10 @@
       "accessDesc": "Вся квартира расположена на первом этаже.",
       "langTitle": "Языки",
       "langDesc": "Английский и Сербский"
-    }
+    },
+    "apartmentGallery": "Галерея квартир",
+    "roomGallery": "Галерея комнат",
+    "groundApartmentGallery": "Галерея квартир на первом этаже",
+    "gardenGallery": "Садовая галерея"
   }
 }

@@ -211,6 +211,10 @@
       "accessDesc": "Die gesamte Wohneinheit befindet sich im Erdgeschoss.",
       "langTitle": "Gesprochene Sprachen",
       "langDesc": "Englisch & Serbisch"
-    }
+    },
+    "apartmentGallery": "Apartment-Galerie",
+    "roomGallery": "Zimmer-Galerie",
+    "groundApartmentGallery": "Erdgeschoss-Wohnungsgalerie",
+    "gardenGallery": "Garten-Galerie"
   }
 }
